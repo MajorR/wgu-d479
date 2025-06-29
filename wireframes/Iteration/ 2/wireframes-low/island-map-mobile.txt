@@ -1,0 +1,74 @@
+# Island Map Page - Mobile Wireframe
+
++----------------------+
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|   FULL SCREEN MAP    |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
++----------------------+
+
++------+
+| Back |  <- Control buttons
++------+  <- (stacked vertically
++------+     in top left corner)
+| Home |
++------+
++--------+
+| Layers |
++--------+
+
++----------------------+
+|                      |
+|  MAP OVERLAY FILTER  |  <- Full-width slide-in panel
+|                      |  <- (Hidden by default, appears
+|  [Category 1]        |     when Layers button is clicked)
+|   □ Subcategory A    |
+|   □ Subcategory B    |
+|                      |
+|  [Category 2]        |
+|   □ Subcategory C    |
+|   □ Subcategory D    |
+|                      |
+|  [Category 3]        |
+|   □ Subcategory E    |
+|   □ Subcategory F    |
+|                      |
++----------------------+
+
++----------------------+
+|                      |
+| OVERLAY INFO PANEL   |  <- Full-width panel that appears
+|                      |  <- at the bottom when a map
+|  [Image]             |     point is clicked
+|                      |
+|  Title               |
+|                      |
+|  Description text    |
+|  spanning multiple   |
+|  lines with details  |
+|  about the selected  |
+|  location.           |
+|                      |
+|  [View Details]      |
+|                      |
++----------------------+

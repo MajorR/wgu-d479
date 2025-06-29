@@ -1,0 +1,92 @@
+# Experiences Page - Desktop Wireframe
+
++------------------------------------------------------+
+|                      HEADER                          |
+| [Logo]        [Nav Links: Home, Bookings, etc.]      |
++------------------------------------------------------+
+|                                                      |
+|                  PAGE HEADER                         |
+|        "Island Experiences" + Subtitle               |
+|                                                      |
++------------------------------------------------------+
+|                                                      |
+|                 CATEGORY NAV                         |
+| [Water Activities] [Land Adventures] [Cultural] [Food]|
+|                                                      |
++------------------------------------------------------+
+|                                                      |
+|             WATER ACTIVITIES SECTION                 |
+|                                                      |
+| +----------+  +----------+  +----------+  +--------+ |
+| |          |  |          |  |          |  |        | |
+| |  IMAGE   |  |  IMAGE   |  |  IMAGE   |  | IMAGE  | |
+| |          |  |          |  |          |  |        | |
+| |          |  |          |  |          |  |        | |
+| +----------+  +----------+  +----------+  +--------+ |
+| | Snorkeling|  | Sailing  |  | Fishing  |  | Beach  | |
+| | & Diving  |  | & Boat   |  | Expedit. |  | Relax. | |
+| | Text      |  | Text     |  | Text     |  | Text   | |
+| | [Button]  |  | [Button] |  | [Button] |  | [Button]| |
+| +----------+  +----------+  +----------+  +--------+ |
+|                                                      |
++------------------------------------------------------+
+|                                                      |
+|             LAND ADVENTURES SECTION                  |
+|                                                      |
+| +----------+  +----------+  +----------+  +--------+ |
+| |          |  |          |  |          |  |        | |
+| |  IMAGE   |  |  IMAGE   |  |  IMAGE   |  | IMAGE  | |
+| |          |  |          |  |          |  |        | |
+| |          |  |          |  |          |  |        | |
+| +----------+  +----------+  +----------+  +--------+ |
+| | Volcano   |  | Rainforest|  | Mountain |  | Bird   | |
+| | Tours     |  | Treks    |  | Biking   |  | Watching| |
+| | Text      |  | Text     |  | Text     |  | Text   | |
+| | [Button]  |  | [Button] |  | [Button] |  | [Button]| |
+| +----------+  +----------+  +----------+  +--------+ |
+|                                                      |
++------------------------------------------------------+
+|                                                      |
+|           CULTURAL EXPERIENCES SECTION               |
+|                                                      |
+| +----------+  +----------+  +----------+  +--------+ |
+| |          |  |          |  |          |  |        | |
+| |  IMAGE   |  |  IMAGE   |  |  IMAGE   |  | IMAGE  | |
+| |          |  |          |  |          |  |        | |
+| |          |  |          |  |          |  |        | |
+| +----------+  +----------+  +----------+  +--------+ |
+| | Traditional|  | Craft    |  | Village  |  | Historic| |
+| | Dance     |  | Workshops|  | Tours    |  | Sites  | |
+| | Text      |  | Text     |  | Text     |  | Text   | |
+| | [Button]  |  | [Button] |  | [Button] |  | [Button]| |
+| +----------+  +----------+  +----------+  +--------+ |
+|                                                      |
++------------------------------------------------------+
+|                                                      |
+|              FOOD & DINING SECTION                   |
+|                                                      |
+| +----------+  +----------+  +----------+  +--------+ |
+| |          |  |          |  |          |  |        | |
+| |  IMAGE   |  |  IMAGE   |  |  IMAGE   |  | IMAGE  | |
+| |          |  |          |  |          |  |        | |
+| |          |  |          |  |          |  |        | |
+| +----------+  +----------+  +----------+  +--------+ |
+| | Seafood   |  | Cooking  |  | Farm-to- |  | Sunset | |
+| | Feasts    |  | Classes  |  | Table    |  | Dining | |
+| | Text      |  | Text     |  | Text     |  | Text   | |
+| | [Button]  |  | [Button] |  | [Button] |  | [Button]| |
+| +----------+  +----------+  +----------+  +--------+ |
+|                                                      |
++------------------------------------------------------+
+|                                                      |
+|                  CTA SECTION                         |
+|           "Ready for Adventure?" + Text              |
+|                  [Book Now]                          |
+|                                                      |
++------------------------------------------------------+
+|                                                      |
+|                    FOOTER                            |
+|  [Logo/Info]  [Quick Links]  [Contact Information]   |
+|                Copyright Text                        |
+|                                                      |
++------------------------------------------------------+

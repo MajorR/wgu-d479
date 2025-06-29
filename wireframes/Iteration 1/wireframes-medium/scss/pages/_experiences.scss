@@ -1,0 +1,35 @@
+// Experiences page specific styles
+
+// Activity cards
+.activity-card {
+  border: 1px solid $border-color;
+  border-radius: $border-radius-md;
+  overflow: hidden;
+  @include card-hover;
+  background-color: $white;
+}
+
+.activity-image {
+  @include image-placeholder(160px);
+}
+
+.activity-content {
+  padding: $spacing-lg;
+}
+
+.activity-title {
+  font-size: $font-size-large;
+  margin-bottom: $spacing-md;
+  color: $text-color;
+}
+
+.activity-description {
+  font-size: $font-size-base;
+  color: $text-color-lighter;
+  margin-bottom: $spacing-lg;
+  min-height: 40px;
+
+  @include respond-to('small') {
+    min-height: auto;
+  }
+}

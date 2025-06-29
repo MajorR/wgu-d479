@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Run Console Test</title>
+</head>
+<body>
+    <h1>Running Console Error Test</h1>
+    <p>Loading test_console_errors.html...</p>
+    <iframe src="test_console_errors.html" width="100%" height="800px"></iframe>
+
+    <script>
+        // Auto-run the test after a short delay
+        setTimeout(() => {
+            try {
+                const iframe = document.querySelector('iframe');
+                if (iframe && iframe.contentWindow) {
+                    iframe.contentWindow.runTest();
+                }
+            } catch (error) {
+                console.log('Could not auto-run test:', error);
+            }
+        }, 2000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+# Bookings Page - Desktop Wireframe
+
++------------------------------------------------------+
+|                      HEADER                          |
+| [Logo]        [Nav Links: Home, Bookings, etc.]      |
++------------------------------------------------------+
+|                                                      |
+|                  PAGE HEADER                         |
+|           "Book Your Stay" + Subtitle                |
+|                                                      |
++------------------------------------------------------+
+|                                                      |
+|               ACCOMMODATIONS SECTION                 |
+|                                                      |
+| +----------+  +----------+  +----------+  +--------+ |
+| |          |  |          |  |          |  |        | |
+| |  IMAGE   |  |  IMAGE   |  |  IMAGE   |  | IMAGE  | |
+| |          |  |          |  |          |  |        | |
+| |          |  |          |  |          |  |        | |
+| +----------+  +----------+  +----------+  +--------+ |
+| | Luxury    |  | Boutique |  | Beach    |  | Eco    | |
+| | Resorts   |  | Hotels   |  | Bungalows|  | Lodges | |
+| | Text      |  | Text     |  | Text     |  | Text   | |
+| | [Button]  |  | [Button] |  | [Button] |  | [Button]| |
+| +----------+  +----------+  +----------+  +--------+ |
+|                                                      |
++------------------------------------------------------+
+|                                                      |
+|               TRANSPORTATION SECTION                 |
+|                                                      |
+| +----------+  +----------+  +----------+             |
+| |          |  |          |  |          |             |
+| |  IMAGE   |  |  IMAGE   |  |  IMAGE   |             |
+| |          |  |          |  |          |             |
+| |          |  |          |  |          |             |
+| +----------+  +----------+  +----------+             |
+| | By Air    |  | By Sea   |  | Island   |            |
+| | Text      |  | Text     |  | Transport|            |
+| | [Button]  |  | [Button] |  | [Button] |            |
+| +----------+  +----------+  +----------+             |
+|                                                      |
++------------------------------------------------------+
+|                                                      |
+|               BOOKING FORM SECTION                   |
+|                                                      |
+| +--------------------------------------------------+ |
+| |                                                  | |
+| |  [Full Name]                                     | |
+| |                                                  | |
+| |  [Email Address]                                 | |
+| |                                                  | |
+| |  [Arrival Date]        [Departure Date]         | |
+| |                                                  | |
+| |  [Number of Guests]                             | |
+| |                                                  | |
+| |  [Preferred Accommodation]                       | |
+| |                                                  | |
+| |  [Special Requests - Textarea]                  | |
+| |                                                  | |
+| |  [Submit Button]                                | |
+| |                                                  | |
+| +--------------------------------------------------+ |
+|                                                      |
++------------------------------------------------------+
+|                                                      |
+|                  CTA SECTION                         |
+|         "Explore Our Island Paradise" + Text         |
+|         [View Experiences] [Explore Map]             |
+|                                                      |
++------------------------------------------------------+
+|                                                      |
+|                    FOOTER                            |
+|  [Logo/Info]  [Quick Links]  [Contact Information]   |
+|                Copyright Text                        |
+|                                                      |
++------------------------------------------------------+

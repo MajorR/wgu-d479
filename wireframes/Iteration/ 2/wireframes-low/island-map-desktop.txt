@@ -1,0 +1,74 @@
+# Island Map Page - Desktop Wireframe
+
++------------------------------------------------------+
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                  FULL SCREEN MAP                     |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
++------------------------------------------------------+
+
++------+
+| Back |  <- Control buttons (top left corner)
++------+
++------+
+| Home |
++------+
++--------+
+| Layers |
++--------+
+
++---------------------------+
+|                           |
+|    MAP OVERLAY FILTER     |  <- Slide-in panel (right side)
+|                           |  <- (Hidden by default, appears when
+|  [Category 1]             |     Layers button is clicked)
+|    □ Subcategory A        |
+|    □ Subcategory B        |
+|                           |
+|  [Category 2]             |
+|    □ Subcategory C        |
+|    □ Subcategory D        |
+|                           |
+|  [Category 3]             |
+|    □ Subcategory E        |
+|    □ Subcategory F        |
+|                           |
++---------------------------+
+
++---------------------------+
+|                           |
+|   OVERLAY INFO PANEL      |  <- Appears when a map point is clicked
+|                           |
+|  [Image]                  |
+|                           |
+|  Title                    |
+|                           |
+|  Description text         |
+|  spanning multiple        |
+|  lines with details       |
+|  about the selected       |
+|  location.                |
+|                           |
+|  [Button: View Details]   |
+|                           |
++---------------------------+

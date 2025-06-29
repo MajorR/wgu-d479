@@ -1,0 +1,125 @@
+// Bookings page specific styles
+
+// Accommodation cards
+.accommodation-card {
+  border: 1px solid $border-color;
+  border-radius: $border-radius-md;
+  overflow: hidden;
+  @include card-hover;
+}
+
+.accommodation-image {
+  @include image-placeholder(160px);
+}
+
+.accommodation-content {
+  padding: $spacing-lg;
+}
+
+.accommodation-title {
+  font-size: $font-size-large;
+  margin-bottom: $spacing-md;
+  color: $text-color;
+}
+
+.accommodation-description {
+  font-size: $font-size-base;
+  color: $text-color-lighter;
+  margin-bottom: $spacing-lg;
+  min-height: 60px;
+
+  @include respond-to('small') {
+    min-height: auto;
+  }
+}
+
+// Transport cards
+.transport-card {
+  border: 1px solid $border-color;
+  border-radius: $border-radius-md;
+  padding: $spacing-xl;
+  background-color: $white;
+  @include card-hover;
+}
+
+.transport-icon {
+  width: 60px;
+  height: 60px;
+  background-color: $primary-color-light;
+  border-radius: $border-radius-circle;
+  @include flex-center;
+  margin: 0 auto $spacing-lg;
+  color: $primary-color;
+  font-size: $font-size-xlarge;
+}
+
+.transport-title {
+  font-size: $font-size-large;
+  margin-bottom: $spacing-md;
+  color: $text-color;
+  text-align: center;
+}
+
+.transport-description {
+  font-size: $font-size-base;
+  color: $text-color-lighter;
+  text-align: center;
+}
+
+// Booking form
+.booking-form {
+  background-color: $white;
+  border-radius: $border-radius-md;
+  padding: $spacing-xxl;
+  box-shadow: $box-shadow-lg;
+}
+
+.form-title {
+  font-size: $font-size-xlarge;
+  margin-bottom: $spacing-xl;
+  color: $text-color;
+  text-align: center;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-xl;
+
+  @include respond-to('small') {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-group {
+  margin-bottom: $spacing-lg;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: $spacing-xs;
+  font-weight: bold;
+  color: $text-color-light;
+}
+
+.form-control {
+  width: 100%;
+  padding: $spacing-md;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-sm;
+  font-size: $font-size-base;
+  transition: border-color $transition-speed;
+
+  &:focus {
+    border-color: $primary-color;
+    outline: none;
+  }
+}
+
+.form-full-width {
+  grid-column: span 2;
+
+  @include respond-to('small') {
+    grid-column: span 1;
+  }
+}

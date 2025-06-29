@@ -1,0 +1,150 @@
+// Wireframe Styles for Taniti Island Website
+// This file contains styles specific to the wireframe display page
+
+// Variables
+$container-max-width: 1200px;
+$primary-color: var(--primary-ocean);
+$primary-light-color: var(--primary-teal);
+$secondary-color: var(--primary-sunset);
+$background-light: #f9f9f9;
+$background-lighter: #f0f0f0;
+$background-hover: #e0e0e0;
+$border-color: #ddd;
+$text-muted: #666;
+$box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+$box-shadow-top: 0 -2px 5px rgba(0, 0, 0, 0.1);
+
+// Container
+.wireframe-container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+// Tab Navigation Styles
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  border-bottom: 2px solid $primary-light-color;
+}
+
+.tab-button {
+  background: $background-lighter;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  font-weight: 600;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $background-hover;
+  }
+
+  &.active {
+    background: $primary-color;
+    color: white;
+    border-bottom: 3px solid $secondary-color;
+    box-shadow: $box-shadow-top;
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    transform: translateY(-3px);
+  }
+}
+
+// Tab Content Styles
+.tab-content {
+  display: none;
+  padding: 20px;
+  background: $background-light;
+  border-radius: 0 5px 5px 5px;
+  box-shadow: $box-shadow;
+  position: relative;
+  z-index: 0;
+  margin-top: -3px;
+  border-top: 2px solid $primary-color;
+
+  &.active {
+    display: block;
+  }
+}
+
+// Wireframe Display Styles
+.wireframe-display {
+  margin-bottom: 30px;
+}
+
+.wireframe-image {
+  width: 100%;
+  max-width: 1000px;
+  height: 1000px;
+  border: 1px solid $border-color;
+  margin: 0 auto;
+  display: block;
+  background-color: white;
+}
+
+.wireframe-caption {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  color: $text-muted;
+}
+
+// Device Toggle Styles
+.device-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.device-button {
+  background: $background-lighter;
+  border: none;
+  padding: 8px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $background-hover;
+  }
+
+  &.active {
+    background: $primary-light-color;
+    color: white;
+  }
+}
+
+// Methodology section
+.methodology {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: $background-lighter;
+  border-radius: 10px;
+  box-shadow: $box-shadow;
+
+  h2 {
+    color: var(--color-primary-dark);
+    border-bottom: 2px solid $primary-light-color;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+}
+
+// Responsive Styles
+@media screen and (max-width: 768px) {
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tab-button {
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+}

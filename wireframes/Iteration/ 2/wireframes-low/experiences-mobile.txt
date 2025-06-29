@@ -1,0 +1,144 @@
+# Experiences Page - Mobile Wireframe
+
++----------------------+
+|       HEADER         |
+| [Logo]    [Hamburger]|
++----------------------+
+|                      |
+|     PAGE HEADER      |
+|  "Island Experiences"|
+|      + Subtitle      |
+|                      |
++----------------------+
+|                      |
+|    CATEGORY NAV      |
+| [Water Activities]   |
+| [Land Adventures]    |
+| [Cultural]           |
+| [Food & Dining]      |
+|                      |
++----------------------+
+|                      |
+|  WATER ACTIVITIES    |
+|      SECTION         |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Snorkeling &     | |
+| | Diving           | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Sailing & Boat   | |
+| | Tours            | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Fishing          | |
+| | Expeditions      | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Beach Relaxation | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
++----------------------+
+|                      |
+|  LAND ADVENTURES     |
+|      SECTION         |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Volcano Tours    | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
+| (Similar cards for   |
+| Rainforest Treks,    |
+| Mountain Biking,     |
+| Bird Watching)       |
+|                      |
++----------------------+
+|                      |
+|  CULTURAL EXPERIENCES|
+|      SECTION         |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Traditional Dance| |
+| | Shows            | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
+| (Similar cards for   |
+| Craft Workshops,     |
+| Village Tours,       |
+| Historical Sites)    |
+|                      |
++----------------------+
+|                      |
+|  FOOD & DINING       |
+|      SECTION         |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Seafood Feasts   | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
+| (Similar cards for   |
+| Cooking Classes,     |
+| Farm-to-Table Tours, |
+| Sunset Dining)       |
+|                      |
++----------------------+
+|                      |
+|    CTA SECTION       |
+| "Ready for Adventure"|
+|        + Text        |
+|     [Book Now]       |
+|                      |
++----------------------+
+|                      |
+|       FOOTER         |
+|     [Logo/Info]      |
+|    [Quick Links]     |
+| [Contact Information]|
+|    Copyright Text    |
+|                      |
++----------------------+

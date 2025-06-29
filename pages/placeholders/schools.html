@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+  <title>Taniti Island - Schools</title>
+  <meta name="description" content="Explore Taniti Island schools and educational institutions.">
+
+  <meta property="og:title" content="Taniti Island - Schools">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Taniti Island schools page">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../icon.png">
+
+  <link rel="manifest" href="../../site.webmanifest">
+  <meta name="theme-color" content="#86acaf">
+
+  <link rel="stylesheet" href="../../css/island-map.css">
+  <link rel="stylesheet" href="../../css/placeholderPage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="construction-icon">
+      <i class="fas fa-hard-hat"></i>
+      <i class="fas fa-tools"></i>
+    </div>
+    <h1>Under Construction</h1>
+    <div class="message" id="welcome-message">
+      Welcome to schools
+    </div>
+    <div class="button-container">
+      <button class="back-button" onclick="window.location.href='../../index.html'">
+        Back to Home
+      </button>
+      <button class="map-button" onclick="window.location.href='island-map.html'">
+        View Island Map
+      </button>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get the fragment identifier from the URL
+      const fragment = window.location.hash.substring(1);
+
+      // Update the welcome message with the fragment identifier
+      if (fragment) {
+        // Decode URL-encoded characters (e.g., %20 to space)
+        const decodedFragment = decodeURIComponent(fragment);
+        document.getElementById('welcome-message').textContent = `Welcome to ${decodedFragment}`;
+        document.title = `Taniti Island - ${decodedFragment}`;
+      } else {
+        document.getElementById('welcome-message').textContent = `Welcome to schools`;
+      }
+    });
+  </script>
+</body>
+
+</html>

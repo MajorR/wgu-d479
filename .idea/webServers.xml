@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="254b7f6f-4779-4671-a135-732cd45d505b" name="web-tester" url="">
+        <fileTransfer accessType="LOCAL" port="0" />
+      </webServer>
+      <webServer id="cac15faf-03ad-4c9f-989f-fc4689fde208" name="ftp-server">
+        <fileTransfer port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

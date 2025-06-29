@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 192 192">
+  <!-- Volcano base -->
+  <path fill="#8B4513" d="M30 140 L96 30 L162 140 Z" />
+  <!-- Volcano crater -->
+  <path fill="#A52A2A" d="M60 140 L96 60 L132 140 Z" />
+  <!-- Lava -->
+  <path fill="#FF4500" d="M80 140 L96 80 L112 140 Z" />
+  <!-- Smoke -->
+  <path fill="#A9A9A9" d="M86 60 Q96 40 106 60 Q116 50 110 40 Q100 30 90 40 Q80 30 86 60" />
+</svg>

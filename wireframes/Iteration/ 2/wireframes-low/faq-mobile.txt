@@ -1,0 +1,153 @@
+# FAQ Page - Mobile Wireframe
+
++----------------------+
+|       HEADER         |
+| [Logo]    [Hamburger]|
++----------------------+
+|                      |
+|     PAGE HEADER      |
+| "Frequently Asked    |
+|    Questions"        |
+|      + Subtitle      |
+|                      |
++----------------------+
+|                      |
+|    CATEGORY NAV      |
+| [Travel]             |
+| [Accommodations]     |
+| [Activities]         |
+| [Practical]          |
+|                      |
++----------------------+
+|                      |
+|       TRAVEL &       |
+|    TRANSPORTATION    |
+|                      |
+| +------------------+ |
+| | Q: How do I get  | |
+| | to Taniti Island?| |
+| |                ▼ | |
+| +------------------+ |
+| | A: Taniti is      | |
+| | accessible by air | |
+| | through our small | |
+| | airport with daily| |
+| | flights...        | |
+| +------------------+ |
+|                      |
+| +------------------+ |
+| | Q: Do I need a   | |
+| | visa to visit    | |
+| | Taniti?        ▼ | |
+| +------------------+ |
+| | A: Most visitors  | |
+| | can stay on Taniti| |
+| | for up to 30 days | |
+| | without a visa... | |
+| +------------------+ |
+|                      |
+| +------------------+ |
+| | Q: What transport| |
+| | options are      | |
+| | available?     ▼ | |
+| +------------------+ |
+| | A: Taniti offers  | |
+| | taxis, rental     | |
+| | cars, bicycles... | |
+| +------------------+ |
+|                      |
+| +------------------+ |
+| | Q: How far is it | |
+| | from the airport | |
+| | to hotels?     ▼ | |
+| +------------------+ |
+| | A: Most accommo-  | |
+| | dations are within| |
+| | a 15-30 minute    | |
+| | drive...          | |
+| +------------------+ |
+|                      |
++----------------------+
+|                      |
+|    ACCOMMODATIONS    |
+|                      |
+| +------------------+ |
+| | Q: What types of | |
+| | accommodations   | |
+| | are available? ▼ | |
+| +------------------+ |
+| | A: Taniti offers  | |
+| | a range of        | |
+| | accommodations... | |
+| +------------------+ |
+|                      |
+| (Similar accordion   |
+| items for other      |
+| accommodation        |
+| questions)           |
+|                      |
++----------------------+
+|                      |
+|     ACTIVITIES &     |
+|     EXPERIENCES      |
+|                      |
+| +------------------+ |
+| | Q: What are the  | |
+| | most popular     | |
+| | activities?    ▼ | |
+| +------------------+ |
+| | A: The most       | |
+| | popular activities| |
+| | include snorkeling| |
+| | and diving...     | |
+| +------------------+ |
+|                      |
+| (Similar accordion   |
+| items for other      |
+| activity questions)  |
+|                      |
++----------------------+
+|                      |
+|      PRACTICAL       |
+|     INFORMATION      |
+|                      |
+| +------------------+ |
+| | Q: What is the   | |
+| | currency used on | |
+| | Taniti?        ▼ | |
+| +------------------+ |
+| | A: The local      | |
+| | currency is the   | |
+| | Taniti Dollar     | |
+| | (TND)...          | |
+| +------------------+ |
+|                      |
+| (Similar accordion   |
+| items for other      |
+| practical questions) |
+|                      |
++----------------------+
+|                      |
+|    CTA SECTION       |
+| "Still Have Questions"|
+|        + Text        |
+|                      |
+| +------------------+ |
+| | Email Us         | |
+| | info@taniti.com  | |
+| +------------------+ |
+|                      |
+| +------------------+ |
+| | Call Us          | |
+| | +1 (555) 123-4567| |
+| +------------------+ |
+|                      |
++----------------------+
+|                      |
+|       FOOTER         |
+|     [Logo/Info]      |
+|    [Quick Links]     |
+| [Contact Information]|
+|    Copyright Text    |
+|                      |
++----------------------+

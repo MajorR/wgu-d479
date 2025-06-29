@@ -1,0 +1,151 @@
+theaters:
+  movies:
+    - "3f7af2d8-9b4c-4e5f-8a6d-1c2e3f4a5b6c":
+      title: The Grand Adventure
+      director: Sarah Johnson
+      genre: Adventure/Fantasy
+      runtime: 128 min
+      rating: PG-13
+      release-date: 2023-06-15
+      tagline: The journey of a lifetime awaits
+      overview: A group of friends embark on an epic adventure to find a legendary treasure that could change their lives forever.
+
+    - "7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a":
+      title: Midnight Shadows
+      director: Michael Chen
+      genre: Thriller/Mystery
+      runtime: 115 min
+      rating: R
+      release-date: 2023-08-22
+      tagline: Some secrets are better left in the dark
+      overview: A detective with a troubled past must solve a series of mysterious disappearances in a small town with a dark history.
+
+    - "2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d":
+      title: Love in Paris
+      director: Emma Rodriguez
+      genre: Romance/Comedy
+      runtime: 105 min
+      rating: PG-13
+      release-date: 2023-02-14
+      tagline: Sometimes love finds you when you least expect it
+      overview: Two strangers meet by chance in the city of love and spend a magical weekend together that changes their lives forever.
+
+    - "9c8b7a6d-5e4f-3c2b-1a0d-9e8f7a6b5c4d":
+      title: The Last Stand
+      director: James Wilson
+      genre: Action/Sci-Fi
+      runtime: 142 min
+      rating: PG-13
+      release-date: 2023-07-04
+      tagline: The fate of humanity rests in their hands
+      overview: A team of unlikely heroes must band together to stop an alien invasion that threatens to destroy Earth.
+
+    - "5f4e3d2c-1b0a-9f8e-7d6c-5b4a3c2d1e0f":
+      title: Whispers in the Wind
+      director: Olivia Thompson
+      genre: Drama/Historical
+      runtime: 135 min
+      rating: PG
+      release-date: 2023-09-30
+      tagline: A story of courage, hope, and resilience
+      overview: Based on a true story, a young woman overcomes adversity during World War II to save her family and community.
+
+    - "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d":
+      title: The Haunting of Blackwood Manor
+      director: Robert Jackson
+      genre: Horror/Supernatural
+      runtime: 110 min
+      rating: R
+      release-date: 2023-10-13
+      tagline: Some houses never let you leave
+      overview: A family moves into a historic mansion only to discover it's haunted by malevolent spirits with a connection to their past.
+
+    - "8d7c6b5a-4e3f-2d1c-0b9a-8f7e6d5c4b3a":
+      title: Fast Lane
+      director: David Martinez
+      genre: Action/Crime
+      runtime: 118 min
+      rating: PG-13
+      release-date: 2023-05-19
+      tagline: Live life a quarter mile at a time
+      overview: A former street racer is forced back into the world of illegal racing to save his brother from a dangerous crime boss.
+
+    - "4b5c6d7e-8f9a-0b1c-2d3e-4f5a6b7c8d9e":
+      title: Starlight Chronicles
+      director: Jennifer Lee
+      genre: Fantasy/Adventure
+      runtime: 150 min
+      rating: PG
+      release-date: 2023-12-08
+      tagline: The stars hold the key to our destiny
+      overview: A young orphan discovers she has magical powers linked to the stars and must learn to control them to save her world from darkness.
+
+    - "6d5e4f3a-2b1c-0d9e-8f7a-6b5c4d3e2f1a":
+      title: The Perfect Heist
+      director: Thomas Wright
+      genre: Crime/Thriller
+      runtime: 122 min
+      rating: R
+      release-date: 2023-03-24
+      tagline: The plan was perfect. Until it wasn't.
+      overview: A master thief assembles a team of experts for one last heist, but unexpected complications put their lives and freedom at risk.
+
+    - "0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d":
+      title: Beyond the Horizon
+      director: Lisa Kim
+      genre: Sci-Fi/Drama
+      runtime: 138 min
+      rating: PG-13
+      release-date: 2023-11-17
+      tagline: The future is not what it seems
+      overview: In a dystopian future, a scientist discovers a way to travel between parallel universes and must decide whether to save her world or escape to another.
+
+    - "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e":
+      title: The Silent Echo
+      director: Daniel Park
+      genre: Psychological Thriller
+      runtime: 112 min
+      rating: R
+      release-date: 2023-04-07
+      tagline: The mind hears what the ears cannot
+      overview: A deaf musician begins to experience strange auditory hallucinations that may be warnings from another dimension or signs of her deteriorating sanity.
+
+    - "e5d4c3b2-a1f0-9e8d-7c6b-5a4f3e2d1c0b":
+      title: Quantum Leap
+      director: Marcus Johnson
+      genre: Sci-Fi/Action
+      runtime: 145 min
+      rating: PG-13
+      release-date: 2023-08-11
+      tagline: The next evolution of humanity is here
+      overview: A brilliant physicist creates a technology that allows humans to evolve beyond their physical limitations, but powerful forces want to weaponize his discovery.
+
+    - "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f":
+      title: Blooming Hearts
+      director: Sophia Williams
+      genre: Romance/Drama
+      runtime: 108 min
+      rating: PG
+      release-date: 2023-05-05
+      tagline: Love grows in the most unexpected gardens
+      overview: A widowed florist finds new purpose when she begins creating special arrangements that mysteriously bring love to everyone who receives them—except herself.
+
+    - "2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b":
+      title: The Last Frontier
+      director: Alexander Scott
+      genre: Western/Drama
+      runtime: 157 min
+      rating: R
+      release-date: 2023-07-28
+      tagline: In the wild, only the strongest survive
+      overview: In the dying days of the American frontier, a legendary outlaw returns to his hometown seeking redemption but finds that civilization has brought its own kind of lawlessness.
+
+    - "7b6a5c4d-3e2f-1a0b-9c8d-7e6f5a4b3c2d":
+      title: Neon Nights
+      director: Victoria Chen
+      genre: Crime/Neo-Noir
+      runtime: 125 min
+      rating: R
+      release-date: 2023-10-20
+      tagline: The city never sleeps. Neither does crime.
+      overview: A jaded detective and a tech-savvy hacker form an unlikely alliance to track down a serial killer who's using social media to choose his victims in a near-future metropolis.

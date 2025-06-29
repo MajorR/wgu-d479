@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taniti Island - Interactive Map</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/overlay-info-panel.css">
+    <link rel="stylesheet" href="../css/island-map.css">
+    <link rel="stylesheet" href="../lib/components/map-overlay-toggle-new/map-overlay-toggle-new.css">
+
+    <!-- CSS Styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #6397a8ff;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .fullscreen-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .map-container {
+            flex: 1;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        map-component {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+
+        .map-footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 70%, transparent 100%);
+            padding: 15px 20px;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .keyboard-shortcuts {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .shortcut {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .key {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 11px;
+        }
+
+        /* Loading Screen */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            color: white;
+        }
+
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-top: 3px solid #fff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .loading-progress {
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        /* Error Screen */
+        .error-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #1a1a1a;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .error-icon {
+            font-size: 48px;
+            color: #ff4444;
+            margin-bottom: 20px;
+        }
+
+        .error-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .error-message {
+            font-size: 16px;
+            opacity: 0.8;
+            margin-bottom: 20px;
+            max-width: 600px;
+        }
+
+        .retry-button {
+            background: #ff4444;
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+
+        .retry-button:hover {
+            background: #ff6666;
+        }
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .control-button {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+
+            .keyboard-shortcuts {
+                gap: 10px;
+            }
+
+            .shortcut {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 480px) {
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Loading Interactive Map</div>
+        <div class="loading-progress">Initializing components...</div>
+    </div>
+
+    <!-- Error Screen -->
+    <div id="error-screen" class="error-screen">
+        <div class="error-icon">⚠️</div>
+        <div class="error-title">Failed to Load Map</div>
+        <div class="error-message">
+            There was an error loading the interactive map. Please check your internet connection and try again.
+        </div>
+        <button class="retry-button" onclick="location.reload()">Retry</button>
+    </div>
+
+    <!-- Main Application -->
+    <div id="app" class="fullscreen-container" style="display: none;">
+        <!-- Header -->
+      <div class="map-controls-container">
+        <button class="control-button back-button" id="back-button">
+          <img src="../img/solid/arrow-left.svg" style="width: 24px; height: 24px;">
+        </button>
+        <button class="control-button home-button" onclick="window.location.href='../index.html'">
+          <img src="../img/solid/house.svg" style="width: 24px; height: 24px;">
+        </button>
+        <!--<button class="control-button toggle-overlays-button" id="toggle-overlays-button">
+          <img src="../img/solid/layer-group.svg" style="width: 24px; height: 24px;">
+        </button>-->
+      </div>
+
+        <!-- Map Container -->
+        <div class="map-container">
+            <map-component id="map-component"></map-component>
+            <map-overlay-toggle-new id="map-overlay-toggle-new" style="display: none;"></map-overlay-toggle-new>
+        </div>
+
+
+        <!-- Footer -->
+        <!--<div class="map-footer">
+            <div class="keyboard-shortcuts">
+                <div class="shortcut">
+                    <span class="key">R</span>
+                    <span>Reset View</span>
+                </div>
+                <div class="shortcut">
+                    <span class="key">Ctrl+A</span>
+                    <span>Show All</span>
+                </div>
+                <div class="shortcut">
+                    <span class="key">Ctrl+H</span>
+                    <span>Hide All</span>
+                </div>
+                <div class="shortcut">
+                    <span class="key">Esc</span>
+                    <span>Close Info</span>
+                </div>
+            </div>
+        </div>-->
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <script type="module" src="../lib/components/map/map-component.js"></script>
+    <script type="module" src="../lib/managers/fullscreen-map-manager.js"></script>
+    <script type="module" src="../lib/components/map-overlay-toggle-new/map-overlay-toggle-new.js"></script>
+
+    <script type="module">
+        import { FullscreenMapManager } from '../lib/managers/fullscreen-map-manager.js';
+
+        // Global variables
+        let mapManager = null;
+        let isFullscreen = false;
+        let overlayToggleVisible = false;
+
+        // DOM elements
+        const loadingScreen = document.getElementById('loading-screen');
+        const errorScreen = document.getElementById('error-screen');
+        const app = document.getElementById('app');
+        const loadingProgress = document.querySelector('.loading-progress');
+
+        // Control buttons
+        const toggleOverlaysButton = document.getElementById('toggle-overlays-button');
+        const backButton = document.getElementById('back-button');
+
+        // Map overlay toggle component
+        const mapOverlayToggle = document.getElementById('map-overlay-toggle-new');
+
+        // Initialize the application
+        async function initializeApp() {
+            try {
+                updateLoadingProgress('Creating map manager...');
+                mapManager = new FullscreenMapManager();
+
+                updateLoadingProgress('Loading map components...');
+                await mapManager.initialize(
+                    'map-component',
+                    '../img/island.svg'
+                );
+
+                updateLoadingProgress('Setting up event listeners...');
+                // Wait for custom elements to be defined before setting up event listeners
+                setupEventListeners();
+
+                updateLoadingProgress('Finalizing...');
+
+                // Hide loading screen and show app
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                    app.style.display = 'flex';
+                }, 500);
+
+                console.log('Fullscreen map application initialized successfully');
+            } catch (error) {
+                console.error('Error initializing application:', error);
+                showError(error.message);
+            }
+        }
+
+        // Update loading progress text
+        function updateLoadingProgress(text) {
+            loadingProgress.textContent = text;
+        }
+
+        // Show error screen
+        function showError(message) {
+            loadingScreen.style.display = 'none';
+            errorScreen.style.display = 'flex';
+            document.querySelector('.error-message').textContent = message;
+        }
+
+        // Set up event listeners
+        function setupEventListeners() {
+            // Set up back button to navigate to previous page
+            if (backButton) {
+                backButton.addEventListener('click', function() {
+                    window.history.back();
+                });
+            }
+
+            // Set up toggle overlays button
+            if (toggleOverlaysButton) {
+                toggleOverlaysButton.addEventListener('click', function() {
+                    toggleOverlayToggleVisibility();
+                });
+            }
+
+            // Set up keyboard shortcuts
+            document.addEventListener('keydown', function(event) {
+                // Prevent default behavior for our shortcuts
+                const isCtrlPressed = event.ctrlKey || event.metaKey;
+
+                switch(event.key.toLowerCase()) {
+                    case 'r':
+                        if (!isCtrlPressed) {
+                            event.preventDefault();
+                            // Reset view
+                            if (mapManager && mapManager.resetView) {
+                                mapManager.resetView();
+                            }
+                        }
+                        break;
+                    case 'a':
+                        if (isCtrlPressed) {
+                            event.preventDefault();
+                            // Show all overlays
+                            if (mapManager && mapManager.showAllOverlays) {
+                                mapManager.showAllOverlays();
+                            }
+                        }
+                        break;
+                    case 'h':
+                        if (isCtrlPressed) {
+                            event.preventDefault();
+                            // Hide all overlays
+                            if (mapManager && mapManager.hideAllOverlays) {
+                                mapManager.hideAllOverlays();
+                            }
+                        }
+                        break;
+                    case 'escape':
+                        event.preventDefault();
+                        // Close info panel
+                        if (mapManager && mapManager.closeInfoPanel) {
+                            mapManager.closeInfoPanel();
+                        }
+                        break;
+                }
+            });
+
+            // Set up window resize handler
+            window.addEventListener('resize', handleResize);
+
+            // Set up visibility change handler
+            document.addEventListener('visibilitychange', handleVisibilityChange);
+
+            // Set up overlay toggle component event listener
+            if (mapOverlayToggle) {
+                mapOverlayToggle.addEventListener('overlayToggleChange', function(event) {
+                    handleOverlayToggleChange(event.detail);
+                });
+            }
+        }
+
+        // Toggle overlay toggle component visibility
+        function toggleOverlayToggleVisibility() {
+            if (mapOverlayToggle && toggleOverlaysButton) {
+                overlayToggleVisible = !overlayToggleVisible;
+
+                if (overlayToggleVisible) {
+                    mapOverlayToggle.style.display = 'block';
+                    toggleOverlaysButton.classList.add('active');
+                } else {
+                    mapOverlayToggle.style.display = 'none';
+                    toggleOverlaysButton.classList.remove('active');
+                }
+
+                console.log('Overlay toggle visibility:', overlayToggleVisible);
+            } else {
+                console.warn('Required overlay toggle elements not found');
+            }
+        }
+
+        // Handle overlay toggle changes and apply filters to the map
+        function handleOverlayToggleChange(detail) {
+            if (!mapManager) {
+                console.warn('Map manager not available for overlay filtering');
+                return;
+            }
+
+            console.log('Overlay toggle change:', detail);
+
+            // Extract enabled categories from the toggle component state
+            const enabledCategories = [];
+
+            if (detail.categoryStates) {
+                for (const [categoryKey, categoryState] of detail.categoryStates) {
+                    if (categoryState.enabled) {
+                        enabledCategories.push(categoryKey);
+                    }
+                }
+            }
+
+
+
+
+            // Apply category-based filter to the map
+            if (enabledCategories.length > 0) {
+                // Show overlays for enabled categories
+                mapManager.applyFilter({
+                    type: 'category',
+                    categories: enabledCategories
+                });
+              console.log('Enabled categories:', enabledCategories);
+            } else {
+                // Hide all overlays if no categories are enabled
+                mapManager.hideAllOverlays();
+            }
+        }
+
+        // Toggle fullscreen mode
+        function toggleFullscreen() {
+            if (!isFullscreen) {
+                // Enter fullscreen
+                const element = document.documentElement;
+                if (element.requestFullscreen) {
+                    element.requestFullscreen();
+                } else if (element.webkitRequestFullscreen) {
+                    element.webkitRequestFullscreen();
+                } else if (element.mozRequestFullScreen) {
+                    element.mozRequestFullScreen();
+                } else if (element.msRequestFullscreen) {
+                    element.msRequestFullscreen();
+                }
+            } else {
+                // Exit fullscreen
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                }
+            }
+        }
+
+        // Update fullscreen button text
+        function updateFullscreenButton() {
+            isFullscreen = !!(document.fullscreenElement ||
+                             document.webkitFullscreenElement ||
+                             document.mozFullScreenElement ||
+                             document.msFullscreenElement);
+
+            // Note: No fullscreen button in current UI
+            // fullscreenToggle.textContent = isFullscreen ? '🗗 Exit Fullscreen' : '⛶ Fullscreen';
+        }
+
+        // Handle window resize
+        function handleResize() {
+            // Trigger map component resize if needed
+            const mapComponent = document.getElementById('map-component');
+            if (mapComponent && mapComponent.resizeCanvas) {
+                mapComponent.resizeCanvas();
+            }
+        }
+
+        // Handle visibility change (tab switching)
+        function handleVisibilityChange() {
+            if (document.hidden) {
+                // Tab is hidden - pause any animations or reduce activity
+                console.log('Tab hidden - reducing activity');
+            } else {
+                // Tab is visible - resume normal activity
+                console.log('Tab visible - resuming normal activity');
+                handleResize(); // Ensure proper sizing when tab becomes visible
+            }
+        }
+
+        // Handle page unload
+        window.addEventListener('beforeunload', () => {
+            if (mapManager) {
+                mapManager.destroy();
+            }
+        });
+
+        // Handle errors
+        window.addEventListener('error', (event) => {
+            console.error('Global error:', event.error);
+            if (loadingScreen.style.display !== 'none') {
+                showError('An unexpected error occurred while loading the application.');
+            }
+        });
+
+        // Handle unhandled promise rejections
+        window.addEventListener('unhandledrejection', (event) => {
+            console.error('Unhandled promise rejection:', event.reason);
+            if (loadingScreen.style.display !== 'none') {
+                showError('Failed to load required resources.');
+            }
+        });
+
+        // Start the application
+        document.addEventListener('DOMContentLoaded', initializeApp);
+    </script>
+</body>
+</html>

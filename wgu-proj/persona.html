@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Persona</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .persona {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+        .persona-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .persona-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: #666;
+        }
+        .persona-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .persona-tagline {
+            font-style: italic;
+            color: #666;
+        }
+        .persona-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .persona-section {
+            margin-bottom: 20px;
+        }
+        .persona-section h3 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .persona-attribute {
+            margin-bottom: 10px;
+        }
+        .attribute-label {
+            font-weight: bold;
+        }
+        .methodology {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Island Visitor Persona</h1>
+
+    <div class="persona">
+        <div class="persona-header">
+            <div class="persona-image">👤</div>
+            <div>
+                <div class="persona-name">Michael Thompson</div>
+                <div class="persona-tagline">First-time family vacationer from the USA</div>
+            </div>
+        </div>
+
+        <div class="persona-details">
+            <div class="persona-section">
+                <h3>Demographics</h3>
+                <div class="persona-attribute">
+                    <span class="attribute-label">Age:</span> 42 (40-45 age range)
+                </div>
+                <div class="persona-attribute">
+                    <span class="attribute-label">Gender:</span> Male
+                </div>
+                <div class="persona-attribute">
+                    <span class="attribute-label">Country of Origin:</span> United States
+                </div>
+                <div class="persona-attribute">
+                    <span class="attribute-label">Annual Income:</span> $70,000
+                </div>
+                <div class="persona-attribute">
+                    <span class="attribute-label">Occupation:</span> Marketing Manager
+                </div>
+            </div>
+
+            <div class="persona-section">
+                <h3>Travel Information</h3>
+                <div class="persona-attribute">
+                    <span class="attribute-label">Transportation to Island:</span> Air travel
+                </div>
+                <div class="persona-attribute">
+                    <span class="attribute-label">Party Size:</span> 4 people (spouse and two children)
+                </div>
+                <div class="persona-attribute">
+                    <span class="attribute-label">Accommodations:</span> Hotel
+                </div>
+                <div class="persona-attribute">
+                    <span class="attribute-label">Length of Stay:</span> 5 days
+                </div>
+                <div class="persona-attribute">
+                    <span class="attribute-label">Visit Status:</span> First time visitor
+                </div>
+                <div class="persona-attribute">
+                    <span class="attribute-label">Island Transportation:</span> Rental car
+                </div>
+            </div>
+
+            <div class="persona-section">
+                <h3>Preferences & Interests</h3>
+                <div class="persona-attribute">
+                    <span class="attribute-label">Purpose of Trip:</span> Family vacation
+                </div>
+                <div class="persona-attribute">
+                    <span class="attribute-label">Interested in Local Attractions:</span> Yes
+                </div>
+                <div class="persona-attribute">
+                    <span class="attribute-label">Activities of Interest:</span> Beach activities, hiking, cultural experiences, family-friendly entertainment
+                </div>
+                <div class="persona-attribute">
+                    <span class="attribute-label">Dining Preferences:</span> Mix of local cuisine and familiar options for children
+                </div>
+            </div>
+
+            <div class="persona-section">
+                <h3>Goals & Motivations</h3>
+                <ul>
+                    <li>Create lasting memories with family</li>
+                    <li>Experience the local culture and attractions</li>
+                    <li>Relax and escape from daily work routine</li>
+                    <li>Find activities that appeal to both adults and children</li>
+                    <li>Stay within budget while enjoying quality experiences</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="persona-section">
+            <h3>Persona Narrative</h3>
+            <p>Michael is a 42-year-old marketing manager from the United States who is planning his family's first visit to the island. He's traveling with his wife and two children (ages 10 and 14) and has chosen to fly to the island for convenience. They'll be staying at a hotel for 5 days and plan to rent a car to explore the island at their own pace.</p>
+
+            <p>With an annual income of $70,000, Michael has saved for this special family vacation and wants to make the most of their time on the island. He's particularly interested in local attractions and is looking for a mix of relaxation and adventure that will appeal to the whole family.</p>
+
+            <p>Michael values experiences that will create lasting memories for his children while also allowing him and his wife to enjoy some downtime. He's researching family-friendly activities, beaches, and cultural experiences that will give them an authentic taste of island life while still being accessible and enjoyable for children.</p>
+        </div>
+    </div>
+
+    <div class="methodology">
+        <h2>Methodology</h2>
+        <p>This persona was created based on analysis of survey data from 20 island visitors. The characteristics represent the most common or representative attributes found in the survey responses:</p>
+        <ul>
+            <li>Age range of 40-45 (one of the most common in the survey)</li>
+            <li>Air travel (slightly more common than cruise ship)</li>
+            <li>Party size of 4 (representative of family groups)</li>
+            <li>Hotel accommodation (most common in the survey)</li>
+            <li>Interest in local attractions (majority of respondents)</li>
+            <li>Family vacation purpose (one of the most common reasons for visiting)</li>
+            <li>USA as country of origin (vast majority of visitors)</li>
+            <li>5-day length of stay (most common duration)</li>
+            <li>First-time visitor status (slightly more common than repeat visitors)</li>
+            <li>Rental car for island transportation (most common option)</li>
+        </ul>
+    </div>
+</body>
+</html>

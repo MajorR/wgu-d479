@@ -1,0 +1,122 @@
+.wireframe-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--primary-teal);
+}
+
+.tab-button {
+  background: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.tab-button:hover {
+  background: #e0e0e0;
+}
+.tab-button.active {
+  background: var(--primary-ocean);
+  color: white;
+  border-bottom: 3px solid var(--primary-sunset);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  transform: translateY(-3px);
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 0 5px 5px 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 0;
+  margin-top: -3px;
+  border-top: 2px solid var(--primary-ocean);
+}
+.tab-content.active {
+  display: block;
+}
+
+.wireframe-display {
+  margin-bottom: 30px;
+}
+
+.wireframe-image {
+  width: 100%;
+  max-width: 1000px;
+  height: 1000px;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+  display: block;
+  background-color: white;
+}
+
+.wireframe-caption {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+}
+
+.device-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.device-button {
+  background: #f0f0f0;
+  border: none;
+  padding: 8px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.device-button:hover {
+  background: #e0e0e0;
+}
+.device-button.active {
+  background: var(--primary-teal);
+  color: white;
+}
+
+.methodology {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.methodology h2 {
+  color: var(--color-primary-dark);
+  border-bottom: 2px solid var(--primary-teal);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .tabs {
+    flex-direction: column;
+  }
+  .tab-button {
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+}
+
+/*# sourceMappingURL=wireframe.css.map */

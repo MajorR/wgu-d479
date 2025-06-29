@@ -1,0 +1,387 @@
+# Taniti Island Map Overlay Categories
+# This file defines the categories and subcategories for map overlays
+# Each category has a name, default color, and default icon
+# Subcategories can override the icon if specified
+
+hotels:
+  name: Hotels
+  color: "#849DE3"
+  icon: "suitcase-rolling"
+  default-view: false
+  subcategories:
+    luxury:
+      name: Luxury Hotels
+      icon: "hotel"
+    mid-range:
+      name: Mid-Range Hotels
+    eco-friendly:
+      name: Eco-Friendly Accommodations
+      icon: "bed"
+    budget:
+      name: Budget Accommodations
+      icon: "bed"
+    resort:
+      name: Resorts
+      icon: "bell-concierge"
+    boutique:
+      name: Boutique Hotels
+    villa:
+      name: Villas & Vacation Rentals
+      icon: "tent"
+
+eats:
+  name: Eats
+  color: "#FF965E"
+  icon: "utensils"
+  default-view: true
+  subcategories:
+    seafood:
+      name: Seafood Restaurants
+      icon: "fish"
+    cafe:
+      name: Cafes
+      icon: "mug-hot"
+    grill:
+      name: Grill Restaurants
+      icon: "grill-hot"
+    fine dining:
+      name: Fine Dining
+      icon: "wine-glass"
+    fast food:
+      name: Fast Food
+      icon: "burger"
+    local cuisine:
+      name: Local Cuisine
+      icon: "bowl-food"
+    international:
+      name: International Cuisine
+      icon: "earth-americas"
+    beach bar:
+      name: Beach Bars
+      icon: "martini-glass-citrus"
+    pizza:
+      name: Pizza Restaurants
+      icon: "pizza-slice"
+    breakfast:
+      name: Breakfast Spots
+      icon: "pancakes"
+    bar and grill:
+      name: Bar & Grill
+      icon: "beer-mug"
+    asian:
+      name: Asian Cuisine
+      icon: "bowl-rice"
+    dessert:
+      name: Dessert Places
+      icon: "ice-cream"
+    mexican:
+      name: Mexican Cuisine
+      icon: "taco"
+    barbecue:
+      name: Barbecue Restaurants
+      icon: "fire"
+    mediterranean:
+      name: Mediterranean Cuisine
+      icon: "olive"
+    japanese:
+      name: Japanese Cuisine
+      icon: "sushi"
+    vegetarian:
+      name: Vegetarian Restaurants
+      icon: "leafy-green"
+    coffee shop:
+      name: Coffee Shops
+      icon: "mug-saucer"
+
+recreation:
+  name: Recreation
+  color: "#00B73F"
+  icon: "baseball-bat-ball"
+  default-view: true
+  subcategories:
+    water sports:
+      name: Water Sports
+      icon: "person-swimming"
+    fishing:
+      name: Fishing Spots
+      icon: "fishing-rod"
+    boating:
+      name: Boating Areas
+      icon: "ship"
+    sailing:
+      name: Sailing
+      icon: "sailboat"
+    hiking:
+      name: Hiking
+      icon: "person-hiking"
+    adventure:
+      name: Adventure Activities
+      icon: "person-biking-mountain"
+    cycling:
+      name: Cycling
+      icon: "bicycle"
+    golf:
+      name: Golf
+      icon: "golf-flag-hole"
+    sports:
+      name: Sports Areas
+      icon: "sportsball"
+    surfing:
+      name: Surfing Beaches
+      icon: "wave"
+
+
+sites:
+  name: Sites
+  color: "#00B73F"
+  icon: "tower-observation"
+  default-view: true
+  subcategories:
+    natural:
+      name: Natural Sites
+      icon: "mountain"
+    volcano:
+      name: Volcano
+      icon: "volcano"
+    historical:
+      name: Historical Sites
+      icon: "monument"
+    lighthouse:
+      name: Lighthouse
+      icon: "lighthouse"
+    cultural:
+      name: Cultural Sites
+      icon: "masks-theater"
+    viewpoint:
+      name: Scenic Viewpoints
+      icon: "binoculars"
+    religious:
+      name: Religious Sites
+      icon: "place-of-worship"
+
+schools:
+  name: Schools
+  color: "#649FB2"
+  icon: "school"
+  default-view: false
+  subcategories:
+    elementary:
+      name: Elementary Schools
+    high school:
+      name: High Schools
+
+hospitals:
+  name: Hospitals
+  color: "#FF757C"
+  icon: "star-of-life"
+  default-view: false
+  subcategories:
+    general:
+      name: General Hospitals
+      icon: "hospital"
+    clinic:
+      name: Medical Clinics
+      icon: "suitcase-medical"
+    pharmacy:
+      name: Pharmacies
+      icon: "prescription-bottle-medical"
+
+stores:
+  name: Stores
+  color: "#0098F5"
+  icon: "basket-shopping"
+  default-view: false
+  subcategories:
+    market:
+      name: Markets
+      icon: "store"
+    gift shop:
+      name: Gift Shops
+      icon: "gift"
+    convenience:
+      name: Convenience Stores
+      icon: "shop"
+    beach shop:
+      name: Beach Shops
+      icon: "umbrella-beach"
+    department:
+      name: Department Stores
+      icon: "building"
+    outdoor:
+      name: Outdoor Stores
+      icon: "campground"
+    grocery:
+      name: Grocery Stores
+      icon: "cart-shopping"
+    tourist shop:
+      name: Tourist Shops
+      icon: "camera"
+
+transport:
+  name: Transport
+  color: "#00C1FF"
+  icon: "taxi-bus"
+  default-view: false
+  subcategories:
+    main port:
+      name: Airport
+    international airport:
+      name: International Airport
+      icon: "plane-departure"
+    harbor:
+      name: Harbor
+      icon: "anchor"
+    sailing docks:
+      name: Sailing Docks
+      icon: "sailboat"
+    ferry terminal:
+      name: Ferry Terminal
+      icon: "ship"
+    bus station:
+      name: Bus Station
+      icon: "bus"
+    taxi stand:
+      name: Taxi Stand
+      icon: "taxi"
+    car rental:
+      name: Car Rental
+      icon: "car"
+    bike rental:
+      name: Bike Rental
+      icon: "bicycle"
+    helipad:
+      name: Helipad
+      icon: "helicopter"
+
+theaters:
+  name: Movie Theaters
+  color: "#9C27B0"
+  icon: "film"
+  default-view: false
+  subcategories:
+    multiplex:
+      name: Multiplex Theaters
+    independent:
+      name: Independent Theaters
+
+beaches:
+  name: Beaches
+  color: "#00BCD4"
+  icon: "umbrella-beach"
+  default-view: true
+  subcategories:
+    public:
+      name: Public Beaches
+    private:
+      name: Private Beaches
+      icon: "hat-beach"
+    amenities:
+      name: Beaches with Amenities
+    surfing:
+      name: Surfing Beaches
+      icon: "wave"
+    snorkeling:
+      name: Snorkeling Spots
+      icon: "mask-snorkel"
+    swimming:
+      name: Swimming Beaches
+      icon: "person-drowning"
+
+parks:
+  name: Parks
+  color: "#4CAF50"
+  icon: "tree"
+  default-view: false
+  subcategories:
+    national park:
+      name: National Parks
+      icon: "trees"
+    dog parks:
+      name: Dog Parks
+      icon: "dog"
+    hiking trails:
+      name: Hiking Trails
+      icon: "person-hiking"
+    open spaces:
+      name: Open Spaces
+      icon: "bench-tree"
+    playgrounds:
+      name: Playgrounds
+      icon: "child"
+    sports field:
+      name: Sports Fields
+      icon: "goal-net"
+    soccer field:
+      name: Soccer Field
+      icon: "futbol"
+    baseball diamond:
+      name: Baseball Field
+      icon: "baseball"
+    water parks:
+      name: Water Parks
+      icon: "water-ladder"
+    botanical gardens:
+      name: Botanical Gardens
+      icon: "flower-daffodil"
+    picnic areas:
+      name: Picnic Areas
+      icon: "table-picnic"
+
+services:
+  name: Services
+  color: "#7D9EB3"
+  icon: "building-shield"
+  default-view: false
+  subcategories:
+    police:
+      name: Police Stations
+      icon: "user-police"
+    fire:
+      name: Fire Stations
+      icon: "truck-fire"
+    government:
+      name: Government Buildings
+      icon: "landmark-dome"
+    post office:
+      name: Post Offices
+      icon: "envelope"
+    library:
+      name: Libraries
+      icon: "book"
+    community center:
+      name: Community Centers
+      icon: "people-group"
+    utility:
+      name: Utility Services
+      icon: "bolt"
+    emergency:
+      name: Emergency Services
+      icon: "truck-medical"
+
+tours:
+  name: Tours
+  color: "#FF5722"
+  icon: "map-location-dot"
+  default-view: true
+  subcategories:
+    guided:
+      name: Guided Tours
+      icon: "person-walking-with-cane"
+    boat:
+      name: Boat Tours
+      icon: "ship"
+    adventure:
+      name: Adventure Tours
+      icon: "compass"
+    cultural:
+      name: Cultural Tours
+      icon: "masks-theater"
+    nature:
+      name: Nature Tours
+      icon: "leaf"
+    historical:
+      name: Historical Tours
+      icon: "landmark"
+    food:
+      name: Food Tours
+      icon: "utensils"

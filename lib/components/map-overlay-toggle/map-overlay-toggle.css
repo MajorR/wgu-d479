@@ -1,0 +1,206 @@
+.map-overlay-toggle-container {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  max-height: 80vh;
+  overflow-y: auto;
+  width: 280px;
+}
+.map-overlay-toggle-container .category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.map-overlay-toggle-container .category-button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 80px;
+  user-select: none;
+}
+.map-overlay-toggle-container .category-button:hover {
+  border-color: #007bff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+.map-overlay-toggle-container .category-button.active {
+  border-color: #007bff;
+  background: #f0f8ff;
+}
+.map-overlay-toggle-container .category-button.partially-filtered {
+  border-color: #ffa500;
+  background: #fff8e1;
+}
+.map-overlay-toggle-container .category-button .category-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 8px;
+  fill: currentColor;
+}
+.map-overlay-toggle-container .category-button .category-name {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.2;
+  color: #333;
+}
+.map-overlay-toggle-container .category-button .overlay-count {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: #007bff;
+  color: white;
+  border-radius: 10px;
+  padding: 2px 6px;
+  font-size: 10px;
+  font-weight: bold;
+  min-width: 16px;
+  text-align: center;
+}
+.map-overlay-toggle-container .category-button .filter-indicator {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 16px;
+  height: 16px;
+  background: #ffa500;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.map-overlay-toggle-container .category-button .filter-indicator .filter-icon {
+  width: 10px;
+  height: 10px;
+  fill: white;
+}
+.map-overlay-toggle-container .subcategory-panel {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  margin-left: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  width: 320px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.map-overlay-toggle-container .subcategory-panel .subcategory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.map-overlay-toggle-container .subcategory-panel .subcategory-header .subcategory-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+.map-overlay-toggle-container .subcategory-panel .subcategory-header .close-subcategory-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+.map-overlay-toggle-container .subcategory-panel .subcategory-header .close-subcategory-btn:hover {
+  background: #f0f0f0;
+}
+.map-overlay-toggle-container .subcategory-panel .subcategory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+.map-overlay-toggle-container .subcategory-panel .subcategory-button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 60px;
+  user-select: none;
+}
+.map-overlay-toggle-container .subcategory-panel .subcategory-button:hover {
+  border-color: #007bff;
+  background: #f8f9fa;
+}
+.map-overlay-toggle-container .subcategory-panel .subcategory-button.active {
+  border-color: #007bff;
+  background: #f0f8ff;
+}
+.map-overlay-toggle-container .subcategory-panel .subcategory-button .subcategory-icon {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 6px;
+  fill: currentColor;
+}
+.map-overlay-toggle-container .subcategory-panel .subcategory-button .subcategory-name {
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.2;
+  color: #333;
+}
+.map-overlay-toggle-container .subcategory-panel .subcategory-button .overlay-count {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: #007bff;
+  color: white;
+  border-radius: 8px;
+  padding: 1px 4px;
+  font-size: 9px;
+  font-weight: bold;
+  min-width: 12px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .map-overlay-toggle-container {
+    width: 240px;
+    left: 10px;
+  }
+  .map-overlay-toggle-container .category-grid {
+    grid-template-columns: 1fr;
+  }
+  .map-overlay-toggle-container .subcategory-panel {
+    width: 280px;
+  }
+}
+
+/*# sourceMappingURL=map-overlay-toggle.css.map */

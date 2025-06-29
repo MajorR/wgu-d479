@@ -1,0 +1,280 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+  <title>Taniti Island - Full Screen Map</title>
+  <meta name="description" content="Explore Taniti Island with our interactive full-screen map.">
+
+  <meta property="og:title" content="Taniti Island - Full Screen Map">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Full-screen map of Taniti Island">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../icon.png">
+
+  <link rel="manifest" href="../../site.webmanifest">
+  <meta name="theme-color" content="#86acaf">
+
+  <link rel="stylesheet" href="../../css/island-map.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../../lib/components/map-overlay-toggle-new/map-overlay-toggle-new.css">
+
+
+  <style>
+    .fullscreen-map-container {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    island-map-2 {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="fullscreen-map-container">
+  <island-map-2 id="island-map"></island-map-2>
+  <overlay-info-panel id="overlay-info-panel"></overlay-info-panel>
+  <map-overlay-toggle-new id="map-overlay-toggle-new"></map-overlay-toggle-new>
+</div>
+
+<div class="map-controls-container">
+  <button class="control-button back-button" id="back-button">
+    <img src="../../img/solid/arrow-left.svg" style="width: 24px; height: 24px;">
+  </button>
+  <button class="control-button home-button" onclick="window.location.href='../../index.html'">
+    <img src="../../img/solid/house.svg" style="width: 24px; height: 24px;">
+  </button>
+  <button class="control-button toggle-overlays-button" id="toggle-overlays-button">
+    <img src="../../img/solid/layer-group.svg" style="width: 24px; height: 24px;">
+  </button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+<script type="module" src="../lib/components/island-map/island-map-2.js"></script>
+<script type="module" src="../../lib/components/overlay-info-panel/overlay-info-panel.js"></script>
+<script type="module" src="../../lib/components/map-overlay-toggle-new/map-overlay-toggle-new.js"></script>
+<script type="module">
+  // Load and display overlays when the page loads
+  document.addEventListener('DOMContentLoaded', async function() {
+    const islandMap = document.getElementById('island-map');
+    const overlayInfoPanel = document.getElementById('overlay-info-panel');
+
+    // Set up back button to navigate to previous page
+    const backButton = document.getElementById('back-button');
+    backButton.addEventListener('click', function() {
+      window.history.back();
+    });
+
+    try {
+      // Load overlay data
+      const overlaysResponse = await fetch('../data/map-overlays.yaml');
+      const overlaysYaml = await overlaysResponse.text();
+      const overlaysData = jsyaml.load(overlaysYaml);
+
+      // Load category data
+      const categoriesResponse = await fetch('../data/map-overlays-categories.yaml');
+      const categoriesYaml = await categoriesResponse.text();
+      const categoriesData = jsyaml.load(categoriesYaml);
+
+      // Check if a category is defined in the URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const categoryInUrl = urlParams.has('category');
+
+      // Convert the data structure to a flat array of overlays
+      const overlays = [];
+      for (const category in overlaysData) {
+        if (overlaysData.hasOwnProperty(category)) {
+          overlaysData[category].forEach(overlay => {
+            // Add a unique ID to each overlay
+            overlay.id = `${category}-${overlay.name.replace(/\s+/g, '-').toLowerCase()}`;
+
+            // If a category is defined in the URL, ignore the default-view setting
+            // Otherwise, set visibility based on default-view
+            if (categoryInUrl) {
+              // Initially set all overlays to not visible when a category is in URL
+              overlay.visible = false;
+            } else {
+              // Set overlays visible only if their category has default-view: true
+              overlay.visible = categoriesData[category] && categoriesData[category]['default-view'] === true;
+            }
+
+            overlays.push(overlay);
+          });
+        }
+      }
+
+      // Set the category data on the map
+      islandMap.setCategoryData(categoriesData);
+
+
+      // Set up toggle overlays button
+      const toggleOverlaysButton = document.getElementById('toggle-overlays-button');
+
+      toggleOverlaysButton.addEventListener('click', function() {
+        // Filter functionality removed
+
+        // Toggle active state of the button
+        this.classList.toggle('active');
+      });
+
+      // Set up overlay click handler
+      islandMap.addEventListener('overlay-click', function(event) {
+        const overlay = event.detail.overlay;
+
+        if (overlay) {
+          // Show the info panel with the selected overlay data
+          overlayInfoPanel.show(overlay);
+        } else {
+          // Hide the info panel when clicking away from an overlay
+          overlayInfoPanel.hide();
+        }
+      });
+
+      // Check URL parameters or localStorage for overlay selection
+      // Using the urlParams already defined above
+      let selectedOverlay = null;
+
+      // First check URL parameters
+      if (urlParams.has('overlay')) {
+        const overlayId = urlParams.get('overlay');
+        selectedOverlay = overlays.find(o => o.id === overlayId);
+
+        // If the overlay is determined in the URL, only show that overlay
+        // Hide all other overlays
+        overlays.forEach(overlay => {
+          overlay.visible = overlay.id === overlayId;
+        });
+      } else if (urlParams.has('category')) {
+        const category = urlParams.get('category');
+
+        if (urlParams.has('subcategory')) {
+          const subcategory = urlParams.get('subcategory');
+
+          // Make all overlays in this category/subcategory visible
+          overlays.forEach(overlay => {
+            if (overlay.category === category && overlay.sub_category === subcategory) {
+              overlay.visible = true;
+            }
+          });
+        } else {
+          // If only category is specified, make all overlays in that category visible
+          overlays.forEach(overlay => {
+            if (overlay.category === category) {
+              overlay.visible = true;
+            }
+          });
+        }
+
+        // No need to update the map here, we'll do it at the end
+
+        // Filter functionality removed
+        toggleOverlaysButton.classList.add('active');
+      }
+      // Then check localStorage if no URL parameters
+      else if (localStorage.getItem('selectedOverlay')) {
+        const overlayId = localStorage.getItem('selectedOverlay');
+        selectedOverlay = overlays.find(o => o.id === overlayId);
+        // Clear localStorage after use
+        localStorage.removeItem('selectedOverlay');
+      } else if (localStorage.getItem('selectedCategory') && localStorage.getItem('selectedSubcategory')) {
+        const category = localStorage.getItem('selectedCategory');
+        const subcategory = localStorage.getItem('selectedSubcategory');
+
+        // Make all overlays in this category/subcategory visible
+        overlays.forEach(overlay => {
+          if (overlay.category === category && overlay.sub_category === subcategory) {
+            overlay.visible = true;
+          }
+        });
+
+        // No need to update the map here, we'll do it at the end
+
+        // Filter functionality removed
+        toggleOverlaysButton.classList.add('active');
+
+        // Clear localStorage after use
+        localStorage.removeItem('selectedCategory');
+        localStorage.removeItem('selectedSubcategory');
+      }
+
+      // If a specific overlay was selected, show it
+      if (selectedOverlay) {
+        // Make sure the overlay is visible
+        selectedOverlay.visible = true;
+
+        // If the overlay is determined in the URL, zoom in on the map to level 9
+        if (urlParams.has('overlay')) {
+          // Set zoom level to 9
+          islandMap.zoomScale = 9;
+          // Redraw the map with the new zoom level
+          islandMap.drawMap();
+        }
+
+        // Trigger the overlay-click event to show the info panel
+        islandMap.dispatchEvent(new CustomEvent('overlay-click', {
+          bubbles: true,
+          composed: true,
+          detail: { overlay: selectedOverlay }
+        }));
+
+        // Position the overlay in view
+        setTimeout(() => {
+          islandMap.positionOverlayInView(selectedOverlay, true);
+        }, 500);
+      }
+
+      // Set up map overlay toggle component integration
+      const mapOverlayToggle = document.getElementById('map-overlay-toggle');
+
+      // Listen for overlay toggle changes
+      mapOverlayToggle.addEventListener('overlay-toggle-change', function(event) {
+        const { categoryStates } = event.detail;
+
+        // Update overlay visibility based on category states
+        overlays.forEach(overlay => {
+          const categoryKey = overlay.category;
+          const subcategoryKey = overlay.sub_category || overlay.subcategory;
+
+          const categoryState = categoryStates.get(categoryKey);
+          if (categoryState) {
+            if (subcategoryKey && categoryState.subcategories.has(subcategoryKey)) {
+              // Use subcategory state if available
+              overlay.visible = categoryState.subcategories.get(subcategoryKey);
+            } else {
+              // Use main category state
+              overlay.visible = categoryState.enabled;
+            }
+          } else {
+            // If category not found, hide overlay
+            overlay.visible = false;
+          }
+        });
+
+        // Update the map with new overlay visibility
+        islandMap.setOverlays(overlays);
+      });
+
+      // Set the overlays on the map (after all visibility changes)
+      islandMap.setOverlays(overlays);
+
+    } catch (error) {
+      console.error('Error loading overlays:', error);
+    }
+  });
+</script>
+
+</body>
+
+</html>

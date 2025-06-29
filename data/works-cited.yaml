@@ -1,0 +1,509 @@
+images:
+  # island-map.html
+  - title: Tropical Cruise Elements Set
+    image: ../img/ref/tropical-cruise-elements-set.svg
+    author: Macrovector
+    creation-date: 08 April 2019
+    website: Freepik
+    url: https://www.freepik.com/free-vector/tropical-cruise-elements-set_4283958.htm
+    usage-page: island-map
+    usage-link: pages/pages/island-map.html
+  # index.html
+  - title: Beautiful Beach with Turquoise Water
+    image: https://images.unsplash.com/photo-1519046904884-53103b34b206
+    author: Elizeu Dias
+    creation-date: 19 February 2018
+    website: Unsplash
+    url: https://unsplash.com/photos/coconut-tree-near-shore-within-mountain-range-RN6ts8IZ4_0
+    usage-page: index
+    usage-link: pages/index.html
+
+  - title: Lush Tropical Rainforest
+    image: https://images.unsplash.com/photo-1500354960738-4c480ed785bc
+    author: David Clode
+    creation-date: 17 July 2017
+    website: Unsplash
+    url: https://unsplash.com/photos/forest-during-day-xFqH9peAlmw
+    usage-page: index
+    usage-link: pages/index.html
+
+  - title: Snorkeling in Coral Reef
+    image: https://images.unsplash.com/photo-1682687982501-1e58ab814714
+    author: NEOM
+    creation-date: 28 April 2023
+    website: Unsplash
+    url: https://unsplash.com/photos/a-person-swimming-in-the-ocean-near-a-coral-reef-g_suks3yx-U
+    usage-page: index
+    usage-link: pages/index.html
+
+  - title: Luxury Resort with Ocean View
+    image: https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9
+    author: Saad Khan
+    creation-date: 13 October 2019
+    website: Unsplash
+    url: https://unsplash.com/photos/resort-viewing-blue-sea-under-blue-and-white-sky-during-daytime-425b2PhNuHA
+    usage-page: index
+    usage-link: pages/index.html
+
+  - title: Volcano
+    image: https://images.unsplash.com/photo-1700539944422-31a02b7df05d
+    author: Soliman Cifuentes
+    creation-date: 20 November 2023
+    website: Unsplash
+    url: https://unsplash.com/photos/a-volcano-erupts-smoke-as-it-erupts-into-the-night-sky-csO780hYsZo
+    usage-page: index
+    usage-link: pages/index.html
+
+  - title: Traditional Cultural Dancers
+    image: https://images.unsplash.com/photo-1704312507820-08d6165145df
+    author: Happysurd Photography
+    creation-date: 03 January 2024
+    website: Unsplash
+    url: https://unsplash.com/photos/a-woman-in-a-dress-is-performing-a-dance-Bdlf2Dwzyzk
+    usage-page: index
+    usage-link: pages/index.html
+
+  - title: Surfer Riding Wave at Sunset
+    image: https://images.unsplash.com/photo-1520443240718-fce21901db79
+    author: Oliver Sjöström
+    creation-date: 07 March 2018
+    website: Unsplash
+    url: https://unsplash.com/photos/man-surfboarding-during-daytime-y-GMWtWW_H8
+    usage-page: index
+    usage-link: pages/index.html
+
+  - title: Fresh Seafood Platter
+    image: https://images.unsplash.com/photo-1595579547936-c3a0e6c171fc
+    author: sunorwind
+    creation-date: 24 July 2020
+    website: Unsplash
+    url: https://unsplash.com/photos/cooked-shrimp-with-green-leaf-vegetable-in-blue-ceramic-bowl-fTKpdRC8eHQ
+    usage-page: index
+    usage-link: pages/index.html
+
+  # bookings.html
+  - title: Luxury beachfront resort with swimming pool
+    image: https://images.unsplash.com/photo-1595579547936-c3a0e6c171fc
+    author: Antonio Araujo
+    creation-date: 24 October 2024
+    website: Unsplash
+    url: https://unsplash.com/photos/an-aerial-view-of-a-resort-with-a-swimming-pool-5HvDA5xW14g
+    usage-page: bookings
+    usage-link: pages/bookings.html
+
+  - title: Charming boutique hotel with local decor
+    image: https://images.unsplash.com/photo-1683914791867-20c3fa8734fe
+    author: Gabrielle Maurer
+    creation-date: 12 May 2023
+    website: Unsplash
+    url: https://unsplash.com/photos/a-wooden-structure-with-hanging-lights-inside-of-it-RhnIkB2cfsw
+    usage-page: bookings
+    usage-link: pages/bookings.html
+
+  - title: Beach bungalow with ocean view
+    image: https://images.unsplash.com/photo-1665375571919-e6dac80edca7
+    author: Ivan Rohovchenko
+    creation-date: 2022 October 09
+    website: Unsplash
+    url: https://unsplash.com/photos/a-wooden-walkway-with-straw-huts-SA6AIzuxCM8
+    usage-page: bookings
+    usage-link: pages/bookings.html
+
+  - title: Eco lodge nestled in tropical rainforest
+    image: https://images.unsplash.com/photo-1653707147782-ee5de4e5bf20
+    author: Angie J
+    creation-date: 2022 May 27
+    website: Unsplash
+    url: https://unsplash.com/photos/a-wooden-building-sitting-next-to-a-lush-green-forest-LAtl4ziKbqs
+    usage-page: bookings
+    usage-link: pages/bookings.html
+
+  - title: Small island airport with planes
+    image: https://images.unsplash.com/photo-1436491865332-7a61a109cc05
+    author: Ross Parmly
+    creation-date: 09 July 2015
+    website: Unsplash
+    url: https://unsplash.com/photos/aerial-photography-of-airliner-rf6ywHVkrlY
+    usage-page: bookings
+    usage-link: pages/bookings.html
+
+  - title: Harbor with boats and docks
+    image: https://images.unsplash.com/photo-1729253980009-11d209745cfa
+    author: David Vives
+    creation-date: 18 October 2024
+    website: Unsplash
+    url: https://unsplash.com/photos/a-large-cruise-ship-docked-in-a-harbor-7191zuz7mpI
+    usage-page: bookings
+    usage-link: pages/bookings.html
+
+  - title: Rental car with tropical background
+    image: https://images.unsplash.com/photo-1449965408869-eaa3f722e40d
+    author: why kei
+    creation-date: 12 December 2015
+    website: Unsplash
+    url: https://unsplash.com/photos/man-driving-a-car-wearing-wrist-watch-8e2gal_GIE8
+    usage-page: bookings
+    usage-link: pages/bookings.html
+
+  # experiences.html
+  - title: Person snorkeling in clear blue water with coral reef
+    image: https://images.unsplash.com/photo-1622040881897-982624e6d977
+    author: Art Rachen
+    creation-date: 26 May 2021
+    website: Unsplash
+    url: https://unsplash.com/photos/man-in-black-and-red-diving-suit-diving-on-water-EHoCnfN58cc
+    usage-page: experiences
+    usage-link: pages/experiences.html
+
+  - title: Sailboat on turquoise water near island
+    image: https://images.unsplash.com/photo-1603275218135-07c03485bba9
+    author: Tim Gouw
+    creation-date: 21 October 2020
+    website: Unsplash
+    url: https://unsplash.com/photos/white-sailboat-on-sea-under-blue-sky-during-daytime-exxNNGUWOb0
+    usage-page: experiences
+    usage-link: pages/experiences.html
+
+  - title: Fishing Boat
+    image: https://images.unsplash.com/photo-1716401225423-b34788a2139a
+    author: Saara Gomes
+    creation-date: 22 May 2022
+    website: Unsplash
+    url: https://unsplash.com/photos/a-boat-that-is-sitting-in-the-water-TnBYTjcGUR8
+    usage-page: experiences
+    usage-link: pages/experiences.html
+
+  - title: Beach loungers on white sand beach
+    image: https://images.unsplash.com/photo-1642011252158-53c1b5c2002f
+    author: Skyler Smith
+    creation-date: 2022 January 12
+    website: Unsplash
+    url: https://unsplash.com/photos/a-couple-of-lawn-chairs-sitting-on-top-of-a-sandy-beach-fdiZqiKXhp8
+    usage-page: experiences
+    usage-link: pages/experiences.html
+
+  - title: Volcano
+    image: https://images.unsplash.com/photo-1700539944422-31a02b7df05d
+    author: Soliman Cifuentes
+    creation-date: 20 November 2023
+    website: Unsplash
+    url: https://unsplash.com/photos/a-volcano-erupts-smoke-as-it-erupts-into-the-night-sky-csO780hYsZo
+    usage-page: experiences
+    usage-link: pages/experiences.html
+
+  - title: Hiker on lush rainforest trail
+    image: https://images.unsplash.com/photo-1661574069723-bbeee208920b
+    author: Eddie Zhou
+    creation-date: 26 August 2022
+    website: Unsplash
+    url: https://unsplash.com/photos/a-person-hiking-on-a-trail-in-the-woods-d9caxw7i1O4
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title: Mountain bikers on a scenic trail through tropical landscape
+    image: https://images.unsplash.com/photo-1575548393466-0df1618ba410
+    author: Tim Foster
+    creation-date: 05 December 2019
+    website: Unsplash
+    url: https://unsplash.com/photos/man-riding-bike-qrIy8dBzCVU
+    usage-page: experiences
+    usage-link: pages/experiences.html
+
+  - title: Colorful tropical bird perched on a branch
+    image: https://images.unsplash.com/photo-1682788819488-5f894b553503
+    author: Hunter Masters
+    creation-date: 29 April 2023
+    website: Unsplash
+    url: https://unsplash.com/photos/a-colorful-bird-perched-on-a-tree-branch-2C-i-sxD1yw
+    usage-page: experiences
+    usage-link: pages/experiences.html
+
+  - title: Traditional Cultural Dancers
+    image: https://images.unsplash.com/photo-1704312507820-08d6165145df
+    author: Happysurd Photography
+    creation-date: 03 January 2024
+    website: Unsplash
+    url: https://unsplash.com/photos/a-woman-in-a-dress-is-performing-a-dance-Bdlf2Dwzyzk
+    usage-page: experiences
+    usage-link: pages/experiences.html
+
+  - title: Local artisan creating traditional crafts
+    image: https://images.unsplash.com/photo-1722963295947-c6f8f1c50de2
+    author: Shelby Murphy Figueroa
+    creation-date: 06 August 2024
+    website: Unsplash
+    url: https://unsplash.com/photos/a-woman-is-working-on-a-piece-of-art-g-am_-HxnfA
+    usage-page: experiences
+    usage-link: pages/experiences.html
+
+  - title: Traditional village with local architecture
+    image: https://images.unsplash.com/photo-1597823262196-cc7e878d73ce
+    author: Paul Macallan
+    creation-date: 19 August 2020
+    website: Unsplash
+    url: https://unsplash.com/photos/green-trees-near-white-concrete-building-during-daytime-9bWiMx-RQ9A
+    usage-page: experiences
+    usage-link: pages/experiences.html
+
+  - title: Historic building with cultural significance
+    image: https://images.unsplash.com/photo-1650359482407-8b55354844cc
+    author: Jorge Fernández Salas
+    creation-date: 19 April 2022
+    website: Unsplash
+    url: https://unsplash.com/photos/a-person-standing-in-front-of-a-stone-structure-1dL3LCcWZsM
+    usage-page: experiences
+    usage-link: pages/experiences.html
+
+  - title: Fresh Seafood Platter
+    image: https://images.unsplash.com/photo-1595579547936-c3a0e6c171fc
+    author: sunorwind
+    creation-date: 24 July 2020
+    website: Unsplash
+    url: https://unsplash.com/photos/cooked-shrimp-with-green-leaf-vegetable-in-blue-ceramic-bowl-fTKpdRC8eHQ
+    usage-page: experiences
+    usage-link: pages/experiences.html
+
+  - title: Cooking class with local chef preparing traditional dishes
+    image: https://images.unsplash.com/photo-1731990456159-988fae774abd
+    author: Marco J Haenssgen
+    creation-date: 18 November 2024
+    website: Unsplash
+    url: https://unsplash.com/photos/a-woman-cooking-food-in-a-large-pot-uD4MZxSjS64
+    usage-page: experiences
+    usage-link: pages/experiences.html
+
+  - title: Local farmer showing tropical fruits and vegetables
+    image: https://images.unsplash.com/photo-1742909619385-415fbdb6d36f
+    author: Filiz Elaertz
+    creation-date: 25 March 2025
+    website: Unsplash
+    url: https://unsplash.com/photos/fresh-produce-is-displayed-at-an-outdoor-market-yNIx0nVUdho
+    usage-page: experiences
+    usage-link: pages/experiences.html
+
+  - title: Romantic beach dinner setup at sunset
+    image: https://images.unsplash.com/photo-1671691302268-e316f81c7b3e
+    author: Robin Davies
+    creation-date: 21 December 2022
+    website: Unsplash
+    url: https://unsplash.com/photos/a-man-and-a-woman-sitting-at-a-table-next-to-each-other-iOcpnSPcUdc
+    usage-page: experiences
+    usage-link: pages/experiences.html
+
+  # places.html
+  - title: Luxury hotel with pool view
+    image: https://images.unsplash.com/photo-1549294413-26f195200c16
+    author: Christian Lambert
+    creation-date: 04 February 2019
+    website: Unsplash
+    url: https://unsplash.com/photos/brown-wooden-lounge-chairs-near-pool-surrounded-by-palm-trees-vmIWr0NnpCQ
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title: Mid-range hotel with comfortable accommodations
+    image: https://images.unsplash.com/photo-1660676693968-5b2f500e56ad
+    author: Rosemary Media
+    creation-date: 16 August 2022
+    website: Unsplash
+    url: https://unsplash.com/photos/a-building-with-palm-trees-and-grass-5XzIijO8kCg
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title: Eco-friendly retreat nestled in nature
+    image: https://images.unsplash.com/photo-1702984940500-2f5ca6303fb2
+    author: Ronin
+    creation-date: 19 December 2023
+    website: Unsplash
+    url: https://unsplash.com/photos/a-large-building-in-the-middle-of-a-forest-4JimQ0447rE
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title: All-inclusive resort with swimming pool
+    image: https://images.unsplash.com/photo-1561501900-3701fa6a0864
+    author: Roberto Nickson
+    creation-date: 25 June 2019
+    website: Unsplash
+    url: https://unsplash.com/photos/building-with-infinity-pool-MA82mPIZeGI
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title: Fresh seafood platter
+    image: https://images.unsplash.com/photo-1695606452803-6708a37d3836
+    author: Daniel
+    creation-date: 24 September 2023
+    website: Unsplash
+    url: https://unsplash.com/photos/a-wooden-cutting-board-topped-with-food-on-top-of-a-table-luY8p8POTMw
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title: Cozy cafe with coffee and pastries
+    image: https://images.unsplash.com/photo-1709380146558-bbc94b0f05f8
+    author: Jo Jo
+    creation-date: 02 March 2024
+    website: Unsplash
+    url: https://unsplash.com/photos/a-counter-with-a-bunch-of-food-on-it-qubEseZx8yo
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title: Grilled food on barbecue
+    image: https://images.unsplash.com/photo-1750065526016-954b523b7450
+    author: Oleksandra Sereda
+    creation-date: 16 June 2025
+    website: Unsplash
+    url: https://unsplash.com/photos/man-is-grilling-kebabs-and-vegetables-on-skewers-yZKdVbIoQQQ
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title: Local cuisine dishes
+    image: https://images.unsplash.com/photo-1588077699842-b906a1c3ff23
+    author: micheile henderson
+    creation-date: 28 April 2020
+    website: Unsplash
+    url: https://unsplash.com/photos/black-ceramic-bowl-with-food-I7uAP7_Gujw
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title: Person snorkeling in clear blue water with coral reef
+    image: https://images.unsplash.com/photo-1622040881897-982624e6d977
+    author: Art Rachen
+    creation-date: 26 May 2021
+    website: Unsplash
+    url: https://unsplash.com/photos/man-in-black-and-red-diving-suit-diving-on-water-EHoCnfN58cc
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title: Hiker on lush rainforest trail
+    image: https://images.unsplash.com/photo-1661574069723-bbeee208920b
+    author: Eddie Zhou
+    creation-date: 26 August 2022
+    website: Unsplash
+    url: https://unsplash.com/photos/a-person-hiking-on-a-trail-in-the-woods-d9caxw7i1O4
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title: Person fishing from a rock
+    image: https://images.unsplash.com/photo-1631305402240-8e0356df3334
+    author: Hes Mundt
+    creation-date: 10 September 2021
+    website: Unsplash
+    url: https://unsplash.com/photos/a-man-sitting-on-a-rock-with-a-fishing-rod-sdFAUlfxv8I
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title: Person zip-lining through forest canopy
+    image: https://images.unsplash.com/photo-1575495361815-f5e1f0c9532b
+    author: Aristedes Carrera
+    creation-date: 04 December 2019
+    website: Unsplash
+    url: https://unsplash.com/photos/man-wearing-blue-helmet-hM_ftuySjhk
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title: Tropical waterfall in lush forest
+    image: https://images.unsplash.com/photo-1737493453364-7f55ed44e155
+    author: Nejc Šinkovec
+    creation-date: 21 January 2025
+    website: Unsplash
+    url: https://unsplash.com/photos/a-small-waterfall-in-the-middle-of-a-forest-oqNi-GdwZXc
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title: volcano with hiking trail
+    image: https://images.unsplash.com/photo-1609868615353-063228126aba
+    author: Roberto Agreda
+    creation-date: 05 January 2021
+    website: Unsplash
+    url: https://unsplash.com/photos/man-in-orange-jacket-and-black-helmet-standing-on-brown-rock-formation-during-daytime-jQe0W5l8epI
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title: Historic building with cultural significance
+    image: https://images.unsplash.com/photo-1685974528817-20eb1136268b
+    author: SLNC
+    creation-date: 05 June 2023
+    website: Unsplash
+    url: https://unsplash.com/photos/a-wooden-structure-in-the-middle-of-a-forest--6RwbAO7ZyM
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title: Scenic viewpoint overlooking ocean
+    image: https://images.unsplash.com/photo-1674501732915-c0947bc5c3e4
+    author: Daivik Goel
+    creation-date: 23 January 2023
+    website: Unsplash
+    url: https://unsplash.com/photos/a-lone-tree-sitting-on-top-of-a-rock-next-to-the-ocean-y3DehoYZCrc
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title: Public beach with white sand and blue water
+    image: https://images.unsplash.com/photo-1584894727710-fa0f649db8f2
+    author: Adrien Aletti
+    creation-date: 22 March 2022
+    website: Unsplash
+    url: https://unsplash.com/photos/people-on-beach-during-daytime-tu2pWP_67LE
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title:
+    image:
+    author:
+    creation-date:
+    website: Unsplash
+    url:
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title:
+    image:
+    author:
+    creation-date:
+    website: Unsplash
+    url:
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title:
+    image:
+    author:
+    creation-date:
+    website: Unsplash
+    url:
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title:
+    image:
+    author:
+    creation-date:
+    website: Unsplash
+    url:
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title:
+    image:
+    author:
+    creation-date:
+    website: Unsplash
+    url:
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title:
+    image:
+    author:
+    creation-date:
+    website: Unsplash
+    url:
+    usage-page: places
+    usage-link: pages/places.html
+
+  - title:
+    image:
+    author:
+    creation-date:
+    website: Unsplash
+    url:
+    usage-page: places
+    usage-link: pages/places.html
+

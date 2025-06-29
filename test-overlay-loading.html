@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Overlay Loading</title>
+</head>
+<body>
+    <h1>Testing Overlay-Linked-List Loading</h1>
+    <div id="status">Loading...</div>
+
+    <script type="module">
+        try {
+            // Test loading from dist directory (compiled version)
+            const { OverlayLinkedList } = await import('./dist/lib/components/map-overlay/overlay-linked-list.js');
+            console.log('Successfully loaded OverlayLinkedList from dist:', OverlayLinkedList);
+
+            // Test creating an instance
+            const overlayList = new OverlayLinkedList();
+            console.log('Successfully created OverlayLinkedList instance:', overlayList);
+
+            document.getElementById('status').innerHTML = '✅ Success: overlay-linked-list loaded and instantiated successfully!';
+        } catch (error) {
+            console.error('Error loading overlay-linked-list:', error);
+            document.getElementById('status').innerHTML = '❌ Error: ' + error.message;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookings Page - Taniti Island</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .wireframe-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .wireframe-header {
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #000;
+    }
+
+    .wireframe-section {
+      margin-bottom: 30px;
+      padding: 15px;
+      border: 1px solid #000;
+    }
+
+    .wireframe-label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    /* Header styles */
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid #000;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .nav-menu {
+      display: flex;
+    }
+
+    .nav-item {
+      margin-left: 15px;
+      padding: 5px;
+      border: 1px solid #000;
+    }
+
+    /* Page header */
+    .page-header {
+      text-align: center;
+      padding: 15px;
+      border: 1px solid #000;
+    }
+
+    /* Grid layout */
+    .wireframe-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    /* Accommodation cards */
+    .accommodation-card {
+      border: 1px solid #000;
+      padding: 10px;
+    }
+
+    .accommodation-image {
+      height: 100px;
+      border: 1px dashed #000;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .accommodation-button {
+      display: inline-block;
+      padding: 5px;
+      border: 1px solid #000;
+      margin-top: 5px;
+    }
+
+    /* Transport cards */
+    .wireframe-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .transport-card {
+      border: 1px solid #000;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .transport-icon {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    /* Booking form */
+    .booking-form {
+      padding: 15px;
+      border: 1px solid #000;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #000;
+    }
+
+    .form-full-width {
+      grid-column: span 2;
+    }
+
+    .form-button {
+      padding: 8px 15px;
+      border: 1px solid #000;
+      background-color: #fff;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      border-bottom: 1px solid #000;
+      padding-bottom: 15px;
+    }
+
+    .footer-links {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wireframe-container">
+    <div class="wireframe-header">
+      <div class="wireframe-label">WIREFRAME - BOOKINGS PAGE</div>
+      <p>Basic layout for the Taniti Island bookings page</p>
+    </div>
+
+    <div class="wireframe-section">
+      <div class="wireframe-label">HEADER</div>
+      <div class="header-container">
+        <div class="logo">Logo</div>
+        <div class="nav-menu">
+          <div class="nav-item">Home</div>
+          <div class="nav-item">Bookings</div>
+          <div class="nav-item">Experiences</div>
+          <div class="nav-item">Places</div>
+          <div class="nav-item">FAQ</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wireframe-section">
+      <div class="wireframe-label">PAGE HEADER</div>
+      <div class="page-header">
+        <h1>Book Your Stay</h1>
+        <p>Brief description text</p>
+      </div>
+    </div>
+
+    <div class="wireframe-section">
+      <div class="wireframe-label">ACCOMMODATIONS</div>
+      <h2>Accommodations</h2>
+      <div class="wireframe-grid">
+        <div class="accommodation-card">
+          <div class="accommodation-image">IMAGE 1</div>
+          <h3>Accommodation Type 1</h3>
+          <p>Brief description of accommodation</p>
+          <div class="accommodation-button">View Options</div>
+        </div>
+        <div class="accommodation-card">
+          <div class="accommodation-image">IMAGE 2</div>
+          <h3>Accommodation Type 2</h3>
+          <p>Brief description of accommodation</p>
+          <div class="accommodation-button">View Options</div>
+        </div>
+        <div class="accommodation-card">
+          <div class="accommodation-image">IMAGE 3</div>
+          <h3>Accommodation Type 3</h3>
+          <p>Brief description of accommodation</p>
+          <div class="accommodation-button">View Options</div>
+        </div>
+        <div class="accommodation-card">
+          <div class="accommodation-image">IMAGE 4</div>
+          <h3>Accommodation Type 4</h3>
+          <p>Brief description of accommodation</p>
+          <div class="accommodation-button">View Options</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wireframe-section">
+      <div class="wireframe-label">TRANSPORTATION</div>
+      <h2>Getting Here</h2>
+      <div class="wireframe-grid-3">
+        <div class="transport-card">
+          <div class="transport-icon">✈️</div>
+          <h3>By Air</h3>
+          <p>Brief description of air transportation</p>
+        </div>
+        <div class="transport-card">
+          <div class="transport-icon">🚢</div>
+          <h3>By Sea</h3>
+          <p>Brief description of sea transportation</p>
+        </div>
+        <div class="transport-card">
+          <div class="transport-icon">🚗</div>
+          <h3>Island Transport</h3>
+          <p>Brief description of island transportation</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="wireframe-section">
+      <div class="wireframe-label">BOOKING FORM</div>
+      <div class="booking-form">
+        <h2>Inquire About Availability</h2>
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Arrival Date</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Departure Date</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Number of Guests</label>
+            <select class="form-control">
+              <option>Select option</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Accommodation Type</label>
+            <select class="form-control">
+              <option>Select option</option>
+            </select>
+          </div>
+          <div class="form-group form-full-width">
+            <label class="form-label">Special Requests</label>
+            <textarea class="form-control" rows="4"></textarea>
+          </div>
+          <div class="form-full-width" style="text-align: center; margin-top: 20px;">
+            <button class="form-button">SUBMIT INQUIRY</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wireframe-section">
+      <div class="wireframe-label">FOOTER</div>
+      <div class="footer-container">
+        <div>
+          <h3>Site Name</h3>
+          <p>Tagline</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li>Home</li>
+            <li>Bookings</li>
+            <li>Experiences</li>
+            <li>Places</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Project Info</h3>
+          <ul class="footer-links">
+            <li>Creator</li>
+            <li>Timeline</li>
+            <li>Persona</li>
+            <li>Wireframe</li>
+            <li>Testing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

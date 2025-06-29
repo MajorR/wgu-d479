@@ -1,0 +1,193 @@
+// Common components for medium fidelity wireframes
+
+// Header
+.header-container {
+  @include flex-between;
+  padding: $spacing-lg 0;
+  border-bottom: 2px solid $primary-color;
+}
+
+// Logo
+.logo {
+  font-size: $font-size-xlarge;
+  font-weight: bold;
+  color: $primary-color;
+}
+
+// Navigation
+.nav-menu {
+  display: flex;
+  gap: $spacing-xl;
+
+  @include respond-to('medium') {
+    display: none; // Hide on mobile, would be replaced with hamburger menu
+  }
+}
+
+.nav-item {
+  padding: $spacing-sm $spacing-lg;
+  border-radius: $border-radius-sm;
+  cursor: pointer;
+  transition: background-color $transition-speed;
+
+  &:hover {
+    background-color: $primary-color-light;
+  }
+
+  &.active {
+    background-color: $primary-color;
+    color: $white;
+  }
+}
+
+// Page header
+.page-header {
+  text-align: center;
+  padding: $spacing-xxxl 0;
+  background-color: $primary-color-light;
+  border-radius: $border-radius-md;
+  margin-bottom: $spacing-xxl;
+}
+
+.page-title {
+  font-size: $font-size-xxxlarge;
+  margin-bottom: $spacing-md;
+  color: $text-color;
+}
+
+.page-description {
+  font-size: $font-size-large;
+  color: $text-color-light;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+// Category navigation
+.category-nav {
+  display: flex;
+  justify-content: center;
+  gap: $spacing-lg;
+  margin: $spacing-xl 0 $spacing-xxl;
+  padding: $spacing-lg;
+  background-color: $background-color-lighter;
+  border-radius: $border-radius-md;
+  flex-wrap: wrap;
+}
+
+.category-nav-item {
+  padding: $spacing-md $spacing-xl;
+  border-radius: $border-radius-lg;
+  background-color: $white;
+  border: 1px solid $border-color;
+  cursor: pointer;
+  transition: all $transition-speed;
+
+  &:hover {
+    background-color: $primary-color-light;
+    border-color: $primary-color;
+  }
+
+  &.active {
+    background-color: $primary-color;
+    color: $white;
+    border-color: $primary-color;
+  }
+}
+
+// Section title
+.section-title {
+  font-size: $font-size-xxlarge;
+  margin-bottom: $spacing-xl;
+  color: $text-color;
+  padding-bottom: $spacing-md;
+  border-bottom: 2px solid $primary-color-light;
+}
+
+// Buttons
+.button,
+.hero-button,
+.cta-button,
+.card-button,
+.activity-button,
+.accommodation-button,
+.form-button {
+  @include button;
+
+  &.large {
+    @include button($padding-x: $spacing-xxl, $padding-y: $spacing-md);
+    font-weight: bold;
+    font-size: $font-size-medium;
+  }
+}
+
+// Call to action section
+.cta-section {
+  text-align: center;
+  padding: $spacing-xxxl;
+  background-color: $primary-color-light;
+  border-radius: $border-radius-md;
+  margin: $spacing-xxxl 0;
+}
+
+.cta-title {
+  font-size: $font-size-xxlarge;
+  margin-bottom: $spacing-lg;
+  color: $text-color;
+}
+
+.cta-description {
+  font-size: $font-size-medium;
+  margin-bottom: $spacing-xxl;
+  color: $text-color-light;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Footer
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $spacing-xxl;
+
+  @include respond-to('medium') {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.footer-column {
+  h3 {
+    font-size: $font-size-large;
+    margin-bottom: $spacing-lg;
+    color: $text-color;
+  }
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-bottom: $spacing-sm;
+  }
+
+  a {
+    color: $text-color-light;
+    text-decoration: none;
+    transition: color $transition-speed;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.copyright {
+  margin-top: $spacing-xxl;
+  padding-top: $spacing-xl;
+  border-top: 1px solid $border-color;
+  text-align: center;
+  color: $text-color-lightest;
+}

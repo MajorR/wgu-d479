@@ -1,0 +1,236 @@
+hotels:
+  amenities:
+    - free wifi:
+      icon: wifi
+    - comfortable beds:
+      icon: bed
+    - private bathroom:
+      icon: bath
+    - shower:
+      icon: shower
+    - air conditioning:
+      icon: air-conditioner
+    - restaurant:
+      icon: utensils
+    - coffee maker:
+      icon: coffee-pot
+    - tea service:
+      icon: mug-tea
+    - breakfast included:
+      icon: bowl-food
+    - bar:
+      icon: wine-glass
+    - room service:
+      icon: plate-utensils
+    - high-speed internet:
+      icon: globe-wifi
+    - parking:
+      icon: car
+    - fitness center:
+      icon: dumbbell
+    - swimming pool:
+      icon: person-swimming
+    - spa services:
+      icon: spa
+    - business center:
+      icon: briefcase
+    - conference rooms:
+      icon: users
+    - 24-hour front desk:
+      icon: clock
+    - luggage storage:
+      icon: suitcase
+    - laundry service:
+      icon: dryer
+    - entertainment system:
+      icon: tv
+    - kitchenette:
+      icon: kitchen-set
+  features:
+    - wheelchair accessible:
+      icon: wheelchair
+    - pet friendly:
+      icon: dog
+    - family rooms:
+      icon: family
+    - shuttle service:
+      icon: van-shuttle
+    - concierge service:
+      icon: bell-concierge
+    - security cameras:
+      icon: camera-security
+    - non-smoking rooms:
+      icon: ban-smoking
+    - active military discounts:
+      icon: person-military-pointing
+    - veteran discounts:
+      icon: person-military-to-person
+    - senior discounts:
+      icon: id-card
+    - student discounts:
+      icon: id-badge
+    - first responder discounts:
+      icon: truck-medical
+    - teacher discounts:
+      icon: school
+
+theaters:
+  features:
+    - comfortable seating:
+      icon: seat-airline
+    - digital projection:
+      icon: film
+    - surround sound:
+      icon: volume-high
+    - concessions:
+      icon: popcorn
+    - reserved seating:
+      icon: ticket
+    - 3D screenings:
+      icon: glasses
+    - IMAX experience:
+      icon: screen-users
+    - accessible seating:
+      icon: wheelchair
+    - matinee discounts:
+      icon: percent
+    - loyalty program:
+      icon: star
+    - active military discounts:
+      icon: person-military-pointing
+    - veteran discounts:
+      icon: person-military-to-person
+    - senior discounts:
+      icon: id-card
+    - student discounts:
+      icon: id-badge
+    - first responder discounts:
+      icon: truck-medical
+    - teacher discounts:
+      icon: school
+
+beaches:
+  features:
+    - lifeguards on duty:
+      icon: person-swimming
+    - beach umbrellas:
+      icon: umbrella-beach
+    - chair rentals:
+      icon: chair
+    - water sports:
+      icon: sailboat
+    - showers:
+      icon: shower
+    - restrooms:
+      icon: restroom
+    - food vendors:
+      icon: utensils
+    - picnic areas:
+      icon: table-picnic
+    - boardwalk:
+      icon: shoe-prints
+    - sunset views:
+      icon: sunset
+
+parks:
+  features:
+    - hiking trails:
+      icon: person-hiking
+    - picnic areas:
+      icon: table-picnic
+    - playground:
+      icon: child
+    - dog friendly:
+      icon: dog
+    - restrooms:
+      icon: restroom
+    - water fountains:
+      icon: faucet
+    - bike paths:
+      icon: bicycle
+    - sports fields:
+      icon: baseball
+    - wildlife viewing:
+      icon: binoculars
+    - scenic views:
+      icon: mountain
+
+eats:
+  amenities:
+    - outdoor seating:
+      icon: umbrella
+    - takeout available:
+      icon: bag-shopping
+    - delivery:
+      icon: truck
+    - reservations accepted:
+      icon: calendar-check
+    - full bar:
+      icon: martini-glass
+    - vegetarian options:
+      icon: carrot
+    - gluten-free options:
+      icon: wheat-slash
+    - kid-friendly:
+      icon: children
+    - breakfast served:
+      icon: mug-hot
+    - late night menu:
+      icon: moon
+  offerings:
+    - italian cuisine:
+      icon: pizza-slice
+    - asian cuisine:
+      icon: bowl-chopsticks
+    - mexican cuisine:
+      icon: pepper-hot
+    - seafood:
+      icon: fish
+    - burgers:
+      icon: burger
+    - desserts:
+      icon: ice-cream
+    - coffee specialties:
+      icon: mug-hot
+    - craft beer:
+      icon: beer-mug
+    - wine selection:
+      icon: wine-bottle
+    - vegan options:
+      icon: leaf
+    - bbq specialties:
+      icon: fire
+    - steakhouse:
+      icon: steak
+    - breakfast all day:
+      icon: egg
+    - sushi bar:
+      icon: fish-fins
+    - mediterranean cuisine:
+      icon: olive
+    - indian cuisine:
+      icon: pepper-hot
+    - bakery fresh:
+      icon: bread-slice
+    - smoothies & juices:
+      icon: blender
+    - farm to table:
+      icon: tractor
+    - cocktail bar:
+      icon: cocktail
+    - whiskey selection:
+      icon: whiskey-glass
+    - happy hour specials:
+      icon: clock
+    - espresso bar:
+      icon: mug-saucer
+    - cold brew coffee:
+      icon: mug-hot
+    - specialty tea:
+      icon: mug-tea
+    - fine dining:
+      icon: utensils-alt
+    - all-you-can-eat:
+      icon: plate-utensils
+    - food trucks:
+      icon: truck-container

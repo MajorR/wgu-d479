@@ -1,0 +1,120 @@
+// Index page specific styles
+
+// Hero section
+.hero-section {
+  position: relative;
+  height: 400px;
+  background-color: $primary-color-light;
+  overflow: hidden;
+  @include flex-center;
+  text-align: center;
+
+  @include respond-to('small') {
+    height: 300px;
+  }
+}
+
+.hero-content {
+  z-index: 2;
+  padding: $spacing-xxl;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: $border-radius-md;
+  max-width: 600px;
+
+  @include respond-to('small') {
+    padding: $spacing-lg;
+    max-width: 90%;
+  }
+}
+
+.hero-title {
+  font-size: $font-size-hero;
+  margin-bottom: $spacing-lg;
+  color: $text-color;
+
+  @include respond-to('small') {
+    font-size: $font-size-xxlarge;
+  }
+}
+
+.hero-description {
+  font-size: $font-size-large;
+  margin-bottom: $spacing-xxl;
+  color: $text-color-light;
+
+  @include respond-to('small') {
+    font-size: $font-size-medium;
+    margin-bottom: $spacing-lg;
+  }
+}
+
+// Experience cards
+.experience-card {
+  border: 1px solid $border-color;
+  border-radius: $border-radius-md;
+  overflow: hidden;
+  @include card-hover;
+}
+
+.card-image {
+  @include image-placeholder(180px);
+}
+
+.card-content {
+  padding: $spacing-lg;
+}
+
+.card-title {
+  font-size: $font-size-large;
+  margin-bottom: $spacing-md;
+  color: $text-color;
+}
+
+.card-description {
+  font-size: $font-size-base;
+  color: $text-color-lighter;
+  margin-bottom: $spacing-lg;
+}
+
+// About section
+.about-section {
+  display: flex;
+  gap: $spacing-xxl;
+
+  @include respond-to('medium') {
+    flex-direction: column;
+  }
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-image {
+  flex: 1;
+  background-color: $primary-color-light;
+  min-height: 300px;
+  @include flex-center;
+  color: $primary-color;
+  font-size: $font-size-large;
+  border-radius: $border-radius-md;
+}
+
+// Testimonial cards
+.testimonial-card {
+  padding: $spacing-xl;
+  border-radius: $border-radius-md;
+  background-color: $white;
+  box-shadow: $box-shadow-md;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: $spacing-lg;
+  color: $text-color-light;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  color: $text-color;
+}

@@ -1,0 +1,21 @@
+﻿Response,Transportation to Island,# of people in party,Accommodations,Interested in local attractions,Annual income,Purpose of trip,Response,Country of origin,Length of stay (in days),Visit status,Island transportation,Age
+1,Cruise Ship,4,Hotel,yes,60000,family vacation,1,USA,3,First time,none,40-45
+2,Air,2,Bed & Breakfast,yes,80000,honeymoon,2,USA,7,First time,car share,20-25
+3,Air,12,Hotel,no,30000,championship game,3,Japan,2,repeat,bus,15-20
+4,Cruise Ship,2,Hotel,yes,100000,honeymoon,4,USA,5,repeat,rental car,30-35
+5,Air,1,Hotel,no,45000,business,5,Mexico,3,repeat,hotel shuttle,55-60
+6,Cruise Ship,2,Beach House,no,150000,second honeymoon,6,USA,5,repeat,none,50-55
+7,Air,2,Private Condo,yes,250000,vacation,7,USA,7,repeat,rental car,45-50
+8,Cruise Ship,6,Hotel,yes,75000,family vacation,8,Canada,5,First time,public transportation,40-45
+9,Air,2,Private Condo,no,55000,vacation,9,USA,7,repeat,rental car,60-75
+10,Cruise Ship,3,Hotel,yes,65000,family vacation,10,USA,6,First time,hotel shuttle,55-60
+11,Cruise Ship,2,Hotel,yes,60000,honeymoon,11,USA,4,First time,none,20-25
+12,Air,8,Beach House,yes,80000,wedding,12,USA,4,First time,rental car,40-45
+13,Air,5,Hotel,yes,75000,family vacation,13,Canada,6,First time,rental car,35-40
+14,Air,2,Hotel,yes,100000,honeymoon,14,Spain,5,repeat,car share,30-35
+15,Air,1,Hotel,no,85000,business,15,USA,2,repeat,car share,45-50
+16,Cruise Ship,5,Hotel,yes,70000,family vacation,16,USA,2,First time,none,40-45
+17,Air,2,Private Home,no,180000,vacation,17,USA,14,repeat,rental car,55-60
+18,Air,7,Private Home,no,25000,vacation,18,USA,14,First time,none,25-30
+19,Air,4,Private Condo,yes,175000,vacation,19,Canada,10,repeat,rental car,55-60
+20,Air,3,Hotel,no,150000,business,20,USA,4,First time,rental cart,35-40

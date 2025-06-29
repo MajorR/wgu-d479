@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Island Map Wireframe - Taniti Island</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .wireframe-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .wireframe-header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border: 1px solid #ddd;
+    }
+
+    .wireframe-section {
+      margin-bottom: 40px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      background-color: #f9f9f9;
+    }
+
+    .wireframe-box {
+      border: 1px dashed #999;
+      padding: 15px;
+      margin-bottom: 15px;
+      background-color: #fff;
+    }
+
+    .wireframe-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .wireframe-footer {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #f0f0f0;
+      border: 1px solid #ddd;
+    }
+
+    .wireframe-label {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #666;
+    }
+
+    /* Medium fidelity specific styles */
+    .map-container {
+      position: relative;
+      width: 100%;
+      height: 600px;
+      border: 2px solid #666;
+      background-color: #e8f4f5;
+      overflow: hidden;
+    }
+
+    .map-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M30,20 Q50,5 70,20 T90,40 T70,60 T30,80 T10,60 T30,40 T50,30 Z" fill="none" stroke="%2386acaf" stroke-width="2"/></svg>');
+      background-size: 400px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .map-point {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #ff6b6b;
+      border: 2px solid #fff;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+    }
+
+    .map-point:hover {
+      background-color: #ff8e8e;
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    .map-point.hotel {
+      background-color: #4ecdc4;
+    }
+
+    .map-point.attraction {
+      background-color: #ff6b6b;
+    }
+
+    .map-point.restaurant {
+      background-color: #ffd166;
+    }
+
+    .map-controls {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .map-control-button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: white;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .map-control-button:hover {
+      background-color: #f5f5f5;
+    }
+
+    .overlay-filter {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 250px;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      z-index: 10;
+    }
+
+    .overlay-filter-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .overlay-filter-header h3 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .overlay-filter-close {
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .overlay-filter-category {
+      margin-bottom: 10px;
+    }
+
+    .overlay-filter-category-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    .overlay-filter-category-header input {
+      margin-right: 10px;
+    }
+
+    .overlay-filter-items {
+      margin-left: 25px;
+    }
+
+    .overlay-filter-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    .overlay-filter-item input {
+      margin-right: 10px;
+    }
+
+    .info-panel {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      width: 300px;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      z-index: 10;
+    }
+
+    .info-panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .info-panel-header h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .info-panel-close {
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .info-panel-content {
+      margin-bottom: 15px;
+    }
+
+    .info-panel-image {
+      width: 100%;
+      height: 150px;
+      background-color: #f0f0f0;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px dashed #999;
+    }
+
+    .info-panel-actions {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .info-panel-button {
+      padding: 8px 15px;
+      background-color: #4ecdc4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .info-panel-button:hover {
+      background-color: #3dbdb4;
+    }
+  </style>
+</head>
+<body>
+  <div class="wireframe-container">
+    <div class="wireframe-header">
+      <div class="wireframe-label">MEDIUM FIDELITY WIREFRAME - ISLAND MAP</div>
+      <p>This wireframe demonstrates the layout and functionality of the full-screen interactive map page.</p>
+    </div>
+
+    <div class="wireframe-section">
+      <div class="wireframe-label">FULL-SCREEN MAP INTERFACE</div>
+      <div class="map-container">
+        <!-- Map background with island outline -->
+        <div class="map-overlay"></div>
+
+        <!-- Sample map points -->
+        <div class="map-point hotel" style="top: 40%; left: 35%;" title="Taniti Beach Resort"></div>
+        <div class="map-point hotel" style="top: 50%; left: 65%;" title="Mountain View Hotel"></div>
+        <div class="map-point attraction" style="top: 30%; left: 55%;" title="Taniti Volcano"></div>
+        <div class="map-point attraction" style="top: 60%; left: 45%;" title="Coral Reef Diving Spot"></div>
+        <div class="map-point restaurant" style="top: 45%; left: 40%;" title="Seaside Grill"></div>
+        <div class="map-point restaurant" style="top: 55%; left: 60%;" title="Mountain Cafe"></div>
+
+        <!-- Map controls -->
+        <div class="map-controls">
+          <div class="map-control-button" title="Home">
+            <span>🏠</span>
+          </div>
+          <div class="map-control-button" title="Toggle Overlays">
+            <span>📋</span>
+          </div>
+          <div class="map-control-button" title="Zoom In">
+            <span>+</span>
+          </div>
+          <div class="map-control-button" title="Zoom Out">
+            <span>-</span>
+          </div>
+        </div>
+
+        <!-- Overlay filter panel -->
+        <div class="overlay-filter">
+          <div class="overlay-filter-header">
+            <h3>Map Overlays</h3>
+            <span class="overlay-filter-close">×</span>
+          </div>
+
+          <div class="overlay-filter-category">
+            <div class="overlay-filter-category-header">
+              <input type="checkbox" id="category-accommodations" checked>
+              <label for="category-accommodations">Accommodations</label>
+            </div>
+            <div class="overlay-filter-items">
+              <div class="overlay-filter-item">
+                <input type="checkbox" id="item-hotels" checked>
+                <label for="item-hotels">Hotels</label>
+              </div>
+              <div class="overlay-filter-item">
+                <input type="checkbox" id="item-resorts" checked>
+                <label for="item-resorts">Resorts</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="overlay-filter-category">
+            <div class="overlay-filter-category-header">
+              <input type="checkbox" id="category-attractions" checked>
+              <label for="category-attractions">Attractions</label>
+            </div>
+            <div class="overlay-filter-items">
+              <div class="overlay-filter-item">
+                <input type="checkbox" id="item-natural" checked>
+                <label for="item-natural">Natural Attractions</label>
+              </div>
+              <div class="overlay-filter-item">
+                <input type="checkbox" id="item-cultural" checked>
+                <label for="item-cultural">Cultural Sites</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="overlay-filter-category">
+            <div class="overlay-filter-category-header">
+              <input type="checkbox" id="category-dining" checked>
+              <label for="category-dining">Dining</label>
+            </div>
+            <div class="overlay-filter-items">
+              <div class="overlay-filter-item">
+                <input type="checkbox" id="item-restaurants" checked>
+                <label for="item-restaurants">Restaurants</label>
+              </div>
+              <div class="overlay-filter-item">
+                <input type="checkbox" id="item-cafes" checked>
+                <label for="item-cafes">Cafes</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Info panel for selected point -->
+        <div class="info-panel">
+          <div class="info-panel-header">
+            <h3>Taniti Volcano</h3>
+            <span class="info-panel-close">×</span>
+          </div>
+          <div class="info-panel-image">
+            [Volcano Image Placeholder]
+          </div>
+          <div class="info-panel-content">
+            <p>Taniti's active volcano offers breathtaking views and guided hiking tours. The volcano is monitored constantly for safety.</p>
+            <p><strong>Hours:</strong> 8:00 AM - 4:00 PM</p>
+            <p><strong>Admission:</strong> $25 per person</p>
+          </div>
+          <div class="info-panel-actions">
+            <button class="info-panel-button">More Info</button>
+            <button class="info-panel-button">Book Tour</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wireframe-section">
+      <div class="wireframe-label">WIREFRAME NOTES</div>
+      <div class="wireframe-box">
+        <h3>Key Components</h3>
+        <ol>
+          <li><strong>Full-screen Map:</strong> The map takes up the entire viewport with an outline of Taniti Island.</li>
+          <li><strong>Map Points:</strong> Interactive markers on the map representing different locations.</li>
+          <li><strong>Map Controls:</strong> Buttons for navigation, including home, toggle overlays, zoom in/out.</li>
+          <li><strong>Overlay Filter Panel:</strong> A collapsible panel that allows users to filter map points by category.</li>
+          <li><strong>Info Panel:</strong> A panel that displays detailed information about a selected map point.</li>
+        </ol>
+
+        <h3>Interactions</h3>
+        <ul>
+          <li>Clicking on a map point opens the info panel with details about that location.</li>
+          <li>The overlay filter panel can be toggled open/closed using the toggle overlays button.</li>
+          <li>Checkboxes in the overlay filter panel control the visibility of different categories of map points.</li>
+          <li>The home button returns to the main website.</li>
+          <li>Zoom buttons allow users to zoom in and out of the map.</li>
+        </ul>
+
+        <h3>Responsive Behavior</h3>
+        <ul>
+          <li>On mobile devices, the map controls remain in the top-right corner.</li>
+          <li>The overlay filter panel and info panel become full-width on small screens.</li>
+          <li>Map points increase in size slightly on touch devices for easier interaction.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

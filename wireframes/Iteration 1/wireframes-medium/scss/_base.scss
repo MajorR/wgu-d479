@@ -1,0 +1,100 @@
+// Base styles for medium fidelity wireframes
+
+// Reset and base styles
+body {
+  font-family: $font-family;
+  line-height: $line-height;
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+}
+
+// Wireframe container
+.wireframe-container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: $spacing-xl;
+}
+
+// Wireframe header
+.wireframe-header {
+  text-align: center;
+  margin-bottom: $spacing-xxl;
+  padding: $spacing-md;
+  background-color: $background-color-light;
+  border: 1px solid $border-color;
+}
+
+// Wireframe section
+.wireframe-section {
+  margin-bottom: $spacing-xxxl;
+  padding: $spacing-xl;
+  border: 1px solid $border-color;
+  background-color: $background-color;
+}
+
+// Wireframe box
+.wireframe-box {
+  border: 1px dashed $border-color-dark;
+  padding: $spacing-lg;
+  margin-bottom: $spacing-lg;
+  background-color: $white;
+}
+
+// Wireframe grid layouts
+.wireframe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $spacing-xl;
+
+  @include respond-to('medium') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond-to('small') {
+    grid-template-columns: 1fr;
+  }
+}
+
+.wireframe-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $spacing-xl;
+
+  @include respond-to('medium') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond-to('small') {
+    grid-template-columns: 1fr;
+  }
+}
+
+.wireframe-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $spacing-xl;
+
+  @include respond-to('large') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond-to('small') {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Wireframe footer
+.wireframe-footer {
+  margin-top: $spacing-xxl;
+  padding: $spacing-xl;
+  background-color: $background-color-light;
+  border: 1px solid $border-color;
+}
+
+// Wireframe label
+.wireframe-label {
+  font-weight: bold;
+  margin-bottom: $spacing-md;
+  color: $text-color-lighter;
+}

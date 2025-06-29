@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taniti Island - Interactive Map</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="description" content="Explore Taniti Island with our interactive map. Discover hotels, restaurants, recreation areas, and more.">
+
+  <meta property="og:title" content="Taniti Island - Interactive Map">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Interactive map of Taniti Island">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../icon.png">
+
+  <link rel="manifest" href="../../site.webmanifest">
+  <meta name="theme-color" content="#86acaf">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Taniti Island</h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../bookings.html">Bookings</a></li>
+          <li><a href="../experiences.html">Experiences</a></li>
+          <li><a href="map.html" class="active">Island Map</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="map-section">
+      <div class="container">
+        <!-- Filters sidebar toggle for mobile -->
+        <div class="filters-toggle">
+          <button id="filters-toggle-btn" class="btn">
+            <span class="filter-icon">🔍</span> Filters
+          </button>
+        </div>
+
+        <!-- Filters sidebar -->
+        <div class="filters-sidebar" id="filters-sidebar">
+          <div class="filters-header">
+            <div class="toggle-all-container">
+              <input type="checkbox" id="toggle-all-checkbox" class="toggle-all-checkbox">
+              <label for="toggle-all-checkbox" class="toggle-all-label">Toggle All Overlays</label>
+            </div>
+            <button id="filters-close-btn" class="filters-close-btn">×</button>
+          </div>
+          <div id="category-sidebar" class="category-sidebar">
+            <!-- Categories and subcategories will be dynamically loaded here -->
+            <div class="loading-message">Loading categories...</div>
+          </div>
+          <div class="filters-footer">
+            <button id="filters-apply-btn" class="btn btn-primary">Apply Filters</button>
+          </div>
+        </div>
+
+        <!-- Main content area -->
+        <div class="map-content">
+          <!-- Map container -->
+          <div class="map-container">
+            <div class="island-map">
+              <!-- The SVG map will be loaded here -->
+              <object id="island-svg" data="../../img/island.svg" type="image/svg+xml"></object>
+
+              <!-- Overlay markers will be dynamically added here -->
+              <div id="map-overlays" class="map-overlays"></div>
+            </div>
+          </div>
+
+          <!-- Place details panel -->
+          <div id="place-details" class="place-details">
+            <h3>Select a location to view details</h3>
+            <div class="details-content"></div>
+          </div>
+
+          <!-- Full-screen map link -->
+          <div class="fullscreen-link-container" style="text-align: center; margin-top: 20px;">
+            <a href="island-map.html" class="btn btn-primary">View Full-Screen Map</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../../js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+  <script src="../../js/map.js"></script>
+</body>
+
+</html>

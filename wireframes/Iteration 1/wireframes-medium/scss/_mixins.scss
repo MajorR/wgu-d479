@@ -1,0 +1,62 @@
+// Mixins for medium fidelity wireframes
+
+// Flexbox center
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Flexbox space between
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Card hover effect
+@mixin card-hover {
+  transition: transform $transition-speed, box-shadow $transition-speed;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $box-shadow-lg;
+  }
+}
+
+// Button styles
+@mixin button($bg-color: $primary-color, $color: $white, $padding-x: $spacing-lg, $padding-y: $spacing-md) {
+  display: inline-block;
+  padding: $padding-y $padding-x;
+  background-color: $bg-color;
+  color: $color;
+  border-radius: $border-radius-sm;
+  text-decoration: none;
+  transition: background-color $transition-speed;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+}
+
+// Image placeholder
+@mixin image-placeholder($height: 160px) {
+  height: $height;
+  background-color: $primary-color-light;
+  @include flex-center;
+  color: $primary-color;
+  font-size: $font-size-large;
+}
+
+// Responsive breakpoints
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "small" {
+    @media (max-width: 576px) { @content; }
+  } @else if $breakpoint == "medium" {
+    @media (max-width: 768px) { @content; }
+  } @else if $breakpoint == "large" {
+    @media (max-width: 992px) { @content; }
+  } @else if $breakpoint == "xlarge" {
+    @media (max-width: 1200px) { @content; }
+  }
+}

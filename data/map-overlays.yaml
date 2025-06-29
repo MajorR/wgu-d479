@@ -1,0 +1,6314 @@
+- id: hotels-jungle-retreat
+  name: Jungle Retreat
+  category: hotels
+  subcategory: eco-friendly
+  address: 78 Rainforest Way, Taniti
+  description: An eco-friendly retreat nestlfeed in the rainforest.
+  details: Features 30 cabins, a farm-to-table restaurant, and guided nature tours.
+  image: https://example.com/jungle-retreat.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/jungle-retreat
+  phone: +1 (555) 345-6789
+  pricing: $$$$
+  coordinates:
+    left: 59.09
+    top: 44.39
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - free wifi
+        - restaurant
+        - breakfast included
+        - air conditioning
+        - private bathroom
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - pet friendly
+        - shuttle service
+        - concierge service
+        - non-smoking rooms
+- id: hotels-seaside-inn
+  name: Seaside Inn
+  category: hotels
+  subcategory: mid-range
+  address: 45 Harbor Road, Taniti
+  description: A comfortable mid-range hotel near the harbor with ocean views.
+  details: Features 75 rooms, a restaurant, and a swimming pool.
+  image: https://example.com/seaside-inn.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/seaside-inn
+  phone: +1 (555) 234-5678
+  pricing: $$$
+  coordinates:
+    left: 26.6
+    top: 12.18
+  label-placement: above
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - free wifi
+        - comfortable beds
+        - private bathroom
+        - air conditioning
+        - restaurant
+        - swimming pool
+        - parking
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - family rooms
+        - non-smoking rooms
+        - concierge service
+        - security cameras
+- id: hotels-taniti-grand-resort
+  name: Taniti Grand Resort
+  category: hotels
+  subcategory: resort
+  address: 123 Beachfront Drive, Taniti
+  description: A luxurious 5-star resort with private beach access and stunning ocean views.
+  details: Features 200 rooms, 3 restaurants, a spa, and multiple swimming pools.
+  image: https://example.com/taniti-grand.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/taniti-grand
+  phone: +1 (555) 123-4567
+  pricing: $$$$$
+  coordinates:
+    left: 46.95
+    top: 83.68
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - free wifi
+        - comfortable beds
+        - private bathroom
+        - air conditioning
+        - restaurant
+        - room service
+        - high-speed internet
+        - swimming pool
+        - spa services
+        - fitness center
+        - bar
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - concierge service
+        - shuttle service
+        - family rooms
+        - security cameras
+        - non-smoking rooms
+- id: hotels-volcano-view-lodge
+  name: Volcano View Lodge
+  category: hotels
+  subcategory: eco-friendly
+  address: 23 Volcano Road, Taniti
+  description: Sustainable lodge with stunning views of Taniti's dormant volcano.
+  details: Features solar power, rainwater harvesting, and guided volcano hikes.
+  image: https://example.com/volcano-view-lodge.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/volcano-view-lodge
+  phone: +1 (555) 567-8901
+  pricing: $$$
+  coordinates:
+    left: 59.56
+    top: 11.97
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - free wifi
+        - private bathroom
+        - shower
+        - air conditioning
+        - restaurant
+        - breakfast included
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - hiking trails
+        - scenic views
+        - wildlife viewing
+        - non-smoking rooms
+        - shuttle service
+- id: hotels-surfers-paradise
+  name: Surfer's Paradise
+  category: hotels
+  subcategory: eco-friendly
+  address: 67 Wave Rider Beach, Taniti
+  description: Beachfront accommodation catering specifically to surf enthusiasts.
+  details: Features surf equipment rental, lessons, and direct access to the best surf spots.
+  image: https://example.com/surfers-paradise.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/surfers-paradise
+  phone: +1 (555) 456-7890
+  pricing: $$
+  coordinates:
+    left: 57.67
+    top: 11.7
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - free wifi
+        - private bathroom
+        - shower
+        - breakfast included
+        - kitchenette
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - water sports
+        - beach umbrellas
+        - chair rentals
+        - sunset views
+        - pet friendly
+- id: hotels-historic-taniti-inn
+  name: Historic Taniti Inn
+  category: hotels
+  subcategory: budget
+  address: 45 Old Town Square, Taniti
+  description: Restored historic building offering a glimpse into Taniti's colonial past.
+  details: Features antique furnishings, museum-like common areas, and guided history tours.
+  image: https://example.com/historic-taniti-inn.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/historic-taniti-inn
+  phone: +1 (555) 345-6789
+  pricing: $$$
+  coordinates:
+    left: 37.44
+    top: 30.54
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - free wifi
+        - private bathroom
+        - air conditioning
+        - restaurant
+        - breakfast included
+        - tea service
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - wheelchair accessible
+        - non-smoking rooms
+        - concierge service
+        - shuttle service
+        - senior discounts
+- id: hotels-tropical-paradise-resort
+  name: Tropical Paradise Resort
+  category: hotels
+  subcategory: resort
+  address: 89 Paradise Beach, Taniti
+  description: All-inclusive resort with everything you need for a perfect vacation.
+  details: Features 150 rooms, 4 restaurants, 3 bars, multiple pools, and daily activities.
+  image: https://example.com/tropical-paradise.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/tropical-paradise
+  phone: +1 (555) 234-5678
+  pricing: $$$$
+  coordinates:
+    left: 15.09
+    top: 55.86
+  label-placement: below
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - free wifi
+        - comfortable beds
+        - private bathroom
+        - air conditioning
+        - restaurant
+        - bar
+        - room service
+        - swimming pool
+        - spa services
+        - fitness center
+        - entertainment system
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - family rooms
+        - shuttle service
+        - concierge service
+        - non-smoking rooms
+        - security cameras
+- id: hotels-fishermans-cottage
+  name: Fisherman's Cottage
+  category: hotels
+  subcategory: budget
+  address: 12 Harbor Lane, Taniti
+  description: Rustic cottages in the fishing village with authentic local experience.
+  details: Features simple rooms, communal dining, and fishing excursions with locals.
+  image: https://example.com/fishermans-cottage.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/fishermans-cottage
+  phone: +1 (555) 123-4567
+  pricing: $$
+  coordinates:
+    left: 59.91
+    top: 11.99
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - free wifi
+        - private bathroom
+        - shower
+        - restaurant
+        - breakfast included
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - family rooms
+        - pet friendly
+        - water sports
+        - scenic views
+        - wildlife viewing
+- id: hotels-island-wellness-retreat
+  name: Island Wellness Retreat
+  category: hotels
+  subcategory: mid-range
+  address: 78 Tranquil Valley, Taniti
+  description: Holistic wellness retreat focused on health and rejuvenation.
+  details: Features spa treatments, yoga classes, meditation spaces, and organic dining.
+  image: https://example.com/island-wellness.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/island-wellness
+  phone: +1 (555) 012-3456
+  pricing: $$$$$
+  coordinates:
+    left: 15.11
+    top: 61
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - free wifi
+        - comfortable beds
+        - private bathroom
+        - air conditioning
+        - restaurant
+        - spa services
+        - fitness center
+        - breakfast included
+        - tea service
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - non-smoking rooms
+        - shuttle service
+        - scenic views
+        - wheelchair accessible
+        - concierge service
+- id: hotels-sunset-boutique-hotel
+  name: Sunset Boutique Hotel
+  category: hotels
+  subcategory: boutique
+  address: 56 Sunset Boulevard, Taniti
+  description: Intimate boutique hotel with personalized service and unique design.
+  details: Features 25 individually decorated rooms, rooftop terrace, and craft cocktail bar.
+  image: https://example.com/sunset-boutique.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/sunset-boutique
+  phone: +1 (555) 901-2345
+  pricing: $$$$
+  coordinates:
+    left: 41.53
+    top: 70.62
+  label-placement: below
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - free wifi
+        - comfortable beds
+        - private bathroom
+        - air conditioning
+        - bar
+        - room service
+        - high-speed internet
+        - 24-hour front desk
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - non-smoking rooms
+        - concierge service
+        - sunset views
+        - security cameras
+        - wheelchair accessible
+- id: hotels-taniti-family-resort
+  name: Taniti Family Resort
+  category: hotels
+  subcategory: budget
+  address: 34 Palm Beach Road, Taniti
+  description: Family-friendly resort with activities for all ages.
+  details: Features family suites, kids club, water park, and entertainment programs.
+  image: https://example.com/taniti-family-resort.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/taniti-family-resort
+  phone: +1 (555) 890-1234
+  pricing: $$$
+  coordinates:
+    left: 18.65
+    top: 46.23
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - free wifi
+        - comfortable beds
+        - private bathroom
+        - air conditioning
+        - restaurant
+        - swimming pool
+        - entertainment system
+        - room service
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - family rooms
+        - kid-friendly
+        - water sports
+        - shuttle service
+        - security cameras
+- id: hotels-coral-bay-resort
+  name: Coral Bay Resort
+  category: hotels
+  subcategory: luxury
+  address: 90 Coral Reef Drive, Taniti
+  description: Upscale resort with private coral reef access and diving center.
+  details: Features 100 rooms and suites, 2 restaurants, dive shop, and spa facilities.
+  image: https://example.com/coral-bay-resort.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/coral-bay-resort
+  phone: +1 (555) 789-0123
+  pricing: $$$$
+  coordinates:
+    left: 70.11
+    top: 38.79
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - free wifi
+        - comfortable beds
+        - private bathroom
+        - air conditioning
+        - restaurant
+        - bar
+        - room service
+        - swimming pool
+        - spa services
+        - high-speed internet
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - water sports
+        - scenic views
+        - concierge service
+        - non-smoking rooms
+        - shuttle service
+- id: hotels-taniti-backpackers-hostel
+  name: Taniti Backpackers Hostel
+  category: hotels
+  subcategory: budget
+  address: 78 Village Center, Taniti
+  description: Affordable accommodation for budget travelers and backpackers.
+  details: Features dormitory rooms, private rooms, communal kitchen, and social areas.
+  image: https://example.com/taniti-backpackers.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/taniti-backpackers
+  phone: +1 (555) 678-9012
+  pricing: $
+  coordinates:
+    left: 44.99
+    top: 53.08
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - free wifi
+        - shower
+        - kitchenette
+        - luggage storage
+        - laundry service
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - family rooms
+        - security cameras
+        - student discounts
+        - non-smoking rooms
+        - wheelchair accessible
+- id: hotels-mountain-view-lodge
+  name: Mountain View Lodge
+  category: hotels
+  subcategory: luxury
+  address: 45 Highland Path, Taniti
+  description: Exclusive mountain retreat with panoramic island views.
+  details: Features 15 luxury suites, infinity pool, spa services, and gourmet dining.
+  image: https://example.com/mountain-view-lodge.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/mountain-view-lodge
+  phone: +1 (555) 567-8901
+  pricing: $$$$$
+  coordinates:
+    left: 43.87
+    top: 70.68
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - free wifi
+        - comfortable beds
+        - private bathroom
+        - air conditioning
+        - restaurant
+        - bar
+        - room service
+        - swimming pool
+        - spa services
+        - high-speed internet
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - scenic views
+        - concierge service
+        - non-smoking rooms
+        - shuttle service
+        - security cameras
+- id: hotels-beachside-bungalows
+  name: Beachside Bungalows
+  category: hotels
+  subcategory: mid-range
+  address: 123 Coastal Road, Taniti
+  description: Charming bungalows with direct beach access.
+  details: Features 20 private bungalows, beachfront bar, and water sports rentals.
+  image: https://example.com/beachside-bungalows.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/beachside-bungalows
+  phone: +1 (555) 456-7890
+  pricing: $$$
+  coordinates:
+    left: 54.17
+    top: 83.58
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - free wifi
+        - private bathroom
+        - air conditioning
+        - bar
+        - breakfast included
+        - kitchenette
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - water sports
+        - beach umbrellas
+        - chair rentals
+        - sunset views
+        - family rooms
+- id: hotels-honeymoon-villas
+  name: Honeymoon Villas
+  category: hotels
+  subcategory: villa
+  address: 90 Lovers' Cove, Taniti
+  description: Exclusive private villas designed for romantic getaways.
+  details: Features private pools, couples spa treatments, and secluded beach access.
+  image: https://example.com/honeymoon-villas.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/honeymoon-villas
+  phone: +1 (555) 678-9012
+  pricing: $$$$$
+  coordinates:
+    left: 61.63
+    top: 84.58
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - free wifi
+        - comfortable beds
+        - private bathroom
+        - air conditioning
+        - swimming pool
+        - spa services
+        - room service
+        - high-speed internet
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - non-smoking rooms
+        - concierge service
+        - scenic views
+        - sunset views
+        - security cameras
+- id: restaurants-jungle-cafe
+  name: Jungle Cafe
+  category: eats
+  subcategory: cafe
+  address: 90 Rainforest Way, Taniti
+  description: A cozy cafe serving organic coffee, pastries, and light meals.
+  details: All ingredients are locally sourced and organic.
+  image: https://example.com/jungle-cafe.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+    tuesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+    wednesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+    thursday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+    friday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+    saturday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+    sunday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+  website: https://example.com/jungle-cafe
+  phone: +1 (555) 567-8901
+  pricing: $$
+  coordinates:
+    left: 54.06
+    top: 54.76
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - free wifi
+        - outdoor seating
+        - vegetarian options
+        - gluten-free options
+        - breakfast served
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items:
+        - coffee specialties
+        - bakery fresh
+        - smoothies & juices
+        - farm to table
+        - espresso bar
+        - cold brew coffee
+        - specialty tea
+- id: restaurants-ocean-breeze-restaurant
+  name: Ocean Breeze Restaurant
+  category: eats
+  subcategory: seafood
+  address: 56 Beachfront Drive, Taniti
+  description: A seafood restaurant with fresh, locally caught fish and stunning ocean views.
+  details: Specializes in grilled fish, lobster, and traditional Taniti dishes.
+  image: https://example.com/ocean-breeze.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    tuesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    wednesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    thursday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    friday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    saturday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    sunday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+  website: https://example.com/ocean-breeze
+  phone: +1 (555) 456-7890
+  pricing: $$$$
+  coordinates:
+    left: 36.78
+    top: 9.93
+  label-placement: below
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - outdoor seating
+        - reservations accepted
+        - full bar
+        - vegetarian options
+        - kid-friendly
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items:
+        - seafood
+        - wine selection
+        - cocktail bar
+        - farm to table
+        - fine dining
+- id: restaurants-little-italy
+  name: Little Italy
+  category: eats
+  subcategory: international
+  address: 45 Harbor Road, Taniti
+  description: Authentic Italian restaurant serving pasta, pizza, and traditional Italian dishes.
+  details: Features a wood-fired pizza oven, homemade pasta, and imported Italian wines.
+  image: https://example.com/little-italy.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 10:00 PM
+    tuesday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 10:00 PM
+    wednesday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 10:00 PM
+    thursday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 10:00 PM
+    friday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 10:00 PM
+    saturday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 10:00 PM
+    sunday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 10:00 PM
+  website: https://example.com/little-italy
+  phone: +1 (555) 567-8901
+  pricing: $$$
+  coordinates:
+    left: 55.6
+    top: 43.48
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items: null
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items: null
+- id: restaurants-taniti-traditional-kitchen
+  name: Taniti Traditional Kitchen
+  category: eats
+  subcategory: local cuisine
+  address: 56 Cultural District, Taniti
+  description: Authentic local restaurant serving traditional Taniti dishes and delicacies.
+  details: Family-owned restaurant using recipes passed down through generations with cultural performances on weekends.
+  image: https://example.com/traditional-kitchen.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 10:00 PM
+    tuesday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 10:00 PM
+    wednesday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 10:00 PM
+    thursday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 10:00 PM
+    friday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 10:00 PM
+    saturday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 10:00 PM
+    sunday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 10:00 PM
+  website: https://example.com/traditional-kitchen
+  phone: +1 (555) 345-6789
+  pricing: $$$
+  coordinates:
+    left: 34.06
+    top: 76.91
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items: null
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items: null
+- id: restaurants-beachside-burger-shack
+  name: Beachside Burger Shack
+  category: eats
+  subcategory: fast food
+  address: 34 Beach Road, Taniti
+  description: Casual beachfront burger joint serving gourmet burgers, fries, and milkshakes.
+  details: All burgers made with locally sourced beef and fresh ingredients with vegetarian options available.
+  image: https://example.com/burger-shack.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+    tuesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+    wednesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+    thursday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+    friday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+    saturday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+    sunday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+  website: https://example.com/burger-shack
+  phone: +1 (555) 234-5678
+  pricing: $$
+  coordinates:
+    left: 43.17
+    top: 9.85
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items: null
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items: null
+- id: restaurants-island-fusion
+  name: Island Fusion
+  category: eats
+  subcategory: fine dining
+  address: 78 Luxury Avenue, Taniti
+  description: An upscale restaurant offering innovative fusion cuisine combining local and international flavors.
+  details: Features a chef's tasting menu, extensive wine list, and elegant oceanfront dining room.
+  image: https://example.com/island-fusion.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 11:00 PM
+    tuesday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 11:00 PM
+    wednesday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 11:00 PM
+    thursday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 11:00 PM
+    friday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 11:00 PM
+    saturday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 11:00 PM
+    sunday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 11:00 PM
+  website: https://example.com/island-fusion
+  phone: +1 (555) 123-4567
+  pricing: $$$$$
+  coordinates:
+    left: 53.96
+    top: 42.89
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items: null
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items: null
+- id: restaurants-island-brew-coffee-house
+  name: Island Brew Coffee House
+  category: eats
+  subcategory: coffee shop
+  address: 78 Main Street, Taniti
+  description: Artisanal coffee shop serving locally grown coffee, pastries, and light meals.
+  details: Features single-origin Taniti coffee, house-made pastries, and a relaxed atmosphere.
+  image: https://example.com/island-brew.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    tuesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    wednesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    thursday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    friday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    saturday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    sunday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+  website: https://example.com/island-brew
+  phone: +1 (555) 456-7890
+  pricing: $$
+  coordinates:
+    left: 48.21
+    top: 46.18
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - free wifi
+        - outdoor seating
+        - vegetarian options
+        - gluten-free options
+        - breakfast served
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items:
+        - coffee specialties
+        - bakery fresh
+        - breakfast all day
+        - espresso bar
+        - cold brew coffee
+        - specialty tea
+- id: restaurants-veggie-delight
+  name: Veggie Delight
+  category: eats
+  subcategory: vegetarian
+  address: 56 Green Street, Taniti
+  description: Plant-based restaurant serving creative vegetarian and vegan dishes using local produce.
+  details: Farm-to-table concept with daily changing menu based on seasonal availability.
+  image: https://example.com/veggie-delight.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+    tuesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+    wednesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+    thursday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+    friday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+    saturday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+    sunday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+  website: https://example.com/veggie-delight
+  phone: +1 (555) 345-6789
+  pricing: $$
+  coordinates:
+    left: 58.47
+    top: 45.13
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - vegetarian options
+        - gluten-free options
+        - outdoor seating
+        - reservations accepted
+        - takeout available
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items:
+        - vegan options
+        - farm to table
+        - smoothies & juices
+        - desserts
+        - breakfast all day
+- id: restaurants-sushi-paradise
+  name: Sushi Paradise
+  category: eats
+  subcategory: japanese
+  address: 34 Harbor Road, Taniti
+  description: Upscale sushi restaurant offering fresh, locally-caught fish and traditional Japanese dishes.
+  details: Features an omakase menu, sushi bar with ocean views, and extensive sake selection.
+  image: https://example.com/sushi-paradise.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 10:00 PM
+    tuesday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 10:00 PM
+    wednesday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 10:00 PM
+    thursday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 10:00 PM
+    friday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 10:00 PM
+    saturday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 10:00 PM
+    sunday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 10:00 PM
+  website: https://example.com/sushi-paradise
+  phone: +1 (555) 234-5678
+  pricing: $$$$
+  coordinates:
+    left: 48.68
+    top: 45.9
+  label-placement: above
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - reservations accepted
+        - full bar
+        - vegetarian options
+        - outdoor seating
+        - takeout available
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items:
+        - sushi bar
+        - asian cuisine
+        - seafood
+        - wine selection
+        - fine dining
+- id: restaurants-mediterranean-bistro
+  name: Mediterranean Bistro
+  category: eats
+  subcategory: mediterranean
+  address: 89 Coastal Highway, Taniti
+  description: Elegant bistro serving Mediterranean cuisine with a focus on Greek and Lebanese dishes.
+  details: Features a mezze menu, fresh seafood, and traditional dishes made with imported ingredients.
+  image: https://example.com/mediterranean-bistro.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 11:00 PM
+    tuesday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 11:00 PM
+    wednesday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 11:00 PM
+    thursday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 11:00 PM
+    friday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 11:00 PM
+    saturday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 11:00 PM
+    sunday:
+      open-this-day: true
+      open: 5:00 PM
+      close: 11:00 PM
+  website: https://example.com/mediterranean-bistro
+  phone: +1 (555) 123-4567
+  pricing: $$$
+  coordinates:
+    left: 78.97
+    top: 79.42
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - reservations accepted
+        - full bar
+        - vegetarian options
+        - outdoor seating
+        - gluten-free options
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items:
+        - mediterranean cuisine
+        - seafood
+        - wine selection
+        - fine dining
+        - farm to table
+- id: restaurants-jungle-bbq
+  name: Jungle BBQ
+  category: eats
+  subcategory: barbecue
+  address: 67 Rainforest Way, Taniti
+  description: Rustic barbecue restaurant offering slow-cooked meats and island-style sides.
+  details: Meats smoked over local hardwoods with signature tropical barbecue sauces.
+  image: https://example.com/jungle-bbq.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 10:00 PM
+    tuesday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 10:00 PM
+    wednesday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 10:00 PM
+    thursday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 10:00 PM
+    friday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 10:00 PM
+    saturday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 10:00 PM
+    sunday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 10:00 PM
+  website: https://example.com/jungle-bbq
+  phone: +1 (555) 012-3456
+  pricing: $$$
+  coordinates:
+    left: 49.48
+    top: 54.24
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - outdoor seating
+        - full bar
+        - kid-friendly
+        - takeout available
+        - reservations accepted
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items:
+        - bbq specialties
+        - craft beer
+        - farm to table
+        - cocktail bar
+        - whiskey selection
+- id: restaurants-beachside-taco-shack
+  name: Beachside Taco Shack
+  category: eats
+  subcategory: mexican
+  address: 23 Beach Road, Taniti
+  description: Casual taco stand serving fresh, made-to-order tacos and Mexican favorites.
+  details: Known for fish tacos made with the daily catch and homemade salsas and guacamole.
+  image: https://example.com/taco-shack.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 8:00 PM
+    tuesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 8:00 PM
+    wednesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 8:00 PM
+    thursday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 8:00 PM
+    friday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 8:00 PM
+    saturday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 8:00 PM
+    sunday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 8:00 PM
+  website: https://example.com/taco-shack
+  phone: +1 (555) 901-2345
+  pricing: $
+  coordinates:
+    left: 74.68
+    top: 55.4
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - outdoor seating
+        - takeout available
+        - kid-friendly
+        - vegetarian options
+        - gluten-free options
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items:
+        - mexican cuisine
+        - seafood
+        - farm to table
+        - happy hour specials
+        - food trucks
+- id: restaurants-island-ice-cream-parlor
+  name: Island Ice Cream Parlor
+  category: eats
+  subcategory: dessert
+  address: 45 Tourist Avenue, Taniti
+  description: Charming ice cream shop offering homemade ice cream with tropical flavors.
+  details: Features unique island flavors like coconut, mango, passion fruit, and local specialties.
+  image: https://example.com/island-ice-cream.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    tuesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    wednesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    thursday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    friday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    saturday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    sunday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+  website: https://example.com/island-ice-cream
+  phone: +1 (555) 890-1234
+  pricing: $
+  coordinates:
+    left: 15.22
+    top: 55.39
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - kid-friendly
+        - takeout available
+        - outdoor seating
+        - gluten-free options
+        - vegetarian options
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items:
+        - desserts
+        - smoothies & juices
+        - farm to table
+        - bakery fresh
+        - all-you-can-eat
+- id: restaurants-noodle-house
+  name: Noodle House
+  category: eats
+  subcategory: asian
+  address: 78 Central Avenue, Taniti
+  description: Authentic Asian restaurant specializing in noodle dishes from across Asia.
+  details: Offers ramen, pho, pad thai, and other noodle specialties with vegetarian options available.
+  image: https://example.com/noodle-house.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    tuesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    wednesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    thursday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    friday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    saturday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    sunday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+  website: https://example.com/noodle-house
+  phone: +1 (555) 789-0123
+  pricing: $$
+  coordinates:
+    left: 53.13
+    top: 41.78
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - vegetarian options
+        - takeout available
+        - delivery
+        - gluten-free options
+        - kid-friendly
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items:
+        - asian cuisine
+        - vegan options
+        - sushi bar
+        - farm to table
+        - seafood
+- id: restaurants-tiki-grill-bar
+  name: Tiki Grill & Bar
+  category: eats
+  subcategory: bar and grill
+  address: 56 Beachfront Drive, Taniti
+  description: Lively tiki-themed bar and grill serving tropical cocktails and island-inspired dishes.
+  details: Features live music nightly, fire dancers on weekends, and an extensive rum selection.
+  image: https://example.com/tiki-grill.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 1:00 AM
+    tuesday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 1:00 AM
+    wednesday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 1:00 AM
+    thursday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 1:00 AM
+    friday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 1:00 AM
+    saturday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 1:00 AM
+    sunday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 1:00 AM
+  website: https://example.com/tiki-grill
+  phone: +1 (555) 678-9012
+  pricing: $$$
+  coordinates:
+    left: 24.68
+    top: 13.07
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - full bar
+        - outdoor seating
+        - kid-friendly
+        - vegetarian options
+        - late night menu
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items:
+        - cocktail bar
+        - seafood
+        - burgers
+        - happy hour specials
+        - whiskey selection
+- id: restaurants-island-pizza-parlor
+  name: Island Pizza Parlor
+  category: eats
+  subcategory: pizza
+  address: 23 Main Street, Taniti
+  description: Family-friendly pizza restaurant offering traditional and tropical-inspired pizzas.
+  details: Wood-fired oven pizzas with unique island toppings like fresh pineapple and local seafood.
+  image: https://example.com/island-pizza.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    tuesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    wednesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    thursday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    friday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    saturday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+    sunday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 10:00 PM
+  website: https://example.com/island-pizza
+  phone: +1 (555) 456-7890
+  pricing: $$
+  coordinates:
+    left: 15.47
+    top: 54.7
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - kid-friendly
+        - takeout available
+        - delivery
+        - vegetarian options
+        - outdoor seating
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items:
+        - italian cuisine
+        - seafood
+        - farm to table
+        - craft beer
+        - desserts
+- id: restaurants-seafood-shack
+  name: Seafood Shack
+  category: eats
+  subcategory: seafood
+  address: 67 Harbor Way, Taniti
+  description: A casual seafood restaurant serving the freshest catch of the day in a relaxed atmosphere.
+  details: All seafood is sourced from local fishermen with daily specials based on the morning catch.
+  image: https://example.com/seafood-shack.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+    tuesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+    wednesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+    thursday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+    friday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+    saturday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+    sunday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 9:00 PM
+  website: https://example.com/seafood-shack
+  phone: +1 (555) 345-6789
+  pricing: $$$
+  coordinates:
+    left: 76.7
+    top: 61.28
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - outdoor seating
+        - kid-friendly
+        - takeout available
+        - full bar
+        - gluten-free options
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items:
+        - seafood
+        - farm to table
+        - happy hour specials
+        - cocktail bar
+        - wine selection
+- id: eats-sunset-beach-bar-&-grill
+  name: Sunset Beach Bar & Grill
+  category: eats
+  subcategory: beach bar
+  address: 90 Sunset Beach Road, Taniti
+  description: Relaxed beach bar and grill offering cocktails, seafood, and light meals with stunning sunset views.
+  details: Features live music in the evenings, signature tropical cocktails, and fresh seafood caught daily.
+  image: https://example.com/sunset-beach-bar.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 12:00 AM
+    tuesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 12:00 AM
+    wednesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 12:00 AM
+    thursday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 12:00 AM
+    friday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 12:00 AM
+    saturday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 12:00 AM
+    sunday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 12:00 AM
+  website: https://example.com/sunset-beach-bar
+  phone: +1 (555) 456-7890
+  pricing: $$$
+  coordinates:
+    left: 70.37
+    top: 40.31
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - outdoor seating
+        - full bar
+        - kid-friendly
+        - vegetarian options
+        - late night menu
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items:
+        - seafood
+        - cocktail bar
+        - happy hour specials
+        - burgers
+        - farm to table
+- id: eats-sunrise-breakfast-cafe
+  name: Sunrise Breakfast Cafe
+  category: eats
+  subcategory: breakfast
+  address: 34 Sunrise Avenue, Taniti
+  description: Cozy cafe specializing in breakfast and brunch with ocean views.
+  details: Serves traditional breakfast favorites with a tropical twist using locally sourced ingredients.
+  image: https://example.com/sunrise-cafe.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 2:00 PM
+    tuesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 2:00 PM
+    wednesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 2:00 PM
+    thursday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 2:00 PM
+    friday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 2:00 PM
+    saturday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 2:00 PM
+    sunday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 2:00 PM
+  website: https://example.com/sunrise-cafe
+  phone: +1 (555) 567-8901
+  pricing: $$
+  coordinates:
+    left: 39.97
+    top: 69.69
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - breakfast served
+        - outdoor seating
+        - vegetarian options
+        - gluten-free options
+        - kid-friendly
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items:
+        - breakfast all day
+        - coffee specialties
+        - smoothies & juices
+        - farm to table
+        - bakery fresh
+- id: eats-tropical-smoothie-hut
+  name: Tropical Smoothie Hut
+  category: eats
+  subcategory: cafe
+  address: 45 Beach Road, Taniti
+  description: A vibrant cafe specializing in fresh fruit smoothies, acai bowls, and healthy snacks.
+  details: Uses locally grown tropical fruits and organic ingredients with dairy-free options available.
+  image: https://example.com/tropical-smoothie.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+    tuesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+    wednesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+    thursday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+    friday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+    saturday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+    sunday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+  website: https://example.com/tropical-smoothie
+  phone: +1 (555) 234-5678
+  pricing: $$
+  coordinates:
+    left: 52.38
+    top: 83.69
+  label-placement: below
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items:
+        - vegetarian options
+        - gluten-free options
+        - outdoor seating
+        - takeout available
+        - kid-friendly
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items:
+        - smoothies & juices
+        - vegan options
+        - farm to table
+        - breakfast all day
+        - desserts
+- id: eats-harbor-grill
+  name: Harbor Grill
+  category: eats
+  subcategory: grill
+  address: 34 Harbor Road, Taniti
+  description: A casual grill restaurant near the harbor serving burgers, steaks, and local dishes.
+  details: Features a large outdoor seating area with harbor views.
+  image: https://example.com/harbor-grill.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 11:00 PM
+    tuesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 11:00 PM
+    wednesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 11:00 PM
+    thursday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 11:00 PM
+    friday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 11:00 PM
+    saturday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 11:00 PM
+    sunday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 11:00 PM
+  website: https://example.com/harbor-grill
+  phone: +1 (555) 678-9012
+  pricing: $$$
+  coordinates:
+    left: 22.91
+    top: 34.39
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: amenities
+      items: null
+    - type: item-list
+      source: place-features
+      lookup: offerings
+      items: null
+- id: recreation-jungle-adventure-park
+  name: Jungle Adventure Park
+  category: recreation
+  subcategory: adventure
+  address: 78 Rainforest Way, Taniti
+  description: An adventure park featuring rope courses, suspension bridges, and climbing walls.
+  details: Suitable for all ages with varying difficulty levels and professional safety equipment.
+  image: https://example.com/jungle-adventure.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    tuesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    wednesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    thursday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    friday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    saturday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    sunday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+  website: https://example.com/jungle-adventure
+  phone: +1 (555) 890-1234
+  pricing: $$$
+  coordinates:
+    left: 42.32
+    top: 33.14
+  label-placement: left
+  more-info: null
+- id: recreation-taniti-parasailing
+  name: Taniti Parasailing
+  category: recreation
+  subcategory: water sports
+  address: 34 Beachfront Drive, Taniti
+  description: Soar above Taniti's beautiful coastline with professional parasailing guides.
+  details: Offers single and tandem parasailing experiences with stunning aerial views.
+  image: https://example.com/taniti-parasailing.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    tuesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    wednesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    thursday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    friday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    saturday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    sunday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+  website: https://example.com/taniti-parasailing
+  phone: +1 (555) 789-0123
+  pricing: $$$$
+  coordinates:
+    left: 41.85
+    top: 9.26
+  label-placement: above
+  more-info: null
+- id: recreation-island-cycling-tours
+  name: Island Cycling Tours
+  category: recreation
+  subcategory: cycling
+  address: 56 Mountain View Road, Taniti
+  description: Guided cycling tours around the island on scenic routes.
+  details: Offers bike rentals, guided tours for all skill levels, and custom itineraries.
+  image: https://example.com/island-cycling.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    tuesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    wednesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    thursday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    friday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    saturday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    sunday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+  website: https://example.com/island-cycling
+  phone: +1 (555) 678-9012
+  pricing: $$$
+  coordinates:
+    left: 23.69
+    top: 38.04
+  label-placement: below
+  more-info: null
+- id: recreation-taniti-golf-club
+  name: Taniti Golf Club
+  category: recreation
+  subcategory: golf
+  address: 123 Coastal Drive, Taniti
+  description: A scenic 18-hole golf course with ocean and mountain views.
+  details: Features a clubhouse, pro shop, and restaurant with equipment rentals available.
+  image: https://example.com/taniti-golf.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 6:30 AM
+      close: 7:00 PM
+    tuesday:
+      open-this-day: true
+      open: 6:30 AM
+      close: 7:00 PM
+    wednesday:
+      open-this-day: true
+      open: 6:30 AM
+      close: 7:00 PM
+    thursday:
+      open-this-day: true
+      open: 6:30 AM
+      close: 7:00 PM
+    friday:
+      open-this-day: true
+      open: 6:30 AM
+      close: 7:00 PM
+    saturday:
+      open-this-day: true
+      open: 6:30 AM
+      close: 7:00 PM
+    sunday:
+      open-this-day: true
+      open: 6:30 AM
+      close: 7:00 PM
+  website: https://example.com/taniti-golf
+  phone: +1 (555) 567-8901
+  pricing: $$$$$
+  coordinates:
+    left: 37.44
+    top: 39.32
+  label-placement: below
+  more-info: null
+- id: recreation-island-zip-line-adventure
+  name: Island Zip Line Adventure
+  category: recreation
+  subcategory: adventure
+  address: 89 Rainforest Way, Taniti
+  description: Experience the thrill of zip lining through Taniti's lush rainforest canopy.
+  details: Features 5 zip lines of varying lengths and heights with stunning views of the island.
+  image: https://example.com/zip-line-adventure.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 4:00 PM
+    tuesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 4:00 PM
+    wednesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 4:00 PM
+    thursday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 4:00 PM
+    friday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 4:00 PM
+    saturday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 4:00 PM
+    sunday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 4:00 PM
+  website: https://example.com/zip-line-adventure
+  phone: +1 (555) 456-7890
+  pricing: $$$$
+  coordinates:
+    left: 68.58
+    top: 50.54
+  label-placement: right
+  more-info: null
+- id: recreation-island-kayaking-adventures
+  name: Island Kayaking Adventures
+  category: recreation
+  subcategory: water sports
+  address: 45 Coastal Highway, Taniti
+  description: Explore Taniti's coastline and hidden coves by kayak.
+  details: Offers guided kayak tours, rentals, and sunset paddling experiences.
+  image: https://example.com/island-kayaking.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+    tuesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+    wednesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+    thursday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+    friday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+    saturday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+    sunday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+  website: https://example.com/island-kayaking
+  phone: +1 (555) 234-5678
+  pricing: $$$
+  coordinates:
+    left: 71.87
+    top: 37.67
+  label-placement: left
+  more-info: null
+- id: recreation-taniti-scuba-diving
+  name: Taniti Scuba Diving
+  category: recreation
+  subcategory: water sports
+  address: 23 Harbor Road, Taniti
+  description: Explore Taniti's vibrant coral reefs and marine life with certified dive instructors.
+  details: Offers certification courses, guided dives, and equipment rental.
+  image: https://example.com/taniti-scuba.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 5:00 PM
+    tuesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 5:00 PM
+    wednesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 5:00 PM
+    thursday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 5:00 PM
+    friday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 5:00 PM
+    saturday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 5:00 PM
+    sunday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 5:00 PM
+  website: https://example.com/taniti-scuba
+  phone: +1 (555) 901-2345
+  pricing: $$$$
+  coordinates:
+    left: 61.13
+    top: 9.89
+  label-placement: left
+  more-info: null
+- id: recreation-rainforest-hiking-tours
+  name: Rainforest Hiking Tours
+  category: recreation
+  subcategory: hiking
+  address: 56 Rainforest Way, Taniti
+  description: Guided hiking tours through Taniti's lush rainforest.
+  details: Offers half-day and full-day tours with knowledgeable local guides.
+  image: https://example.com/rainforest-hiking.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 4:00 PM
+    tuesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 4:00 PM
+    wednesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 4:00 PM
+    thursday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 4:00 PM
+    friday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 4:00 PM
+    saturday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 4:00 PM
+    sunday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 4:00 PM
+  website: https://example.com/rainforest-hiking
+  phone: +1 (555) 890-1234
+  pricing: $$
+  coordinates:
+    left: 46.3
+    top: 50.96
+  label-placement: right
+  more-info: null
+- id: recreation-taniti-surf-school
+  name: Taniti Surf School
+  category: recreation
+  subcategory: water sports
+  address: 78 Beachfront Drive, Taniti
+  description: Learn to surf with professional instructors on Taniti's beautiful beaches.
+  details: Offers lessons for all skill levels, equipment rental, and guided surf tours.
+  image: https://example.com/taniti-surf.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    tuesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    wednesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    thursday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    friday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    saturday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    sunday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+  website: https://example.com/taniti-surf
+  phone: +1 (555) 789-0123
+  pricing: $$$
+  coordinates:
+    left: 58.46
+    top: 88.74
+  label-placement: left
+  more-info: null
+- id: recreation-taniti-sports-complex
+  name: Taniti Sports Complex
+  category: recreation
+  subcategory: sports
+  address: 123 Sports Avenue, Taniti
+  description: Multi-purpose sports facility with courts, fields, and fitness equipment.
+  details: Features tennis courts, basketball courts, soccer fields, and a fitness center.
+  image: https://example.com/sports-complex.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    tuesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    wednesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    thursday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    friday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    saturday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    sunday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+  website: https://example.com/sports-complex
+  phone: +1 (555) 789-0123
+  pricing: $$
+  coordinates:
+    left: 47.2
+    top: 42.2
+  label-placement: left
+  more-info: null
+- id: recreation-island-jet-ski-rentals
+  name: Island Jet Ski Rentals
+  category: recreation
+  subcategory: water sports
+  address: 56 Beachfront Drive, Taniti
+  description: Jet ski rentals and guided tours around the island's coastline.
+  details: Offers hourly rentals and guided tours with safety equipment and instruction included.
+  image: https://example.com/jet-ski-rentals.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    tuesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    wednesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    thursday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    friday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    saturday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    sunday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+  website: https://example.com/jet-ski-rentals
+  phone: +1 (555) 678-9012
+  pricing: $$$
+  coordinates:
+    left: 38.28
+    top: 83.94
+  label-placement: left
+  more-info: null
+- id: recreation-coral-reef-fishing-spot
+  name: Coral Reef Fishing Spot
+  category: recreation
+  subcategory: fishing
+  address: East Coast, Taniti
+  description: Popular fishing spot near the coral reef with abundant marine life.
+  details: Great for shore fishing with opportunities to catch tropical reef fish.
+  image: https://example.com/coral-reef-fishing.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/coral-reef-fishing
+  phone: ""
+  pricing: $
+  coordinates:
+    left: 74.5
+    top: 14.78
+  label-placement: left
+  more-info: null
+- id: recreation-deep-sea-fishing-charters
+  name: Deep Sea Fishing Charters
+  category: recreation
+  subcategory: fishing
+  address: 78 Harbor Road, Taniti
+  description: Professional deep sea fishing charters for all skill levels.
+  details: Full and half-day trips targeting marlin, tuna, and other game fish with all equipment provided.
+  image: https://example.com/deep-sea-fishing.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    tuesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    wednesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    thursday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    friday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    saturday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    sunday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+  website: https://example.com/deep-sea-fishing
+  phone: +1 (555) 456-7890
+  pricing: $$$$
+  coordinates:
+    left: 70.69
+    top: 36.52
+  label-placement: above
+  more-info: null
+- id: recreation-fishing-village-dock
+  name: Fishing Village Dock
+  category: recreation
+  subcategory: fishing
+  address: 23 Fishing Village Road, Taniti
+  description: A traditional fishing village with a dock for local fishing boats.
+  details: Visitors can purchase fresh seafood directly from fishermen or take fishing tours.
+  image: https://example.com/fishing-dock.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 5:00 AM
+      close: 7:00 PM
+    tuesday:
+      open-this-day: true
+      open: 5:00 AM
+      close: 7:00 PM
+    wednesday:
+      open-this-day: true
+      open: 5:00 AM
+      close: 7:00 PM
+    thursday:
+      open-this-day: true
+      open: 5:00 AM
+      close: 7:00 PM
+    friday:
+      open-this-day: true
+      open: 5:00 AM
+      close: 7:00 PM
+    saturday:
+      open-this-day: true
+      open: 5:00 AM
+      close: 7:00 PM
+    sunday:
+      open-this-day: true
+      open: 5:00 AM
+      close: 7:00 PM
+  website: https://example.com/fishing-dock
+  phone: +1 (555) 123-4567
+  pricing: ""
+  coordinates:
+    left: 71.73
+    top: 38.64
+  label-placement: right
+  more-info: null
+- id: sites-ancient-taniti-village
+  name: Ancient Taniti Village
+  category: sites
+  subcategory: historical
+  address: 45 Heritage Road, Taniti
+  description: A preserved ancient village showcasing the traditional lifestyle of Taniti's indigenous people.
+  details: Features traditional huts, artifacts, and cultural demonstrations.
+  image: https://example.com/ancient-village.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    tuesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    wednesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    thursday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    friday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    saturday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    sunday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+  website: https://example.com/ancient-village
+  phone: +1 (555) 123-4567
+  pricing: $$
+  coordinates:
+    left: 34.74
+    top: 29.7
+  label-placement: right
+  more-info: null
+- id: sites-taniti-lighthouse
+  name: Taniti Lighthouse
+  category: sites
+  subcategory: lighthouse
+  address: 12 Lighthouse Point, Taniti
+  description: A historic lighthouse offering panoramic views of the ocean and coastline.
+  details: Built in 1892, the lighthouse has been restored and includes a small museum.
+  image: https://example.com/taniti-lighthouse.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 4:00 PM
+    tuesday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 4:00 PM
+    wednesday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 4:00 PM
+    thursday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 4:00 PM
+    friday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 4:00 PM
+    saturday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 4:00 PM
+    sunday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 4:00 PM
+  website: https://example.com/taniti-lighthouse
+  phone: +1 (555) 234-5678
+  pricing: $
+  coordinates:
+    left: 18.16
+    top: 31.44
+  label-placement: left
+  more-info: null
+- id: sites-lighthouse-heritage-museum
+  name: Lighthouse Heritage Museum
+  category: sites
+  subcategory: historical
+  address: 789 Coastal Highway, Taniti
+  description: Historic lighthouse converted into a maritime museum.
+  details: Built in 1892, this lighthouse now houses exhibits on Taniti's maritime history, including artifacts from shipwrecks and traditional fishing methods.
+  image: https://example.com/lighthouse-museum.jpg
+  operating-times:
+    monday:
+      open-this-day: false
+    tuesday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 4:00 PM
+    wednesday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 4:00 PM
+    thursday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 4:00 PM
+    friday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 4:00 PM
+    saturday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 4:00 PM
+    sunday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 4:00 PM
+  website: https://example.com/lighthouse-museum
+  phone: +1 (555) 345-6789
+  pricing: $
+  coordinates:
+    left: 18.47
+    top: 31.43
+  label-placement: right
+  more-info: null
+- id: sites-ancient-taniti-temple
+  name: Ancient Taniti Temple
+  category: sites
+  subcategory: historical
+  address: 456 Ancient Path, Taniti
+  description: Well-preserved temple from the indigenous Taniti civilization.
+  details: This 500-year-old temple showcases the unique architecture and religious practices of the original Taniti inhabitants.
+  image: https://example.com/taniti-temple.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    tuesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    wednesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    thursday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    friday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    saturday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    sunday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+  website: https://example.com/taniti-temple
+  phone: +1 (555) 234-5678
+  pricing: $$
+  coordinates:
+    left: 44.21
+    top: 19.05
+  label-placement: right
+  more-info: null
+- id: sites-emerald-lagoon-lookout
+  name: Emerald Lagoon Lookout
+  category: sites
+  subcategory: viewpoint
+  address: Northern Peninsula, Taniti
+  description: A breathtaking viewpoint overlooking a hidden lagoon with emerald waters.
+  details: This natural platform offers panoramic views of the lagoon, surrounding jungle, and on clear days, neighboring islands. Perfect for photography and sunset viewing.
+  image: https://example.com/emerald-lagoon.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/emerald-lagoon
+  phone: +1 (555) 567-8901
+  pricing: Free
+  coordinates:
+    left: 20.58
+    top: 28.43
+  label-placement: left
+  more-info: null
+- id: sites-traditional-craft-village
+  name: Traditional Craft Village
+  category: sites
+  subcategory: cultural
+  address: Central Valley, Taniti
+  description: A living museum where local artisans practice and teach traditional Taniti crafts.
+  details: Visitors can observe and participate in traditional weaving, pottery, woodcarving, and other crafts that have been practiced on the island for generations.
+  image: https://example.com/craft-village.jpg
+  operating-times:
+    monday:
+      open-this-day: false
+    tuesday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 6:00 PM
+    wednesday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 6:00 PM
+    thursday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 6:00 PM
+    friday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 6:00 PM
+    saturday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 6:00 PM
+    sunday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 6:00 PM
+  website: https://example.com/craft-village
+  phone: +1 (555) 456-7890
+  pricing: $$
+  coordinates:
+    left: 27.59
+    top: 20.42
+  label-placement: above
+  more-info: null
+- id: sites-ancient-petroglyphs
+  name: Ancient Petroglyphs
+  category: sites
+  subcategory: historical
+  address: Western Cliffs, Taniti
+  description: Extensive rock carvings created by the earliest inhabitants of Taniti.
+  details: Dating back over 2,000 years, these petroglyphs depict daily life, mythological creatures, and astronomical observations of the ancient Taniti people.
+  image: https://example.com/petroglyphs.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 5:00 PM
+    tuesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 5:00 PM
+    wednesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 5:00 PM
+    thursday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 5:00 PM
+    friday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 5:00 PM
+    saturday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 5:00 PM
+    sunday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 5:00 PM
+  website: https://example.com/petroglyphs
+  phone: +1 (555) 345-6789
+  pricing: $$
+  coordinates:
+    left: 42.34
+    top: 19.32
+  label-placement: left
+  more-info: null
+- id: sites-coral-caverns
+  name: Coral Caverns
+  category: sites
+  subcategory: natural
+  address: Southern Reef, Taniti
+  description: A stunning network of underwater caves formed by ancient coral formations.
+  details: These breathtaking caverns feature bioluminescent organisms that create a magical underwater light show. Guided diving tours available for experienced divers.
+  image: https://example.com/coral-caverns.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 4:00 PM
+    tuesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 4:00 PM
+    wednesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 4:00 PM
+    thursday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 4:00 PM
+    friday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 4:00 PM
+    saturday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 4:00 PM
+    sunday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 4:00 PM
+  website: https://example.com/coral-caverns
+  phone: +1 (555) 234-5678
+  pricing: $$$
+  coordinates:
+    left: 71.34
+    top: 20.65
+  label-placement: right
+  more-info: null
+- id: sites-sacred-tiki-grove
+  name: Sacred Tiki Grove
+  category: sites
+  subcategory: religious
+  address: Eastern Jungle Path, Taniti
+  description: A sacred grove of ancient tiki statues carved by the indigenous people of Taniti.
+  details: These impressive stone statues, some over 15 feet tall, were carved over 500 years ago and are believed to represent ancestral deities and tribal leaders.
+  image: https://example.com/tiki-grove.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    tuesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    wednesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    thursday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    friday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    saturday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    sunday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+  website: https://example.com/tiki-grove
+  phone: +1 (555) 123-4567
+  pricing: $
+  coordinates:
+    left: 35.06
+    top: 52.48
+  label-placement: right
+  more-info: null
+- id: sites-taniti-volcano
+  name: Taniti Volcano
+  category: sites
+  subcategory: volcano
+  address: Volcano Road, Taniti
+  description: A small but active volcano offering stunning views of the island and surrounding ocean.
+  details: Guided tours available, with a visitor center explaining the volcano's geology and history.
+  image: https://example.com/taniti-volcano.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    tuesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    wednesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    thursday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    friday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    saturday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+    sunday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 6:00 PM
+  website: https://example.com/taniti-volcano
+  phone: +1 (555) 012-3456
+  pricing: $$
+  coordinates:
+    left: 58.92
+    top: 25.14
+  label-placement: below
+  more-info: null
+- id: schools-taniti-high-school
+  name: Taniti High School
+  category: schools
+  subcategory: high school
+  address: 56 Education Road, Taniti
+  description: The main high school serving Taniti's teenagers.
+  details: Offers education for students ages 12-18 with programs in marine biology and tourism.
+  image: https://example.com/taniti-high.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 4:00 PM
+    tuesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 4:00 PM
+    wednesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 4:00 PM
+    thursday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 4:00 PM
+    friday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 4:00 PM
+    saturday:
+      open-this-day: false
+    sunday:
+      open-this-day: false
+  website: https://example.com/taniti-high
+  phone: +1 (555) 456-7890
+  pricing: ""
+  coordinates:
+    left: 38.19
+    top: 44.83
+  label-placement: above
+  more-info: null
+- id: schools-taniti-elementary-school
+  name: Taniti Elementary School
+  category: schools
+  subcategory: elementary
+  address: 34 Education Road, Taniti
+  description: The main elementary school serving Taniti's children.
+  details: Offers education for children ages 5-11 with a focus on environmental awareness.
+  image: https://example.com/taniti-elementary.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 3:00 PM
+    tuesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 3:00 PM
+    wednesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 3:00 PM
+    thursday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 3:00 PM
+    friday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 3:00 PM
+    saturday:
+      open-this-day: false
+    sunday:
+      open-this-day: false
+  website: https://example.com/taniti-elementary
+  phone: +1 (555) 345-6789
+  pricing: ""
+  coordinates:
+    left: 41.86
+    top: 45.94
+  label-placement: right
+  more-info: null
+- id: hospitals-beachside-medical-clinic
+  name: Beachside Medical Clinic
+  category: hospitals
+  subcategory: clinic
+  address: 23 Beachfront Drive, Taniti
+  description: A medical clinic providing basic healthcare services for residents and tourists.
+  details: Offers walk-in appointments, vaccinations, and treatment for minor injuries and illnesses.
+  image: https://example.com/beachside-clinic.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+    tuesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+    wednesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+    thursday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+    friday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+    saturday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+    sunday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+  website: https://example.com/beachside-clinic
+  phone: +1 (555) 678-9012
+  pricing: ""
+  coordinates:
+    left: 77.46
+    top: 78.6
+  label-placement: left
+  more-info: null
+- id: hospitals-taniti-general-hospital
+  name: Taniti General Hospital
+  category: hospitals
+  subcategory: general
+  address: 78 Health Road, Taniti
+  description: The main hospital serving Taniti Island with 24/7 emergency care.
+  details: Features 50 beds, emergency department, and specialized care for common tropical ailments.
+  image: https://example.com/taniti-hospital.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/taniti-hospital
+  phone: +1 (555) 567-8901
+  pricing: ""
+  coordinates:
+    left: 54.01
+    top: 41.41
+  label-placement: right
+  more-info: null
+- id: hospitals-island-pharmacy
+  name: Island Pharmacy
+  category: hospitals
+  subcategory: pharmacy
+  address: 56 Health Road, Taniti
+  description: Full-service pharmacy offering medications, health products, and first aid supplies.
+  details: Staffed by licensed pharmacists with a selection of over-the-counter medications and personal care items.
+  image: https://example.com/island-pharmacy.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+    tuesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+    wednesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+    thursday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+    friday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+    saturday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+    sunday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+  website: https://example.com/island-pharmacy
+  phone: +1 (555) 456-7890
+  pricing: ""
+  coordinates:
+    left: 43.9
+    top: 83.22
+  label-placement: above
+  more-info: null
+- id: stores-taniti-department-store
+  name: Taniti Department Store
+  category: stores
+  subcategory: department
+  address: 123 Main Street, Taniti
+  description: A large department store offering clothing, home goods, electronics, and more.
+  details: Three-story building with a wide selection of products for locals and tourists.
+  image: https://example.com/taniti-department-store.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 9:00 PM
+    tuesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 9:00 PM
+    wednesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 9:00 PM
+    thursday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 9:00 PM
+    friday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 9:00 PM
+    saturday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 9:00 PM
+    sunday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 9:00 PM
+  website: https://example.com/taniti-department-store
+  phone: +1 (555) 123-4567
+  pricing: $$$
+  coordinates:
+    left: 56.82
+    top: 45.03
+  label-placement: below
+  more-info: null
+- id: stores-fresh-island-grocery
+  name: Fresh Island Grocery
+  category: stores
+  subcategory: grocery
+  address: 56 Palm Avenue, Taniti
+  description: A full-service grocery store offering fresh produce, meats, seafood, and pantry items.
+  details: Features a large selection of local produce and specialty island products.
+  image: https://example.com/fresh-island-grocery.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    tuesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    wednesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    thursday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    friday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    saturday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    sunday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+  website: https://example.com/fresh-island-grocery
+  phone: +1 (555) 345-6789
+  pricing: $$
+  coordinates:
+    left: 56.23
+    top: 44.19
+  label-placement: right
+  more-info: null
+- id: stores-island-adventure-outfitters
+  name: Island Adventure Outfitters
+  category: stores
+  subcategory: outdoor
+  address: 78 Mountain View Road, Taniti
+  description: An outdoor gear store specializing in hiking, camping, and water sports equipment.
+  details: Offers equipment sales, rentals, and guided adventure tours around the island.
+  image: https://example.com/island-adventure-outfitters.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 7:00 PM
+    tuesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 7:00 PM
+    wednesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 7:00 PM
+    thursday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 7:00 PM
+    friday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 7:00 PM
+    saturday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 7:00 PM
+    sunday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 7:00 PM
+  website: https://example.com/island-adventure-outfitters
+  phone: +1 (555) 234-5678
+  pricing: $$$
+  coordinates:
+    left: 55.79
+    top: 44.53
+  label-placement: left
+  more-info: null
+- id: stores-beachfront-convenience-store
+  name: Beachfront Convenience Store
+  category: stores
+  subcategory: convenience
+  address: 34 Beachfront Drive, Taniti
+  description: A convenience store selling snacks, drinks, sunscreen, and beach essentials.
+  details: Also offers rental of beach chairs, umbrellas, and snorkeling equipment.
+  image: https://example.com/beachfront-store.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    tuesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    wednesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    thursday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    friday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    saturday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    sunday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+  website: https://example.com/beachfront-store
+  phone: +1 (555) 901-2345
+  pricing: ""
+  coordinates:
+    left: 28.65
+    top: 76.5
+  label-placement: above
+  more-info: null
+- id: stores-island-souvenirs
+  name: Island Souvenirs
+  category: stores
+  subcategory: gift shop
+  address: 67 Harbor Road, Taniti
+  description: A gift shop selling Taniti souvenirs, clothing, and local crafts.
+  details: All products are made by local artisans using traditional techniques.
+  image: https://example.com/island-souvenirs.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 7:00 PM
+    tuesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 7:00 PM
+    wednesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 7:00 PM
+    thursday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 7:00 PM
+    friday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 7:00 PM
+    saturday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 7:00 PM
+    sunday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 7:00 PM
+  website: https://example.com/island-souvenirs
+  phone: +1 (555) 890-1234
+  pricing: ""
+  coordinates:
+    left: 22.31
+    top: 35.68
+  label-placement: below
+  more-info: null
+- id: stores-taniti-market
+  name: Taniti Market
+  category: stores
+  subcategory: market
+  address: 45 Market Street, Taniti
+  description: A traditional market selling fresh local produce, seafood, and crafts.
+  details: Open-air market with dozens of local vendors selling a variety of goods.
+  image: https://example.com/taniti-market.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 2:00 PM
+    tuesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 2:00 PM
+    wednesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 2:00 PM
+    thursday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 2:00 PM
+    friday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 2:00 PM
+    saturday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 2:00 PM
+    sunday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 2:00 PM
+  website: https://example.com/taniti-market
+  phone: +1 (555) 789-0123
+  pricing: ""
+  coordinates:
+    left: 19.18
+    top: 51.38
+  label-placement: left
+  more-info: null
+- id: stores-resort-convenience-store
+  name: Resort Convenience Store
+  category: stores
+  subcategory: convenience
+  address: 123 Resort Drive, Taniti
+  description: Convenience store located in the main resort area.
+  details: Offers snacks, drinks, beach essentials, and basic groceries for resort guests.
+  image: https://example.com/resort-store.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 11:00 PM
+    tuesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 11:00 PM
+    wednesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 11:00 PM
+    thursday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 11:00 PM
+    friday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 11:00 PM
+    saturday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 11:00 PM
+    sunday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 11:00 PM
+  website: https://example.com/resort-store
+  phone: +1 (555) 678-9012
+  pricing: ""
+  coordinates:
+    left: 50
+    top: 83.86
+  label-placement: above
+  more-info: null
+- id: stores-taniti-treasures
+  name: Taniti Treasures
+  category: stores
+  subcategory: tourist shop
+  address: 78 Tourist Avenue, Taniti
+  description: Souvenir shop offering a wide range of Taniti-themed gifts and mementos.
+  details: Sells t-shirts, postcards, handcrafted items, and authentic local art.
+  image: https://example.com/taniti-treasures.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 9:00 PM
+    tuesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 9:00 PM
+    wednesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 9:00 PM
+    thursday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 9:00 PM
+    friday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 9:00 PM
+    saturday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 9:00 PM
+    sunday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 9:00 PM
+  website: https://example.com/taniti-treasures
+  phone: +1 (555) 567-8901
+  pricing: $$
+  coordinates:
+    left: 69.74
+    top: 83.83
+  label-placement: right
+  more-info: null
+- id: stores-beach-essentials
+  name: Beach Essentials
+  category: stores
+  subcategory: beach shop
+  address: 67 Beachfront Drive, Taniti
+  description: Shop specializing in beach gear, swimwear, and sun protection products.
+  details: Offers swimsuits, beach towels, sunscreen, hats, and beach toys.
+  image: https://example.com/beach-essentials.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 7:00 PM
+    tuesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 7:00 PM
+    wednesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 7:00 PM
+    thursday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 7:00 PM
+    friday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 7:00 PM
+    saturday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 7:00 PM
+    sunday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 7:00 PM
+  website: https://example.com/beach-essentials
+  phone: +1 (555) 345-6789
+  pricing: $$
+  coordinates:
+    left: 47.12
+    top: 84.64
+  label-placement: below
+  more-info: null
+- id: stores-airport-mini-mart
+  name: Airport Mini-Mart
+  category: stores
+  subcategory: convenience
+  address: 200 Airport Road, Taniti
+  description: Convenience store located in the airport terminal.
+  details: Offers travel essentials, snacks, magazines, and local souvenirs.
+  image: https://example.com/airport-mart.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 5:00 AM
+      close: 10:00 PM
+    tuesday:
+      open-this-day: true
+      open: 5:00 AM
+      close: 10:00 PM
+    wednesday:
+      open-this-day: true
+      open: 5:00 AM
+      close: 10:00 PM
+    thursday:
+      open-this-day: true
+      open: 5:00 AM
+      close: 10:00 PM
+    friday:
+      open-this-day: true
+      open: 5:00 AM
+      close: 10:00 PM
+    saturday:
+      open-this-day: true
+      open: 5:00 AM
+      close: 10:00 PM
+    sunday:
+      open-this-day: true
+      open: 5:00 AM
+      close: 10:00 PM
+  website: https://example.com/airport-mart
+  phone: +1 (555) 234-5678
+  pricing: ""
+  coordinates:
+    left: 58.39
+    top: 69.27
+  label-placement: below
+  more-info: null
+- id: stores-harbor-convenience-store
+  name: Harbor Convenience Store
+  category: stores
+  subcategory: convenience
+  address: 23 Harbor Road, Taniti
+  description: Convenient store near the harbor offering essentials and local snacks.
+  details: Stocks basic groceries, toiletries, beverages, and souvenirs for tourists.
+  image: https://example.com/harbor-convenience.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 11:00 PM
+    tuesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 11:00 PM
+    wednesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 11:00 PM
+    thursday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 11:00 PM
+    friday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 11:00 PM
+    saturday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 11:00 PM
+    sunday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 11:00 PM
+  website: https://example.com/harbor-convenience
+  phone: +1 (555) 123-4567
+  pricing: ""
+  coordinates:
+    left: 22.42
+    top: 35.41
+  label-placement: right
+  more-info: null
+- id: transport-taniti-harbor
+  name: Taniti Harbor
+  category: transport
+  subcategory: harbor
+  address: 1 Harbor Road, Taniti
+  description: The main harbor of Taniti Island, serving passenger ferries and small cruise ships.
+  details: Features a passenger terminal, customs office, and several boat tour operators.
+  image: https://example.com/taniti-harbor.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    tuesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    wednesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    thursday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    friday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    saturday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    sunday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+  website: https://example.com/taniti-harbor
+  phone: +1 (555) 012-3456
+  pricing: ""
+  coordinates:
+    left: 20.18
+    top: 34.23
+  label-placement: left
+  more-info: null
+- id: transport-taniti-ferry-terminal
+  name: Taniti Ferry Terminal
+  category: transport
+  subcategory: ferry terminal
+  address: 5 Harbor Road, Taniti
+  description: The main ferry terminal connecting Taniti to neighboring islands and the mainland.
+  details: Offers regular passenger and vehicle ferry services with a comfortable waiting area.
+  image: https://example.com/ferry-terminal.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 8:00 PM
+    tuesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 8:00 PM
+    wednesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 8:00 PM
+    thursday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 8:00 PM
+    friday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 8:00 PM
+    saturday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 8:00 PM
+    sunday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 8:00 PM
+  website: https://example.com/ferry-terminal
+  phone: +1 (555) 345-6789
+  pricing: ""
+  coordinates:
+    left: 19.91
+    top: 35.53
+  label-placement: left
+  more-info: null
+- id: transport-north-shore-sailing-docks
+  name: North Shore Sailing Docks
+  category: transport
+  subcategory: sailing docks
+  address: 45 Coastal Highway, Taniti
+  description: A dedicated facility for sailing enthusiasts with docking space for private sailboats.
+  details: Offers mooring services, sailing lessons, and equipment rentals for experienced sailors.
+  image: https://example.com/sailing-docks.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+    tuesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+    wednesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+    thursday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+    friday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+    saturday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+    sunday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+  website: https://example.com/sailing-docks
+  phone: +1 (555) 234-5678
+  pricing: $$$
+  coordinates:
+    left: 73.51
+    top: 37.42
+  label-placement: right
+  more-info: null
+- id: transport-harbor-dock-car-rentals
+  name: Harbor & Dock Car Rentals
+  category: transport
+  subcategory: car rental
+  address: Harbor Road, Taniti
+  description: Car rental service located near the harbor for convenient access after arriving by sea.
+  details: Offers a variety of vehicles for tourists arriving via ferry or cruise ships.
+  image: https://example.com/harbor-car-rentals.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 9:00 PM
+    tuesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 9:00 PM
+    wednesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 9:00 PM
+    thursday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 9:00 PM
+    friday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 9:00 PM
+    saturday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 9:00 PM
+    sunday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 9:00 PM
+  website: https://example.com/harbor-car-rentals
+  phone: +1 (555) 234-5678
+  pricing: $$
+  coordinates:
+    left: 21.8
+    top: 34.07
+  label-placement: above
+  more-info: null
+- id: transport-taniti-international-airport
+  name: Taniti International Airport
+  category: transport
+  subcategory: international airport
+  address: 200 Airport Road, Taniti
+  description: The main international airport serving Taniti Island with flights to major destinations.
+  details: Features a modern terminal with duty-free shopping, restaurants, and car rental services.
+  image: https://example.com/taniti-airport.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/taniti-airport
+  phone: +1 (555) 123-4567
+  pricing: ""
+  coordinates:
+    left: 57.62
+    top: 68.91
+  label-placement: above
+  more-info: null
+- id: transport-flight-to-drive-car-rentals
+  name: Flight-to-Drive Car Rentals
+  category: transport
+  subcategory: car rental
+  address: Airport Road, Taniti
+  description: Car rental service located at the airport for convenient access after arriving by air.
+  details: Offers a variety of vehicles for tourists arriving via airplane.
+  image: https://example.com/flight-to-drive.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    tuesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    wednesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    thursday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    friday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    saturday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    sunday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+  website: https://example.com/flight-to-drive
+  phone: +1 (555) 876-5432
+  pricing: $$
+  coordinates:
+    left: 56.47
+    top: 69.57
+  label-placement: left
+  more-info: null
+- id: theaters-heritage-cinema
+  name: Heritage Cinema
+  category: theaters
+  subcategory: independent
+  address: 45 Cultural District, Taniti
+  description: An independent cinema showcasing classic films, documentaries, and local productions.
+  details: A restored historic building with a single screen and an attached cafe serving local snacks.
+  image: https://example.com/heritage-cinema.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 2:00 PM
+      close: 10:00 PM
+    tuesday:
+      open-this-day: true
+      open: 2:00 PM
+      close: 10:00 PM
+    wednesday:
+      open-this-day: true
+      open: 2:00 PM
+      close: 10:00 PM
+    thursday:
+      open-this-day: true
+      open: 2:00 PM
+      close: 10:00 PM
+    friday:
+      open-this-day: true
+      open: 2:00 PM
+      close: 10:00 PM
+    saturday:
+      open-this-day: true
+      open: 2:00 PM
+      close: 10:00 PM
+    sunday:
+      open-this-day: true
+      open: 2:00 PM
+      close: 10:00 PM
+  website: https://example.com/heritage-cinema
+  phone: +1 (555) 345-6789
+  pricing: ""
+  coordinates:
+    left: 43.07
+    top: 38.92
+  label-placement: above
+  more-info:
+    - type: movies
+      source: theaters-movies
+      lookup: movies
+      items:
+        - "5f4e3d2c-1b0a-9f8e-7d6c-5b4a3c2d1e0f":
+          showings:
+            - day: 0
+              times:
+                - 10:00 AM
+                - 12:30 PM
+                - 2:00 PM
+                - 5:30 PM
+                - 8:45 PM
+            - day: 1
+              times:
+                - 11:00 AM
+                - 2:00 PM
+                - 4:30 PM
+                - 5:30 PM
+                - 9:00 PM
+            - day: 2
+              times:
+                - 10:30 AM
+                - 1:00 PM
+                - 2:00 PM
+                - 6:15 PM
+                - 8:45 PM
+            - day: 3
+              times:
+                - 11:30 AM
+                - 2:30 PM
+                - 5:00 PM
+                - 7:45 PM
+            - day: 4
+              times:
+                - 10:00 AM
+                - 1:30 PM
+                - 4:45 PM
+                - 8:00 PM
+            - day: 5
+              times:
+                - 11:15 AM
+                - 2:45 PM
+                - 5:15 PM
+                - 8:30 PM
+            - day: 6
+              times:
+                - 12:00 PM
+                - 3:00 PM
+                - 6:00 PM
+                - 9:15 PM
+            - day: 7
+              times:
+                - 10:45 AM
+                - 1:45 PM
+                - 4:30 PM
+                - 7:30 PM
+        - "9c8b7a6d-5e4f-3c2b-1a0d-9e8f7a6b5c4d":
+          showings:
+            - day: 0
+              times:
+                - 11:15 AM
+                - 1:15 PM
+                - 4:00 PM
+                - 7:15 PM
+                - 10:00 PM
+            - day: 1
+              times:
+                - 10:30 AM
+                - 1:30 PM
+                - 4:15 PM
+                - 7:00 PM
+            - day: 2
+              times:
+                - 11:45 AM
+                - 2:30 PM
+                - 5:15 PM
+                - 8:30 PM
+            - day: 3
+              times:
+                - 10:15 AM
+                - 1:15 PM
+                - 4:30 PM
+                - 7:15 PM
+                - 9:45 PM
+            - day: 4
+              times:
+                - 11:00 AM
+                - 2:15 PM
+                - 4:00 PM
+                - 6:45 PM
+                - 9:30 PM
+            - day: 5
+              times:
+                - 10:45 AM
+                - 1:15 PM
+                - 3:45 PM
+                - 6:30 PM
+                - 9:00 PM
+            - day: 6
+              times:
+                - 12:15 PM
+                - 3:30 PM
+                - 6:15 PM
+                - 9:00 PM
+            - day: 7
+              times:
+                - 11:30 AM
+                - 2:00 PM
+                - 5:00 PM
+                - 8:15 PM
+- id: theaters-taniti-cineplex
+  name: Taniti Cineplex
+  category: theaters
+  subcategory: multiplex
+  address: 123 Entertainment Avenue, Taniti
+  description: A modern multiplex cinema featuring the latest Hollywood and international films.
+  details: Features 6 screens with state-of-the-art sound systems and comfortable seating.
+  image: https://example.com/taniti-cineplex.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 11:00 PM
+    tuesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 11:00 PM
+    wednesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 11:00 PM
+    thursday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 11:00 PM
+    friday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 11:00 PM
+    saturday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 11:00 PM
+    sunday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 11:00 PM
+  website: https://example.com/taniti-cineplex
+  phone: +1 (555) 234-5678
+  pricing: ""
+  more-info:
+    - type: movies
+      source: theaters-movies
+      lookup: movies
+      items:
+        - "3f7af2d8-9b4c-4e5f-8a6d-1c2e3f4a5b6c":
+          showings:
+            - day: 0
+              times:
+                - 10:00 AM
+                - 11:30 AM
+                - 2:45 PM
+                - 6:00 PM
+                - 9:15 PM
+            - day: 1
+              times:
+                - 10:15 AM
+                - 11:30 AM
+                - 3:00 PM
+                - 6:00 PM
+                - 8:45 PM
+            - day: 2
+              times:
+                - 11:00 AM
+                - 1:30 PM
+                - 2:45 PM
+                - 5:15 PM
+                - 8:00 PM
+            - day: 3
+              times:
+                - 10:30 AM
+                - 1:45 PM
+                - 5:00 PM
+                - 7:30 PM
+                - 9:15 PM
+            - day: 4
+              times:
+                - 11:15 AM
+                - 2:30 PM
+                - 5:45 PM
+                - 8:30 PM
+            - day: 5
+              times:
+                - 10:45 AM
+                - 2:00 PM
+                - 5:30 PM
+                - 8:15 PM
+            - day: 6
+              times:
+                - 11:45 AM
+                - 3:15 PM
+                - 6:30 PM
+                - 9:00 PM
+            - day: 7
+              times:
+                - 10:30 AM
+                - 1:15 PM
+                - 4:45 PM
+                - 7:45 PM
+        - "2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d":
+          showings:
+            - day: 0
+              times:
+                - 12:15 PM
+                - 3:30 PM
+                - 6:45 PM
+                - 10:00 PM
+            - day: 1
+              times:
+                - 11:45 AM
+                - 2:30 PM
+                - 5:15 PM
+                - 8:00 PM
+            - day: 2
+              times:
+                - 12:30 PM
+                - 3:45 PM
+                - 7:00 PM
+                - 9:30 PM
+            - day: 3
+              times:
+                - 11:15 AM
+                - 2:45 PM
+                - 6:15 PM
+                - 9:45 PM
+            - day: 4
+              times:
+                - 12:15 PM
+                - 3:00 PM
+                - 6:45 PM
+                - 9:15 PM
+            - day: 5
+              times:
+                - 11:30 AM
+                - 3:30 PM
+                - 6:00 PM
+                - 8:45 PM
+            - day: 6
+              times:
+                - 12:45 PM
+                - 4:00 PM
+                - 7:15 PM
+                - 10:00 PM
+            - day: 7
+              times:
+                - 11:00 AM
+                - 2:15 PM
+                - 5:30 PM
+                - 8:30 PM
+        - "0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d":
+          showings:
+            - day: 0
+              times:
+                - 11:00 AM
+                - 2:15 PM
+                - 5:30 PM
+                - 8:45 PM
+            - day: 1
+              times:
+                - 10:45 AM
+                - 1:30 PM
+                - 4:45 PM
+                - 8:15 PM
+            - day: 2
+              times:
+                - 11:00 AM
+                - 2:00 PM
+                - 5:00 PM
+                - 9:00 PM
+            - day: 3
+              times:
+                - 10:30 AM
+                - 1:45 PM
+                - 5:30 PM
+                - 8:30 PM
+            - day: 4
+              times:
+                - 11:30 AM
+                - 2:30 PM
+                - 6:15 PM
+                - 9:30 PM
+            - day: 5
+              times:
+                - 10:15 AM
+                - 1:15 PM
+                - 4:30 PM
+                - 7:45 PM
+            - day: 6
+              times:
+                - 11:45 AM
+                - 3:00 PM
+                - 6:30 PM
+                - 9:15 PM
+            - day: 7
+              times:
+                - 10:00 AM
+                - 1:00 PM
+                - 4:15 PM
+                - 8:45 PM
+  coordinates:
+    left: 42
+    top: 69.61
+  label-placement: right
+- id: theaters-taniti-outdoor-cinema
+  name: Taniti Outdoor Cinema
+  category: theaters
+  subcategory: independent
+  address: 67 Beachfront Drive, Taniti
+  description: An open-air cinema experience on the beach under the stars.
+  details: Shows classic films and family-friendly movies with ocean sounds in the background.
+  image: https://example.com/outdoor-cinema.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 7:30 PM
+      close: 11:00 PM
+    tuesday:
+      open-this-day: true
+      open: 7:30 PM
+      close: 11:00 PM
+    wednesday:
+      open-this-day: true
+      open: 7:30 PM
+      close: 11:00 PM
+    thursday:
+      open-this-day: true
+      open: 7:30 PM
+      close: 11:00 PM
+    friday:
+      open-this-day: true
+      open: 7:30 PM
+      close: 11:00 PM
+    saturday:
+      open-this-day: true
+      open: 7:30 PM
+      close: 11:00 PM
+    sunday:
+      open-this-day: true
+      open: 7:30 PM
+      close: 11:00 PM
+  website: https://example.com/outdoor-cinema
+  phone: +1 (555) 345-6789
+  pricing: $$
+  more-info:
+    - type: movies
+      source: theaters-movies
+      lookup: movies
+      items:
+        - "4b5c6d7e-8f9a-0b1c-2d3e-4f5a6b7c8d9e":
+          showings:
+            - day: 0
+              times:
+                - 7:30 PM
+                - 9:45 PM
+                - 11:30 PM
+                - 1:00 AM
+            - day: 1
+              times:
+                - 7:30 PM
+                - 9:45 PM
+                - 11:30 PM
+                - 1:00 AM
+            - day: 2
+              times:
+                - 7:30 PM
+                - 9:45 PM
+                - 11:30 PM
+                - 1:00 AM
+            - day: 3
+              times:
+                - 7:30 PM
+                - 9:45 PM
+                - 11:30 PM
+                - 1:00 AM
+            - day: 4
+              times:
+                - 7:30 PM
+                - 9:45 PM
+                - 11:30 PM
+                - 1:00 AM
+            - day: 5
+              times:
+                - 7:30 PM
+                - 9:45 PM
+                - 11:30 PM
+                - 1:00 AM
+            - day: 6
+              times:
+                - 7:30 PM
+                - 9:45 PM
+                - 11:30 PM
+                - 1:00 AM
+            - day: 7
+              times:
+                - 7:30 PM
+                - 9:45 PM
+                - 11:30 PM
+                - 1:00 AM
+        - "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f":
+          showings:
+            - day: 0
+              times:
+                - 8:00 PM
+                - 9:30 PM
+                - 11:00 PM
+                - 12:30 AM
+            - day: 1
+              times:
+                - 8:00 PM
+                - 9:30 PM
+                - 11:00 PM
+                - 12:30 AM
+            - day: 2
+              times:
+                - 8:00 PM
+                - 9:30 PM
+                - 11:00 PM
+                - 12:30 AM
+            - day: 3
+              times:
+                - 8:00 PM
+                - 9:30 PM
+                - 11:00 PM
+                - 12:30 AM
+            - day: 4
+              times:
+                - 8:00 PM
+                - 9:30 PM
+                - 11:00 PM
+                - 12:30 AM
+            - day: 5
+              times:
+                - 8:00 PM
+                - 9:30 PM
+                - 11:00 PM
+                - 12:30 AM
+            - day: 6
+              times:
+                - 8:00 PM
+                - 9:30 PM
+                - 11:00 PM
+                - 12:30 AM
+            - day: 7
+              times:
+                - 8:00 PM
+                - 9:30 PM
+                - 11:00 PM
+                - 12:30 AM
+  coordinates:
+    left: 76.8
+    top: 81.7
+  label-placement: right
+- id: beaches-hidden-cove-beach
+  name: Hidden Cove Beach
+  category: beaches
+  subcategory: public
+  address: End of Jungle Trail, Taniti
+  description: A secluded beach accessible by a short hike through the jungle.
+  details: Natural and undeveloped beach with no facilities but incredible natural beauty.
+  image: https://example.com/hidden-cove-beach.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: ""
+  phone: ""
+  pricing: ""
+  coordinates:
+    left: 9.46
+    top: 59.58
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - sunset views
+        - water sports
+        - wildlife viewing
+        - hiking trails
+        - scenic views
+- id: beaches-coral-bay-beach-club
+  name: Coral Bay Beach Club
+  category: beaches
+  subcategory: amenities
+  address: 789 Shoreline Drive, Taniti
+  description: A full-service beach club with loungers, umbrellas, and water sports equipment.
+  details: Offers beach chairs, umbrellas, cabanas, food and drink service, and water sports rentals.
+  image: https://example.com/coral-bay-beach.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: ""
+  phone: ""
+  pricing: ""
+  coordinates:
+    left: 43.09
+    top: 85.98
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - lifeguards on duty
+        - beach umbrellas
+        - chair rentals
+        - water sports
+        - showers
+        - restrooms
+        - food vendors
+        - sunset views
+- id: beaches-palm-cove-resort-beach
+  name: Palm Cove Resort Beach
+  category: beaches
+  subcategory: private
+  address: 456 Resort Drive, Taniti
+  description: An exclusive beach reserved for Palm Cove Resort guests.
+  details: Pristine white sand beach with crystal clear waters, perfect for snorkeling.
+  image: https://example.com/palm-cove-beach.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: ""
+  phone: ""
+  pricing: ""
+  coordinates:
+    left: 10.99
+    top: 52.53
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items: null
+- id: beaches-sunset-beach
+  name: Sunset Beach
+  category: beaches
+  subcategory: public
+  address: 123 Coastal Highway, Taniti
+  description: A beautiful public beach with golden sand and stunning sunset views.
+  details: Features a long stretch of sand perfect for walking and swimming.
+  image: https://example.com/sunset-beach.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: ""
+  phone: ""
+  pricing: ""
+  coordinates:
+    left: 31.79
+    top: 9.39
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items: null
+- id: beaches-secluded-bay
+  name: Secluded Bay
+  category: beaches
+  subcategory: public
+  address: West Coast, Taniti
+  description: Remote and secluded beach accessible by a short hike.
+  details: Pristine and undeveloped beach with natural beauty and privacy.
+  image: https://example.com/secluded-bay.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: ""
+  phone: ""
+  pricing: ""
+  coordinates:
+    left: 10.92
+    top: 23.08
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items: null
+- id: beaches-family-beach
+  name: Family Beach
+  category: beaches
+  subcategory: swimming
+  address: 45 Beach Road, Taniti
+  description: Family-friendly beach with gentle waves and lifeguards on duty.
+  details: Features shallow waters, clean sand, and nearby facilities including restrooms and showers.
+  image: https://example.com/family-beach.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: ""
+  phone: ""
+  pricing: ""
+  coordinates:
+    left: 12.05
+    top: 47.08
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items: null
+- id: beaches-crystal-cove
+  name: Crystal Cove
+  category: beaches
+  subcategory: snorkeling
+  address: East Coast, Taniti
+  description: Protected cove with crystal clear waters and vibrant coral reefs.
+  details: Perfect for snorkeling with abundant marine life and calm waters.
+  image: https://example.com/crystal-cove.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: ""
+  phone: ""
+  pricing: ""
+  coordinates:
+    left: 64.89
+    top: 9.79
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items: null
+- id: beaches-surfers-paradise
+  name: Surfer's Paradise
+  category: beaches
+  subcategory: surfing
+  address: North Shore, Taniti
+  description: Premier surfing beach with consistent waves perfect for all skill levels.
+  details: Features several surf breaks, rental shops, and surf schools nearby.
+  image: https://example.com/surfers-paradise.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/surfers-paradise
+  phone: ""
+  pricing: ""
+  coordinates:
+    left: 18.22
+    top: 16.74
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items: null
+- id: services-taniti-power-station
+  name: Taniti Power Station
+  category: services
+  subcategory: utility
+  address: 120 Power Road, Taniti
+  description: The main power generation facility for Taniti Island.
+  details: Provides electricity to the island through a combination of traditional and renewable energy sources.
+  image: https://example.com/power-station.jpg
+  operating-times:
+    monday:
+      open-this-day: false
+    tuesday:
+      open-this-day: false
+    wednesday:
+      open-this-day: false
+    thursday:
+      open-this-day: false
+    friday:
+      open-this-day: false
+    saturday:
+      open-this-day: false
+    sunday:
+      open-this-day: false
+  website: https://example.com/taniti-power
+  phone: +1 (555) 123-4004
+  pricing: Not applicable
+  coordinates:
+    left: 29.37
+    top: 42.85
+  label-placement: right
+  more-info: null
+- id: services-taniti-community-center
+  name: Taniti Community Center
+  category: services
+  subcategory: community center
+  address: 90 Community Drive, Taniti
+  description: A multipurpose community center for Taniti residents and visitors.
+  details: Hosts cultural events, classes, workshops, and community gatherings.
+  image: https://example.com/community-center.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 9:00 PM
+    tuesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 9:00 PM
+    wednesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 9:00 PM
+    thursday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 9:00 PM
+    friday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 9:00 PM
+    saturday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 9:00 PM
+    sunday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 9:00 PM
+  website: https://example.com/community-center
+  phone: +1 (555) 123-4003
+  pricing: Varies
+  coordinates:
+    left: 50.39
+    top: 42.49
+  label-placement: below
+  more-info: null
+- id: services-taniti-public-library
+  name: Taniti Public Library
+  category: services
+  subcategory: library
+  address: 78 Book Lane, Taniti
+  description: The main public library for Taniti Island.
+  details: Features a large collection of books, free Wi-Fi, computer access, and a special section on Taniti history and culture.
+  image: https://example.com/public-library.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 8:00 PM
+    tuesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 8:00 PM
+    wednesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 8:00 PM
+    thursday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 8:00 PM
+    friday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 8:00 PM
+    saturday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 8:00 PM
+    sunday:
+      open-this-day: true
+      open: 12:00 PM
+      close: 5:00 PM
+  website: https://example.com/taniti-library
+  phone: +1 (555) 123-4002
+  pricing: Free
+  coordinates:
+    left: 59.67
+    top: 43.81
+  label-placement: above
+  more-info: null
+- id: services-taniti-post-office
+  name: Taniti Post Office
+  category: services
+  subcategory: post office
+  address: 56 Mail Street, Taniti
+  description: The main post office for Taniti Island.
+  details: Provides mailing services, package shipping, and postal boxes for visitors and residents.
+  image: https://example.com/post-office.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    tuesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    wednesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    thursday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    friday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    saturday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    sunday:
+      open-this-day: false
+  website: https://example.com/taniti-post
+  phone: +1 (555) 123-4001
+  pricing: Varies
+  coordinates:
+    left: 43.39
+    top: 39.44
+  label-placement: right
+  more-info: null
+- id: services-taniti-government-center
+  name: Taniti Government Center
+  category: services
+  subcategory: government
+  address: 100 Government Plaza, Taniti
+  description: The main government administrative building for Taniti Island.
+  details: Houses various government departments, permit offices, and visitor information services.
+  image: https://example.com/government-center.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 5:00 PM
+    tuesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 5:00 PM
+    wednesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 5:00 PM
+    thursday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 5:00 PM
+    friday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 5:00 PM
+    saturday:
+      open-this-day: false
+    sunday:
+      open-this-day: false
+  website: https://example.com/taniti-government
+  phone: +1 (555) 123-4000
+  pricing: Free
+  coordinates:
+    left: 40.71
+    top: 40.07
+  label-placement: below
+  more-info: null
+- id: services-harbor-fire-station
+  name: Harbor Fire Station
+  category: services
+  subcategory: fire
+  address: 34 Harbor Road, Taniti
+  description: Fire station serving the harbor area of Taniti.
+  details: Specializes in marine firefighting and water rescue operations.
+  image: https://example.com/harbor-fire.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/harbor-fire
+  phone: +1 (555) 911-0003
+  pricing: Free
+  coordinates:
+    left: 23.38
+    top: 36.66
+  label-placement: right
+  more-info: null
+- id: services-taniti-central-fire-station
+  name: Taniti Central Fire Station
+  category: services
+  subcategory: fire
+  address: 78 Fire Road, Taniti
+  description: The main fire station for Taniti Island.
+  details: Equipped with modern firefighting equipment and emergency response vehicles.
+  image: https://example.com/central-fire.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/taniti-fire
+  phone: +1 (555) 911-0002
+  pricing: Free
+  coordinates:
+    left: 48.51
+    top: 46.58
+  label-placement: right
+  more-info: null
+- id: services-north-district-police-station
+  name: North District Police Station
+  category: services
+  subcategory: police
+  address: 45 North Shore Road, Taniti
+  description: Police station serving the northern district of Taniti.
+  details: Provides community policing, tourist assistance, and emergency services.
+  image: https://example.com/north-police.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/north-police
+  phone: +1 (555) 911-0001
+  pricing: Free
+  coordinates:
+    left: 25.12
+    top: 13.82
+  label-placement: right
+  more-info: null
+- id: services-taniti-police-headquarters
+  name: Taniti Police Headquarters
+  category: services
+  subcategory: police
+  address: 123 Main Street, Taniti
+  description: The main police headquarters for Taniti Island.
+  details: Features a 24/7 emergency response team, visitor assistance, and lost and found services.
+  image: https://example.com/taniti-police-hq.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      is24hour: true
+    tuesday:
+      open-this-day: true
+      is24hour: true
+    wednesday:
+      open-this-day: true
+      is24hour: true
+    thursday:
+      open-this-day: true
+      is24hour: true
+    friday:
+      open-this-day: true
+      is24hour: true
+    saturday:
+      open-this-day: true
+      is24hour: true
+    sunday:
+      open-this-day: true
+      is24hour: true
+  website: https://example.com/taniti-police
+  phone: +1 (555) 911-0000
+  pricing: Free
+  coordinates:
+    left: 48.25
+    top: 46.81
+  label-placement: below
+  more-info: null
+- id: parks-beachside-dog-park
+  name: Beachside Dog Park
+  category: parks
+  subcategory: dog parks
+  address: 45 Coastal Highway, Taniti
+  description: A fenced dog park near the beach where pets can play off-leash.
+  details: Features separate areas for small and large dogs, water stations, and agility equipment.
+  image: https://example.com/beachside-dog-park.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 9:00 PM
+    tuesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 9:00 PM
+    wednesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 9:00 PM
+    thursday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 9:00 PM
+    friday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 9:00 PM
+    saturday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 9:00 PM
+    sunday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 9:00 PM
+  website: https://example.com/beachside-dog-park
+  phone: +1 (555) 234-5678
+  pricing: ""
+  coordinates:
+    left: 9.95
+    top: 65.06
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - dog friendly
+        - water fountains
+        - restrooms
+        - picnic areas
+        - scenic views
+- id: parks-taniti-national-park
+  name: Taniti National Park
+  category: parks
+  subcategory: national park
+  address: 123 National Park Road, Taniti
+  description: A protected natural area showcasing Taniti's diverse ecosystems.
+  details: Features hiking trails, wildlife viewing areas, and educational exhibits about local flora and fauna.
+  image: https://example.com/taniti-national-park.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+    tuesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+    wednesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+    thursday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+    friday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+    saturday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+    sunday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 7:00 PM
+  website: https://example.com/taniti-national-park
+  phone: +1 (555) 123-4567
+  pricing: ""
+  coordinates:
+    left: 46.32
+    top: 33.2
+  label-placement: above
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - hiking trails
+        - wildlife viewing
+        - scenic views
+        - picnic areas
+        - restrooms
+        - water fountains
+        - bike paths
+- id: parks-children's-adventure-playground
+  name: Children's Adventure Playground
+  category: parks
+  subcategory: playgrounds
+  address: 56 Family Lane, Taniti
+  description: A modern playground designed for children of all ages.
+  details: Features swings, slides, climbing structures, and a splash pad during summer months.
+  image: https://example.com/adventure-playground.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+    tuesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+    wednesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+    thursday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+    friday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+    saturday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+    sunday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 8:00 PM
+  website: https://example.com/adventure-playground
+  phone: +1 (555) 567-8901
+  pricing: ""
+  coordinates:
+    left: 49.16
+    top: 40.91
+  label-placement: above
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items:
+        - playground
+        - picnic areas
+        - restrooms
+        - water fountains
+        - kid-friendly
+        - shaded areas
+- id: parks-harbor-view-park
+  name: Harbor View Park
+  category: parks
+  subcategory: open spaces
+  address: 34 Harbor Road, Taniti
+  description: A large open green space overlooking Taniti Harbor.
+  details: Features picnic areas, open fields for sports, and beautiful harbor views.
+  image: https://example.com/harbor-view-park.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    tuesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    wednesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    thursday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    friday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    saturday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+    sunday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 10:00 PM
+  website: https://example.com/harbor-view-park
+  phone: +1 (555) 456-7890
+  pricing: ""
+  coordinates:
+    left: 23.1
+    top: 32.16
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items: null
+- id: parks-rainforest-trail
+  name: Rainforest Trail
+  category: parks
+  subcategory: hiking trails
+  address: 78 Rainforest Way, Taniti
+  description: A scenic hiking trail through Taniti's lush rainforest.
+  details: A 5-mile trail with moderate difficulty, featuring waterfalls and diverse wildlife.
+  image: https://example.com/rainforest-trail.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    tuesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    wednesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    thursday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    friday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    saturday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    sunday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+  website: https://example.com/rainforest-trail
+  phone: +1 (555) 345-6789
+  pricing: ""
+  coordinates:
+    left: 55.79
+    top: 56.04
+  label-placement: below
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items: null
+- id: parks-taniti-water-park
+  name: Taniti Water Park
+  category: parks
+  subcategory: water parks
+  address: 123 Fun Avenue, Taniti
+  description: Family-friendly water park with slides, pools, and splash areas.
+  details: Features water slides, lazy river, wave pool, and children's splash zone.
+  image: https://example.com/water-park.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 6:00 PM
+    tuesday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 6:00 PM
+    wednesday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 6:00 PM
+    thursday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 6:00 PM
+    friday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 6:00 PM
+    saturday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 6:00 PM
+    sunday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 6:00 PM
+  website: https://example.com/water-park
+  phone: +1 (555) 789-0123
+  pricing: $$$
+  coordinates:
+    left: 65
+    top: 78.55
+  label-placement: below
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items: null
+- id: parks-island-botanical-gardens
+  name: Island Botanical Gardens
+  category: parks
+  subcategory: botanical gardens
+  address: 56 Garden Road, Taniti
+  description: Beautiful botanical gardens showcasing Taniti's native plants and flowers.
+  details: Features labeled plant collections, walking paths, and a tropical butterfly house.
+  image: https://example.com/botanical-gardens.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    tuesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    wednesday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    thursday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    friday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    saturday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+    sunday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:00 PM
+  website: https://example.com/botanical-gardens
+  phone: +1 (555) 678-9012
+  pricing: $$
+  coordinates:
+    left: 38.42
+    top: 49.98
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items: null
+- id: parks-mountain-view-trail
+  name: Mountain View Trail
+  category: parks
+  subcategory: hiking trails
+  address: Mountain Road, Taniti
+  description: Challenging hiking trail leading to panoramic views of the entire island.
+  details: A 6-mile trail with steep sections, reaching the highest accessible point on the island.
+  image: https://example.com/mountain-view-trail.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    tuesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    wednesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    thursday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    friday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    saturday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    sunday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+  website: https://example.com/mountain-view-trail
+  phone: +1 (555) 567-8901
+  pricing: ""
+  coordinates:
+    left: 33.63
+    top: 45.58
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items: null
+- id: parks-coastal-hiking-trail
+  name: Coastal Hiking Trail
+  category: parks
+  subcategory: hiking trails
+  address: Coastal Highway, Taniti
+  description: A beautiful hiking trail along Taniti's scenic coastline.
+  details: A 7-mile trail with stunning ocean views, beach access points, and wildlife viewing areas.
+  image: https://example.com/coastal-trail.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    tuesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    wednesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    thursday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    friday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    saturday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    sunday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+  website: https://example.com/coastal-trail
+  phone: +1 (555) 456-7890
+  pricing: ""
+  coordinates:
+    left: 70.82
+    top: 20.44
+  label-placement: right
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items: null
+- id: parks-island-soccer-fields
+  name: Island Soccer Fields
+  category: parks
+  subcategory: soccer field
+  address: 45 Sports Avenue, Taniti
+  description: Well-maintained soccer fields available for public use and organized games.
+  details: Features multiple full-size fields, lighting for evening games, and spectator seating.
+  image: https://example.com/soccer-fields.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    tuesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    wednesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    thursday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    friday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    saturday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    sunday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+  website: https://example.com/soccer-fields
+  phone: +1 (555) 890-1234
+  pricing: ""
+  coordinates:
+    left: 47.54
+    top: 41.22
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items: null
+- id: parks-taniti-baseball-diamond
+  name: Taniti Baseball Diamond
+  category: parks
+  subcategory: baseball diamond
+  address: 67 Sports Avenue, Taniti
+  description: Regulation baseball diamond with dugouts and bleachers.
+  details: Available for public use and league games with lighting for evening play.
+  image: https://example.com/baseball-diamond.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    tuesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    wednesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    thursday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    friday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    saturday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+    sunday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 10:00 PM
+  website: https://example.com/baseball-diamond
+  phone: +1 (555) 901-2345
+  pricing: ""
+  coordinates:
+    left: 39.57
+    top: 45.46
+  label-placement: below
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items: null
+- id: parks-sunset-picnic-area
+  name: Sunset Picnic Area
+  category: parks
+  subcategory: picnic areas
+  address: 89 Coastal Highway, Taniti
+  description: Designated picnic area with tables, grills, and ocean views.
+  details: Features covered pavilions, BBQ grills, and nearby playground for children.
+  image: https://example.com/sunset-picnic.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    tuesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    wednesday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    thursday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    friday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    saturday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+    sunday:
+      open-this-day: true
+      open: 6:00 AM
+      close: 6:00 PM
+  website: https://example.com/sunset-picnic
+  phone: ""
+  pricing: ""
+  coordinates:
+    left: 66.22
+    top: 82.94
+  label-placement: left
+  more-info:
+    - type: item-list
+      source: place-features
+      lookup: features
+      items: null
+- id: tours-taniti-culinary-tour
+  name: Taniti Culinary Tour
+  category: tours
+  subcategory: cultural
+  address: 606 Flavor Street, Taniti City
+  description: Delicious tour of Taniti's local cuisine and food culture.
+  details: A 4-hour walking tour visiting local markets, restaurants, and food producers. Includes multiple tastings and a cooking demonstration.
+  image: https://example.com/culinary-tour.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 4:00 PM
+    tuesday:
+      open-this-day: false
+    wednesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 4:00 PM
+    thursday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 4:00 PM
+    friday:
+      open-this-day: false
+    saturday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 4:00 PM
+    sunday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 4:00 PM
+  website: https://example.com/culinary-tour
+  phone: +1 (555) 901-2345
+  pricing: $$$
+  coordinates:
+    left: 21.98
+    top: 37.88
+  label-placement: left
+  more-info: null
+- id: tours-rainforest-ecology-tour
+  name: Rainforest Ecology Tour
+  category: tours
+  subcategory: nature
+  address: 505 Jungle Path, Taniti
+  description: Educational tour through Taniti's diverse rainforest ecosystem.
+  details: A 3-hour guided walk through the rainforest with an expert naturalist. Learn about local flora, fauna, and conservation efforts.
+  image: https://example.com/rainforest-tour.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 4:00 PM
+    tuesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 4:00 PM
+    wednesday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 4:00 PM
+    thursday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 4:00 PM
+    friday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 4:00 PM
+    saturday:
+      open-this-day: true
+      open: 8:00 AM
+      close: 4:00 PM
+    sunday:
+      open-this-day: false
+  website: https://example.com/rainforest-tour
+  phone: +1 (555) 890-1234
+  pricing: $$
+  coordinates:
+    left: 54.49
+    top: 54.11
+  label-placement: left
+  more-info: null
+- id: tours-sunset-catamaran-cruise
+  name: Sunset Catamaran Cruise
+  category: tours
+  subcategory: boat
+  address: 404 Marina Drive, Taniti Harbor
+  description: Relaxing evening cruise along Taniti's picturesque coastline.
+  details: A 2-hour sunset cruise on a luxury catamaran. Includes complimentary drinks, light appetizers, and opportunities for wildlife spotting.
+  image: https://example.com/sunset-cruise.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+    tuesday:
+      open-this-day: false
+    wednesday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+    thursday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+    friday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+    saturday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+    sunday:
+      open-this-day: true
+      open: 7:00 AM
+      close: 6:00 PM
+  website: https://example.com/sunset-cruise
+  phone: +1 (555) 789-0123
+  pricing: $$$$
+  coordinates:
+    left: 17.52
+    top: 32.98
+  label-placement: left
+  more-info: null
+- id: tours-cultural-village-experience
+  name: Cultural Village Experience
+  category: tours
+  subcategory: cultural
+  address: 303 Heritage Lane, Taniti
+  description: Immersive tour of a traditional Taniti village.
+  details: Experience authentic Taniti culture with this 3-hour tour. Includes traditional dance performances, craft demonstrations, and a taste of local cuisine.
+  image: https://example.com/cultural-village.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 3:00 PM
+    tuesday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 3:00 PM
+    wednesday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 3:00 PM
+    thursday:
+      open-this-day: false
+    friday:
+      open-this-day: false
+    saturday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 3:00 PM
+    sunday:
+      open-this-day: true
+      open: 10:00 AM
+      close: 3:00 PM
+  website: https://example.com/cultural-village
+  phone: +1 (555) 678-9012
+  pricing: $$
+  coordinates:
+    left: 50.8
+    top: 44.31
+  label-placement: below
+  more-info: null
+- id: tours-volcano-adventure-tour
+  name: Volcano Adventure Tour
+  category: tours
+  subcategory: adventure
+  address: 202 Volcano Road, Taniti
+  description: Exciting guided hike to Taniti's dormant volcano.
+  details: A 6-hour adventure tour with experienced guides taking you to the rim of Taniti's dormant volcano. Includes lunch and safety equipment.
+  image: https://example.com/volcano-tour.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 6:30 AM
+      close: 2:30 PM
+    tuesday:
+      open-this-day: true
+      open: 6:30 AM
+      close: 2:30 PM
+    wednesday:
+      open-this-day: true
+      open: 6:30 AM
+      close: 2:30 PM
+    thursday:
+      open-this-day: true
+      open: 4:30 PM
+      close: 11:30 PM
+    friday:
+      open-this-day: true
+      open: 4:30 PM
+      close: 11:30 PM
+    saturday:
+      open-this-day: true
+      open: 6:30 AM
+      close: 2:30 PM
+    sunday:
+      open-this-day: true
+      open: 6:30 AM
+      close: 2:30 PM
+  website: https://example.com/volcano-tour
+  phone: +1 (555) 567-8901
+  pricing: $$$
+  coordinates:
+    left: 42.77
+    top: 31.69
+  label-placement: above
+  more-info: null
+- id: tours-island-history-tour
+  name: Island History Tour
+  category: tours
+  subcategory: historical
+  address: 101 Main Street, Taniti City
+  description: Comprehensive tour of Taniti's rich historical sites and landmarks.
+  details: A 4-hour guided tour covering the island's colonial past, indigenous history, and cultural development. Transportation included.
+  image: https://example.com/history-tour.jpg
+  operating-times:
+    monday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 2:30 PM
+    tuesday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 2:30 PM
+    wednesday:
+      open-this-day: false
+    thursday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 2:30 PM
+    friday:
+      open-this-day: true
+      open: 11:00 AM
+      close: 2:30 PM
+    saturday:
+      open-this-day: true
+      open: 9:00 AM
+      close: 5:30 PM
+    sunday:
+      open-this-day: false
+  website: https://example.com/history-tour
+  phone: +1 (555) 456-7890
+  pricing: $$$
+  coordinates:
+    left: 34.06
+    top: 29.36
+  label-placement: left
+  more-info: null

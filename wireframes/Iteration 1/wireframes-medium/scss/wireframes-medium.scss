@@ -1,0 +1,18 @@
+// Main SCSS file for medium fidelity wireframes
+// This file imports all partials and will be compiled to CSS
+
+// Variables and mixins
+@import 'variables';
+@import 'mixins';
+
+// Base styles
+@import 'base';
+
+// Common components
+@import 'components';
+
+// Page-specific styles
+@import 'pages/index';
+@import 'pages/bookings';
+@import 'pages/experiences';
+@import 'pages/faq';

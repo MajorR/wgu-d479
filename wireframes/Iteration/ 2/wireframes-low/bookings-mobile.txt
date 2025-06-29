@@ -1,0 +1,132 @@
+# Bookings Page - Mobile Wireframe
+
++----------------------+
+|       HEADER         |
+| [Logo]    [Hamburger]|
++----------------------+
+|                      |
+|     PAGE HEADER      |
+|  "Book Your Stay"    |
+|      + Subtitle      |
+|                      |
++----------------------+
+|                      |
+|   ACCOMMODATIONS     |
+|      SECTION         |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Luxury Resorts   | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Boutique Hotels  | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Beach Bungalows  | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Eco Lodges       | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
++----------------------+
+|                      |
+|    TRANSPORTATION    |
+|      SECTION         |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | By Air           | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | By Sea           | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Island Transport | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
++----------------------+
+|                      |
+|    BOOKING FORM      |
+|      SECTION         |
+|                      |
+| +------------------+ |
+| | [Full Name]      | |
+| |                  | |
+| | [Email Address]  | |
+| |                  | |
+| | [Arrival Date]   | |
+| |                  | |
+| | [Departure Date] | |
+| |                  | |
+| | [Guests]         | |
+| |                  | |
+| | [Accommodation]  | |
+| |                  | |
+| | [Special Requests| |
+| |  - Textarea]     | |
+| |                  | |
+| | [Submit Button]  | |
+| +------------------+ |
+|                      |
++----------------------+
+|                      |
+|    CTA SECTION       |
+| "Explore Our Island  |
+|    Paradise" + Text  |
+| [View Experiences]   |
+| [Explore Map]        |
+|                      |
++----------------------+
+|                      |
+|       FOOTER         |
+|     [Logo/Info]      |
+|    [Quick Links]     |
+| [Contact Information]|
+|    Copyright Text    |
+|                      |
++----------------------+

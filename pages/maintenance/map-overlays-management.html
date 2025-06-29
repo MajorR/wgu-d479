@@ -1,0 +1,814 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+  <title>Taniti Island - Map Overlays Management</title>
+  <meta name="description" content="Create, edit, and delete map overlays for Taniti Island.">
+
+  <meta property="og:title" content="Taniti Island - Map Overlays Management">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Map overlays management for Taniti Island">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../icon.png">
+
+  <link rel="manifest" href="../../site.webmanifest">
+  <meta name="theme-color" content="#86acaf">
+
+  <link rel="stylesheet" href="../../css/island-map.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    .page-container {
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .map-container {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .management-panel {
+      width: 400px;
+      background-color: #f5f5f5;
+      border-left: 1px solid #ddd;
+      overflow-y: auto;
+      padding: 20px;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .management-panel h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .overlay-list {
+      margin-bottom: 20px;
+    }
+
+    .overlay-item {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .overlay-item .name {
+      font-weight: bold;
+    }
+
+    .overlay-item .category {
+      color: #666;
+      font-size: 0.9em;
+    }
+
+    .overlay-item .actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .overlay-item .actions button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .overlay-item .actions .edit {
+      color: #4285f4;
+    }
+
+    .overlay-item .actions .delete {
+      color: #ea4335;
+    }
+
+    .overlay-form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .form-group textarea {
+      height: 100px;
+    }
+
+    .form-actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .form-actions button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form-actions .cancel {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    .form-actions .save {
+      background-color: #4285f4;
+      color: white;
+    }
+
+    .add-overlay-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .coordinates-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    .coordinates-group .form-group {
+      flex: 1;
+    }
+
+    island-map {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .map-controls-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+    }
+
+    .control-button {
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-right: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .control-button:hover {
+      background-color: #f5f5f5;
+    }
+
+    .control-button.active {
+      background-color: #4285f4;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="page-container">
+  <div class="map-container">
+    <island-map id="island-map"></island-map>
+    <overlay-info-panel id="overlay-info-panel"></overlay-info-panel>
+  </div>
+
+  <div class="management-panel">
+    <h2>Map Overlays Management</h2>
+
+    <button id="add-overlay-button" class="add-overlay-button">
+      <i class="fas fa-plus"></i> Add New Overlay
+    </button>
+
+    <button id="export-overlays-button" class="add-overlay-button" style="margin-top: 10px; background-color: #34a853;">
+      <i class="fas fa-file-export"></i> Export Overlays
+    </button>
+
+    <div class="form-group" style="margin-top: 10px; background-color: #f5f5f5; padding: 10px; border-radius: 4px;">
+      <label for="filter-zero-coordinates">
+        <input type="checkbox" id="filter-zero-coordinates">
+        Show only unplaced overlays
+      </label>
+    </div>
+
+    <div id="overlay-list" class="overlay-list">
+      <!-- Overlay items will be dynamically added here -->
+    </div>
+
+    <div id="overlay-form" class="overlay-form" style="display: none;">
+      <h3 id="form-title">Add New Overlay</h3>
+
+      <div class="form-group">
+        <label for="overlay-name">Name</label>
+        <input type="text" id="overlay-name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="overlay-category">Category</label>
+        <select id="overlay-category" required>
+          <!-- Categories will be dynamically added here -->
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="overlay-subcategory">Subcategory</label>
+        <select id="overlay-subcategory" required>
+          <!-- Subcategories will be dynamically added here -->
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="overlay-address">Address</label>
+        <input type="text" id="overlay-address" required>
+      </div>
+
+      <div class="form-group">
+        <label for="overlay-description">Description</label>
+        <textarea id="overlay-description" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="overlay-details">Details</label>
+        <textarea id="overlay-details"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="overlay-image">Image URL</label>
+        <input type="text" id="overlay-image">
+      </div>
+
+      <div class="form-group">
+        <label for="overlay-operating-times">Operating Times</label>
+        <input type="text" id="overlay-operating-times">
+      </div>
+
+      <div class="form-group">
+        <label for="overlay-website">Website</label>
+        <input type="text" id="overlay-website">
+      </div>
+
+      <div class="form-group">
+        <label for="overlay-phone">Phone</label>
+        <input type="text" id="overlay-phone">
+      </div>
+
+      <div class="form-group">
+        <label for="overlay-pricing">Pricing ($ to $$$$$)</label>
+        <input type="text" id="overlay-pricing">
+      </div>
+
+      <div class="form-group">
+        <label>Coordinates</label>
+        <div class="coordinates-group">
+          <div class="form-group">
+            <label for="overlay-left">Left (%)</label>
+            <input type="number" id="overlay-left" min="0" max="100" required>
+          </div>
+          <div class="form-group">
+            <label for="overlay-top">Top (%)</label>
+            <input type="number" id="overlay-top" min="0" max="100" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="overlay-label-placement">Label Placement</label>
+        <select id="overlay-label-placement">
+          <option value="left">Left</option>
+          <option value="right">Right</option>
+          <option value="above">Above</option>
+          <option value="below">Below</option>
+        </select>
+      </div>
+
+      <div class="form-actions">
+        <button id="cancel-button" class="cancel">Cancel</button>
+        <button id="save-button" class="save">Save Overlay</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="map-controls-container">
+  <button class="control-button back-button" onclick="window.location.href='island-map.html'">
+    <img src="../../img/solid/arrow-left.svg" style="width: 24px; height: 24px;">
+  </button>
+  <button class="control-button toggle-overlays-button" id="toggle-overlays-button">
+    <img src="../../img/solid/layer-group.svg" style="width: 24px; height: 24px;">
+  </button>
+  <button class="control-button home-button" onclick="window.location.href='../../index.html'">
+    <img src="../../img/solid/house.svg" style="width: 24px; height: 24px;">
+  </button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+<script type="module" src="../../lib/components/island-map/island-map.js"></script>
+<script type="module" src="../../lib/components/map-overlay-filter/map-overlay-filter.js"></script>
+<script type="module" src="../../lib/components/overlay-info-panel/overlay-info-panel.js"></script>
+<script type="module">
+  // Global variables
+  let overlaysData = {};
+  let categoriesData = {};
+  let islandMap;
+  let mapOverlayFilter;
+  let overlayInfoPanel;
+  let currentOverlayId = null;
+
+  // DOM elements
+  const overlayList = document.getElementById('overlay-list');
+  const overlayForm = document.getElementById('overlay-form');
+  const formTitle = document.getElementById('form-title');
+  const addOverlayButton = document.getElementById('add-overlay-button');
+  const exportOverlaysButton = document.getElementById('export-overlays-button');
+  const cancelButton = document.getElementById('cancel-button');
+  const saveButton = document.getElementById('save-button');
+  const categorySelect = document.getElementById('overlay-category');
+  const subcategorySelect = document.getElementById('overlay-subcategory');
+  const filterZeroCoordinates = document.getElementById('filter-zero-coordinates');
+
+  // Load data and initialize the page
+  document.addEventListener('DOMContentLoaded', async function() {
+    islandMap = document.getElementById('island-map');
+    mapOverlayFilter = document.getElementById('map-overlay-filter');
+    overlayInfoPanel = document.getElementById('overlay-info-panel');
+
+    try {
+      // Load overlay data
+      const overlaysResponse = await fetch('../data/map-overlays.yaml');
+      const overlaysYaml = await overlaysResponse.text();
+      overlaysData = jsyaml.load(overlaysYaml);
+
+      // Load category data
+      const categoriesResponse = await fetch('../data/map-overlays-categories.yaml');
+      const categoriesYaml = await categoriesResponse.text();
+      categoriesData = jsyaml.load(categoriesYaml);
+
+      // Initialize category dropdown
+      populateCategoryDropdown();
+
+      // Convert the data structure to a flat array of overlays
+      const overlays = [];
+      for (const category in overlaysData) {
+        if (overlaysData.hasOwnProperty(category)) {
+          overlaysData[category].forEach(overlay => {
+            // Add a unique ID to each overlay if not already present
+            if (!overlay.id) {
+              overlay.id = `${category}-${overlay.name.replace(/\s+/g, '-').toLowerCase()}`;
+            }
+            // Set overlays visible only if their category has default-view: true
+            overlay.visible = categoriesData[category] && categoriesData[category]['default-view'] === true;
+            overlays.push(overlay);
+          });
+        }
+      }
+
+      // Set the category data on the map
+      islandMap.setCategoryData(categoriesData);
+
+      // Set the overlays on the map
+      islandMap.setOverlays(overlays);
+
+      // Populate the overlay list
+      populateOverlayList();
+
+      // Set up toggle overlays button
+      const toggleOverlaysButton = document.getElementById('toggle-overlays-button');
+
+      toggleOverlaysButton.addEventListener('click', function() {
+        // Toggle the visibility of the map-overlay-filter component
+        mapOverlayFilter.toggle();
+
+        // Toggle active state of the button
+        this.classList.toggle('active');
+      });
+
+      // Set up overlay click handler
+      islandMap.addEventListener('overlay-click', function(event) {
+        const overlay = event.detail.overlay;
+
+        if (overlay) {
+          // Show the info panel with the selected overlay data
+          overlayInfoPanel.show(overlay);
+        } else {
+          // Hide the info panel when clicking away from an overlay
+          overlayInfoPanel.hide();
+        }
+      });
+
+      // Set up event listeners for the form
+      categorySelect.addEventListener('change', updateSubcategories);
+      addOverlayButton.addEventListener('click', showAddOverlayForm);
+      exportOverlaysButton.addEventListener('click', exportOverlays);
+      cancelButton.addEventListener('click', hideOverlayForm);
+      saveButton.addEventListener('click', saveOverlay);
+
+      // Set up event listener for the filter checkbox
+      filterZeroCoordinates.addEventListener('change', populateOverlayList);
+
+    } catch (error) {
+      console.error('Error loading data:', error);
+    }
+  });
+
+  // Populate the category dropdown
+  function populateCategoryDropdown() {
+    categorySelect.innerHTML = '<option value="">Select a category</option>';
+
+    for (const category in categoriesData) {
+      if (categoriesData.hasOwnProperty(category)) {
+        const option = document.createElement('option');
+        option.value = category;
+        option.textContent = categoriesData[category].name;
+        categorySelect.appendChild(option);
+      }
+    }
+  }
+
+  // Update subcategories based on selected category
+  function updateSubcategories() {
+    const category = categorySelect.value;
+    subcategorySelect.innerHTML = '<option value="">Select a subcategory</option>';
+
+    if (category && categoriesData[category] && categoriesData[category].subcategories) {
+      const subcategories = categoriesData[category].subcategories;
+
+      for (const subcategory in subcategories) {
+        if (subcategories.hasOwnProperty(subcategory)) {
+          const option = document.createElement('option');
+          option.value = subcategory;
+          option.textContent = subcategories[subcategory].name;
+          subcategorySelect.appendChild(option);
+        }
+      }
+    }
+  }
+
+  // Populate the overlay list
+  function populateOverlayList() {
+    overlayList.innerHTML = '';
+
+    const showOnlyZeroCoordinates = filterZeroCoordinates.checked;
+
+    for (const category in overlaysData) {
+      if (overlaysData.hasOwnProperty(category)) {
+        overlaysData[category].forEach(overlay => {
+          // Skip this overlay if filter is active and coordinates are not 0,0
+          if (showOnlyZeroCoordinates &&
+              (overlay.coordinates?.left !== 0 || overlay.coordinates?.top !== 0)) {
+            return;
+          }
+
+          const item = document.createElement('div');
+          item.className = 'overlay-item';
+          item.innerHTML = `
+            <div>
+              <div class="name">${overlay.name}</div>
+              <div class="category">${categoriesData[category].name}</div>
+            </div>
+            <div class="actions">
+              <button class="edit" data-id="${overlay.id}"><i class="fas fa-edit"></i></button>
+              <button class="delete" data-id="${overlay.id}"><i class="fas fa-trash"></i></button>
+            </div>
+          `;
+
+          // Add event listeners for edit and delete buttons
+          item.querySelector('.edit').addEventListener('click', function() {
+            const id = this.getAttribute('data-id');
+            editOverlay(id);
+          });
+
+          item.querySelector('.delete').addEventListener('click', function() {
+            const id = this.getAttribute('data-id');
+            deleteOverlay(id);
+          });
+
+          overlayList.appendChild(item);
+        });
+      }
+    }
+  }
+
+  // Show the form for adding a new overlay
+  function showAddOverlayForm() {
+    formTitle.textContent = 'Add New Overlay';
+    overlayForm.style.display = 'block';
+    overlayList.style.display = 'none';
+    addOverlayButton.style.display = 'none';
+
+    // Clear the form
+    document.getElementById('overlay-name').value = '';
+    document.getElementById('overlay-address').value = '';
+    document.getElementById('overlay-description').value = '';
+    document.getElementById('overlay-details').value = '';
+    document.getElementById('overlay-image').value = '';
+    document.getElementById('overlay-operating-times').value = '';
+    document.getElementById('overlay-website').value = '';
+    document.getElementById('overlay-phone').value = '';
+    document.getElementById('overlay-pricing').value = '';
+    document.getElementById('overlay-left').value = '';
+    document.getElementById('overlay-top').value = '';
+    document.getElementById('overlay-label-placement').value = 'right'; // Default to right
+    categorySelect.value = '';
+    subcategorySelect.innerHTML = '<option value="">Select a subcategory</option>';
+
+    currentOverlayId = null;
+  }
+
+  // Show the form for editing an existing overlay
+  function editOverlay(id) {
+    // Find the overlay by ID
+    let overlayToEdit = null;
+    let categoryOfOverlay = null;
+
+    for (const category in overlaysData) {
+      if (overlaysData.hasOwnProperty(category)) {
+        const found = overlaysData[category].find(overlay => overlay.id === id);
+        if (found) {
+          overlayToEdit = found;
+          categoryOfOverlay = category;
+          break;
+        }
+      }
+    }
+
+    if (overlayToEdit) {
+      formTitle.textContent = 'Edit Overlay';
+      overlayForm.style.display = 'block';
+      overlayList.style.display = 'none';
+      addOverlayButton.style.display = 'none';
+
+      // Fill the form with overlay data
+      document.getElementById('overlay-name').value = overlayToEdit.name || '';
+      document.getElementById('overlay-address').value = overlayToEdit.address || '';
+      document.getElementById('overlay-description').value = overlayToEdit.description || '';
+      document.getElementById('overlay-details').value = overlayToEdit.details || '';
+      document.getElementById('overlay-image').value = overlayToEdit.image || '';
+      document.getElementById('overlay-operating-times').value = overlayToEdit.operating_times || '';
+      document.getElementById('overlay-website').value = overlayToEdit.website || '';
+      document.getElementById('overlay-phone').value = overlayToEdit.phone || '';
+      document.getElementById('overlay-pricing').value = overlayToEdit.pricing || '';
+      document.getElementById('overlay-left').value = overlayToEdit.coordinates?.left || '';
+      document.getElementById('overlay-top').value = overlayToEdit.coordinates?.top || '';
+      document.getElementById('overlay-label-placement').value = overlayToEdit['label-placement'] || 'right';
+
+      // Set category and subcategory
+      categorySelect.value = categoryOfOverlay;
+      updateSubcategories();
+      subcategorySelect.value = overlayToEdit.sub_category || '';
+
+      currentOverlayId = id;
+
+      // Set edit mode on the map to enable marker dragging and grayscale other icons
+      islandMap.setEditMode(true, id);
+
+      // Listen for overlay coordinates changes (from dragging the marker)
+      islandMap.addEventListener('overlay-coordinates-changed', updateCoordinatesFromMap);
+    }
+  }
+
+  // Update coordinates in the form when the marker is dragged on the map
+  function updateCoordinatesFromMap(event) {
+    const { coordinates } = event.detail;
+
+    if (coordinates) {
+      document.getElementById('overlay-left').value = coordinates.left.toFixed(2);
+      document.getElementById('overlay-top').value = coordinates.top.toFixed(2);
+    }
+  }
+
+  // Hide the overlay form
+  function hideOverlayForm() {
+    overlayForm.style.display = 'none';
+    overlayList.style.display = 'block';
+    addOverlayButton.style.display = 'block';
+
+    // Exit edit mode
+    islandMap.setEditMode(false);
+
+    // Remove the event listener for overlay coordinates changes
+    islandMap.removeEventListener('overlay-coordinates-changed', updateCoordinatesFromMap);
+  }
+
+  // Save the overlay (add new or update existing)
+  function saveOverlay() {
+    // Validate form
+    const name = document.getElementById('overlay-name').value.trim();
+    const category = categorySelect.value;
+    const subCategory = subcategorySelect.value;
+    const address = document.getElementById('overlay-address').value.trim();
+    const description = document.getElementById('overlay-description').value.trim();
+    const left = parseFloat(document.getElementById('overlay-left').value);
+    const top = parseFloat(document.getElementById('overlay-top').value);
+
+    if (!name || !category || !subCategory || !address || !description || isNaN(left) || isNaN(top)) {
+      alert('Please fill in all required fields');
+      return;
+    }
+
+    // Create overlay object
+    const overlay = {
+      name: name,
+      category: category,
+      sub_category: subCategory,
+      address: address,
+      description: description,
+      details: document.getElementById('overlay-details').value.trim(),
+      image: document.getElementById('overlay-image').value.trim(),
+      operating_times: document.getElementById('overlay-operating-times').value.trim(),
+      website: document.getElementById('overlay-website').value.trim(),
+      phone: document.getElementById('overlay-phone').value.trim(),
+      pricing: document.getElementById('overlay-pricing').value.trim(),
+      coordinates: {
+        left: left,
+        top: top
+      },
+      'label-placement': document.getElementById('overlay-label-placement').value,
+      visible: true
+    };
+
+    if (currentOverlayId) {
+      // Update existing overlay
+      updateExistingOverlay(currentOverlayId, overlay);
+
+      // Exit edit mode
+      islandMap.setEditMode(false);
+
+      // Remove the event listener for overlay coordinates changes
+      islandMap.removeEventListener('overlay-coordinates-changed', updateCoordinatesFromMap);
+    } else {
+      // Add new overlay
+      addNewOverlay(overlay);
+    }
+
+    // Hide form and show list
+    hideOverlayForm();
+
+    // Refresh the overlay list
+    populateOverlayList();
+  }
+
+  // Add a new overlay
+  function addNewOverlay(overlay) {
+    const category = overlay.category;
+
+    // Generate a unique ID
+    overlay.id = `${category}-${overlay.name.replace(/\s+/g, '-').toLowerCase()}`;
+
+    // Add to overlaysData
+    if (!overlaysData[category]) {
+      overlaysData[category] = [];
+    }
+
+    overlaysData[category].push(overlay);
+
+    // Add to map
+    islandMap.addOverlay(overlay);
+
+    alert(`Overlay "${overlay.name}" has been added.`);
+  }
+
+  // Update an existing overlay
+  function updateExistingOverlay(id, updatedOverlay) {
+    // Find and remove the old overlay
+    for (const category in overlaysData) {
+      if (overlaysData.hasOwnProperty(category)) {
+        const index = overlaysData[category].findIndex(overlay => overlay.id === id);
+        if (index !== -1) {
+          // Remove from the old category
+          overlaysData[category].splice(index, 1);
+          break;
+        }
+      }
+    }
+
+    // Remove from map
+    islandMap.removeOverlay(id);
+
+    // Add the updated overlay
+    const category = updatedOverlay.category;
+
+    // Keep the same ID if the category is the same, otherwise generate a new one
+    updatedOverlay.id = id.startsWith(category) ?
+      id :
+      `${category}-${updatedOverlay.name.replace(/\s+/g, '-').toLowerCase()}`;
+
+    // Add to overlaysData
+    if (!overlaysData[category]) {
+      overlaysData[category] = [];
+    }
+
+    overlaysData[category].push(updatedOverlay);
+
+    // Add to map
+    islandMap.addOverlay(updatedOverlay);
+
+    //alert(`Overlay "${updatedOverlay.name}" has been updated.`);
+  }
+
+  // Delete an overlay
+  function deleteOverlay(id) {
+    if (confirm('Are you sure you want to delete this overlay?')) {
+      // Find and remove the overlay
+      for (const category in overlaysData) {
+        if (overlaysData.hasOwnProperty(category)) {
+          const index = overlaysData[category].findIndex(overlay => overlay.id === id);
+          if (index !== -1) {
+            const overlayName = overlaysData[category][index].name;
+
+            // Remove from overlaysData
+            overlaysData[category].splice(index, 1);
+
+            // Remove from map
+            islandMap.removeOverlay(id);
+
+            // Refresh the overlay list
+            populateOverlayList();
+
+            alert(`Overlay "${overlayName}" has been deleted.`);
+            break;
+          }
+        }
+      }
+    }
+  }
+
+  // Export overlays to YAML file
+  function exportOverlays() {
+    try {
+      // Convert overlaysData to YAML
+      const yamlContent = jsyaml.dump(overlaysData);
+
+      // Create a Blob with the YAML content
+      const blob = new Blob([yamlContent], { type: 'text/yaml' });
+
+      // Create a URL for the Blob
+      const url = URL.createObjectURL(blob);
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'map-overlays.yaml';
+
+      // Append the link to the document
+      document.body.appendChild(link);
+
+      // Trigger a click on the link to start the download
+      link.click();
+
+      // Clean up
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+
+      alert('Overlays exported successfully!');
+    } catch (error) {
+      console.error('Error exporting overlays:', error);
+      alert('Error exporting overlays. Please try again.');
+    }
+  }
+</script>
+
+</body>
+
+</html>

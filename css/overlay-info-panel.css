@@ -1,0 +1,516 @@
+/* Overlay Info Panel Styles */
+.overlay-info-panel {
+  position: fixed;
+  background: white;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1002;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+/* Desktop Layout */
+.overlay-info-panel.desktop {
+  top: 20px;
+  right: 20px;
+  width: 400px;
+  max-height: calc(100vh - 40px);
+  border-radius: 12px;
+  transform: translateX(100%);
+}
+
+.overlay-info-panel.desktop.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+/* Mobile Layout */
+.overlay-info-panel.mobile {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50vh;
+  border-radius: 12px 12px 0 0;
+  transform: translateY(100%);
+}
+
+.overlay-info-panel.mobile.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.overlay-info-panel.mobile.expanded {
+  height: 100vh;
+  border-radius: 0;
+}
+
+/* Panel Header */
+.panel-header {
+  position: relative;
+  padding: 16px 20px 8px;
+  background: white;
+  border-radius: 12px 12px 0 0;
+}
+
+.overlay-info-panel.mobile.expanded .panel-header {
+  border-radius: 0;
+}
+
+.panel-handle {
+  width: 40px;
+  height: 4px;
+  background: #d1d5db;
+  border-radius: 2px;
+  margin: 0 auto 12px;
+  cursor: grab;
+}
+
+.overlay-info-panel.desktop .panel-handle {
+  display: none;
+}
+
+.panel-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.panel-close-btn:hover {
+  background-color: #f3f4f6;
+}
+
+/* Panel Content */
+.panel-content {
+  height: calc(100% - 60px);
+  overflow: hidden;
+}
+
+.panel-scroll-container {
+  height: 100%;
+  overflow-y: auto;
+  padding: 0 20px 20px;
+}
+
+/* Basic Info Section */
+.basic-info {
+  padding-bottom: 10px;
+}
+
+.header-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.overlay-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.title-section {
+  flex: 1;
+  min-width: 0;
+}
+
+.overlay-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.overlay-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.category, .subcategory {
+  background: #f3f4f6;
+  color: #374151;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.subcategory {
+  background: #e5e7eb;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status.open {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status.closed {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.description, .details {
+  color: #4b5563;
+  line-height: 1.5;
+  margin: 12px 0;
+}
+
+.description {
+  font-size: 16px;
+}
+
+.details {
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Contact Info */
+.contact-info {
+  margin: 20px 0;
+}
+
+.info-item {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+.info-item strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+.info-item a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.info-item a:hover {
+  text-decoration: underline;
+}
+
+/* Overview Content */
+.overview-content {
+  padding: 0;
+}
+
+.details-section {
+  margin-bottom: 20px;
+}
+
+.details-section .details {
+  font-size: 14px;
+  font-style: italic;
+  color: #4b5563;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.overview-content .contact-info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 12px 0;
+}
+
+/* Operating Times */
+.operating-times {
+  margin: 20px 0;
+}
+
+.operating-times h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 12px 0;
+}
+
+.times-grid {
+  display: grid;
+  gap: 4px;
+}
+
+.time-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.time-row:last-child {
+  border-bottom: none;
+}
+
+.time-row .day {
+  font-weight: 500;
+  color: #374151;
+  min-width: 40px;
+}
+
+.time-row .time {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Main Tabs Section */
+.main-tabs-section {
+  padding-top: 10px;
+}
+
+/* More Info Section */
+.more-info-section {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.tab-container {
+  width: 100%;
+}
+
+.tab-headers {
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 16px;
+  overflow-x: auto;
+}
+
+.tab-header {
+  background: none;
+  border: none;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.tab-header:hover {
+  color: #374151;
+}
+
+.tab-header.active {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
+}
+
+.tab-contents {
+  position: relative;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Item Lists */
+.item-list {
+  margin: 16px 0;
+}
+
+.item-list h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 8px 0;
+}
+
+.item-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-list li {
+  padding: 6px 0;
+  color: #4b5563;
+  border-bottom: 1px solid #f3f4f6;
+  position: relative;
+  padding-left: 16px;
+}
+
+.item-list li:last-child {
+  border-bottom: none;
+}
+
+.item-list li::before {
+  content: '•';
+  color: #9ca3af;
+  position: absolute;
+  left: 0;
+}
+
+/* Movies Content */
+.movies-content {
+  padding: 0;
+}
+
+.movie-item {
+  margin: 20px 0;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.movie-item:first-child {
+  margin-top: 0;
+}
+
+.movie-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 8px 0;
+}
+
+.movie-description {
+  color: #4b5563;
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.movie-rating, .movie-duration, .movie-genre, .movie-director {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 4px 0;
+}
+
+.movie-rating strong, .movie-duration strong, .movie-genre strong, .movie-director strong {
+  color: #374151;
+}
+
+/* Showtimes */
+.showtimes {
+  margin: 12px 0 0 0;
+}
+
+.showtimes h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 8px 0;
+}
+
+.showtime-day {
+  margin: 8px 0;
+}
+
+.showtime-day strong {
+  display: block;
+  font-size: 13px;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+.times {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.time-slot {
+  background: #2563eb;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.time-slot.past-time {
+  background: #9ca3af;
+  color: #6b7280;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .overlay-info-panel.desktop {
+    width: calc(100vw - 20px);
+    right: 10px;
+    left: 10px;
+  }
+
+  .panel-scroll-container {
+    padding: 0 16px 16px;
+  }
+
+  .header-section {
+    gap: 12px;
+  }
+
+  .overlay-title {
+    font-size: 20px;
+  }
+
+  .tab-headers {
+    margin: 0 -16px 16px;
+    padding: 0 16px;
+  }
+}
+
+/* Smooth scrolling */
+.panel-scroll-container {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+.panel-close-btn:focus,
+.tab-header:focus {
+
+  outline-offset: 2px;
+}
+
+/* Loading state (optional) */
+.overlay-info-panel.loading .panel-scroll-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+}
+
+.overlay-info-panel.loading .panel-scroll-container::before {
+  content: 'Loading...';
+}

@@ -1,0 +1,120 @@
+// FAQ page specific styles
+
+// FAQ list
+.faq-list {
+  margin-bottom: $spacing-xxl;
+}
+
+// FAQ item
+.faq-item {
+  margin-bottom: $spacing-lg;
+  border-radius: $border-radius-md;
+  overflow: hidden;
+  box-shadow: $box-shadow-sm;
+}
+
+// FAQ question
+.faq-question {
+  padding: $spacing-lg $spacing-xl;
+  background-color: $white;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  border-left: 4px solid $primary-color;
+  transition: background-color $transition-speed;
+
+  &:hover {
+    background-color: $background-color;
+  }
+
+  &::after {
+    content: "+";
+    position: absolute;
+    right: $spacing-xl;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: $font-size-xlarge;
+    color: $primary-color;
+  }
+
+  &.active::after {
+    content: "-";
+  }
+}
+
+// FAQ answer
+.faq-answer {
+  padding: $spacing-lg $spacing-xl;
+  background-color: $white;
+  border-top: 1px solid $border-color;
+}
+
+// Contact section
+.contact-section {
+  text-align: center;
+  padding: $spacing-xxxl;
+  background-color: $primary-color-light;
+  border-radius: $border-radius-md;
+  margin: $spacing-xxxl 0;
+}
+
+.contact-title {
+  font-size: $font-size-xxlarge;
+  margin-bottom: $spacing-lg;
+  color: $text-color;
+}
+
+.contact-description {
+  font-size: $font-size-medium;
+  margin-bottom: $spacing-xxl;
+  color: $text-color-light;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-options {
+  display: flex;
+  justify-content: center;
+  gap: $spacing-xxl;
+  margin-top: $spacing-xxl;
+  flex-wrap: wrap;
+
+  @include respond-to('small') {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contact-option {
+  background-color: $white;
+  padding: $spacing-xl;
+  border-radius: $border-radius-md;
+  min-width: 200px;
+  box-shadow: $box-shadow-md;
+  transition: transform $transition-speed;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h3 {
+    color: $text-color;
+    margin-bottom: $spacing-md;
+  }
+
+  p {
+    color: $text-color-light;
+  }
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    transition: color $transition-speed;
+
+    &:hover {
+      color: $primary-color-dark;
+      text-decoration: underline;
+    }
+  }
+}

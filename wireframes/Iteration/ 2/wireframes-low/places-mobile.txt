@@ -1,0 +1,178 @@
+# Places Page - Mobile Wireframe
+
++----------------------+
+|       HEADER         |
+| [Logo]    [Hamburger]|
++----------------------+
+|                      |
+|     PAGE HEADER      |
+|    "Island Places"   |
+|      + Subtitle      |
+|                      |
++----------------------+
+|                      |
+|    CATEGORY NAV      |
+| [Hotels]             |
+| [Food & Drink]       |
+| [Recreation]         |
+| [Sites & Attractions]|
+| [Beaches]            |
+| [Transportation]     |
+|                      |
++----------------------+
+|                      |
+|       HOTELS &       |
+|    ACCOMMODATIONS    |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Luxury Hotels    | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Mid-Range Hotels | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Eco-Friendly     | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Resorts          | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
++----------------------+
+|                      |
+|    FOOD & DRINK      |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Seafood          | |
+| | Restaurants      | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
+| (Similar cards for   |
+| Cafes, Grill         |
+| Restaurants, and     |
+| Local Cuisine)       |
+|                      |
++----------------------+
+|                      |
+|     RECREATION       |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Water Sports     | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
+| (Similar cards for   |
+| Hiking, Fishing, and |
+| Adventure Activities)|
+|                      |
++----------------------+
+|                      |
+|       SITES &        |
+|     ATTRACTIONS      |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Natural Sites    | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
+| (Similar cards for   |
+| Volcano, Historical  |
+| Sites, and Scenic    |
+| Viewpoints)          |
+|                      |
++----------------------+
+|                      |
+|       BEACHES        |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Public Beaches   | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
+| (Similar cards for   |
+| Beaches with         |
+| Amenities, Surfing   |
+| Beaches, and         |
+| Snorkeling Spots)    |
+|                      |
++----------------------+
+|                      |
+|    TRANSPORTATION    |
+|                      |
+| +------------------+ |
+| |                  | |
+| |      IMAGE       | |
+| |                  | |
+| +------------------+ |
+| | Airport          | |
+| | Text             | |
+| | [Button]         | |
+| +------------------+ |
+|                      |
+| (Similar cards for   |
+| Harbor, Car Rental,  |
+| and Bike Rental)     |
+|                      |
++----------------------+
+|                      |
+|    CTA SECTION       |
+| "Explore Taniti      |
+|     Island" + Text   |
+|  [View Full Map]     |
+|                      |
++----------------------+
+|                      |
+|       FOOTER         |
+|     [Logo/Info]      |
+|    [Quick Links]     |
+| [Contact Information]|
+|    Copyright Text    |
+|                      |
++----------------------+

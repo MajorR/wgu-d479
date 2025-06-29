@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taniti Island Website Project Timeline</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .timeline-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: floralwhite;
+    }
+
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+
+    .timeline {
+      position: relative;
+      margin: 40px 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #2c3e50;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    .week {
+      margin-bottom: 60px;
+    }
+
+    .week-header {
+      text-align: center;
+      background-color: #3498db;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .timeline-item {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 46%;
+    }
+
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: white;
+      border: 4px solid #3498db;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .left {
+      right: -3.7%;
+      margin-right: 0;
+    }
+
+    .right {
+      left: 50.3%;
+      margin-left: 0;
+    }
+
+    .left::after {
+      right: -16px;
+    }
+
+    .right::after {
+      left: -16px;
+    }
+
+    .timeline-content {
+      padding: 20px;
+      background-color: white;
+      position: relative;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .day-label {
+      font-weight: bold;
+      color: #3498db;
+      margin-bottom: 10px;
+    }
+
+    .task-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .task-list li {
+      margin-bottom: 8px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .task-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #3498db;
+    }
+
+    .milestone {
+      background-color: #e74c3c;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin: 20px 0;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      width: 80%;
+      margin-left: 2%;
+    / / margin-right: auto;
+    }
+
+    .milestone::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #e74c3c;
+      top: 50%;
+      margin-top: -10px;
+      transform: rotate(45deg);
+      z-index: -1;
+    }
+
+    .milestone.left::after {
+      right: -10px;
+    }
+
+    .milestone.right::after {
+      left: -10px;
+    }
+
+    .deliverables, .testing-approach {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 5px;
+      margin-top: 40px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .timeline::before {
+        left: 31px;
+      }
+
+      .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+
+      .timeline-item::after {
+        left: 15px;
+        right: auto;
+      }
+
+      .left, .right {
+        left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="timeline-container">
+  <h1>Taniti Island Website Project Timeline</h1>
+
+  <div class="overview">
+    <p>Created by R Michael Olsen</p>
+    <p>Estimated Timeline for creation of new Taniti Website</p>
+  </div>
+
+  <div class="timeline">
+    <!-- Week 1 -->
+    <div class="week">
+      <div class="week-header">Week 1: Initial Design & Planning (Days 1-7)</div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <div class="day-label">Day 1-2: Research & Requirements Gathering</div>
+          <ul class="task-list">
+            <li>Survey Research</li>
+            <li>User research</li>
+            <li>Persona Creation</li>
+            <li>Define project scope and requirements</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <div class="day-label">Day 3-4: Information Architecture</div>
+          <ul class="task-list">
+            <li>Site mapping</li>
+            <li>User flows</li>
+            <li>Content inventory</li>
+            <li>Navigation structure</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <div class="day-label">Day 5-7: Low-Fidelity Wireframing</div>
+          <ul class="task-list">
+            <li>Create low-fidelity wireframes for all pages:
+              <ul>
+                <li>Home page</li>
+                <li>Bookings page</li>
+                <li>Experiences page</li>
+                <li>Places page</li>
+                <li>Island Map page</li>
+                <li>FAQ page</li>
+              </ul>
+            </li>
+            <li>Internal review of wireframes</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="milestone right">
+        <strong>MILESTONE:</strong> Completion of low-fidelity wireframes (Day 7)
+      </div>
+    </div>
+
+    <!-- Week 2 -->
+    <div class="week">
+      <div class="week-header">Week 2: Design Refinement & Testing (Days 8-14)</div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <div class="day-label">Day 8-9: Guerilla Testing - Round 1</div>
+          <ul class="task-list">
+            <li>Recruit 3 participants</li>
+            <li>Test low-fidelity wireframes</li>
+            <li>Collect and analyze feedback</li>
+            <li>Document findings and recommendations</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <div class="day-label">Day 10-12: Medium-Fidelity Wireframing</div>
+          <ul class="task-list">
+            <li>Create medium-fidelity wireframes incorporating feedback</li>
+            <li>Design system development (colors, typography, components)</li>
+            <li>Responsive design considerations (desktop and mobile)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <div class="day-label">Day 13-14: Guerilla Testing - Round 2</div>
+          <ul class="task-list">
+            <li>Test medium-fidelity wireframes with 3 participants</li>
+            <li>Focus on navigation and user flows</li>
+            <li>Collect and analyze feedback</li>
+            <li>Finalize design decisions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="milestone right">
+        <strong>MILESTONE:</strong> Finalized designs after guerilla testing (Day 14)
+      </div>
+    </div>
+
+    <!-- Week 3 -->
+    <div class="week">
+      <div class="week-header">Week 3: Development (Days 15-25)</div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <div class="day-label">Day 15-16: Frontend Setup</div>
+          <ul class="task-list">
+            <li>Project structure setup</li>
+            <li>Build system configuration</li>
+            <li>Base component development</li>
+            <li>Responsive framework implementation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <div class="day-label">Day 17-19: Core Page Development</div>
+          <ul class="task-list">
+            <li>Implement HTML structure for all pages</li>
+            <li>Develop SCSS/CSS styling based on design system</li>
+            <li>Create interactive elements with JavaScript</li>
+            <li>Ensure responsive behavior</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <div class="day-label">Day 20-25: Integration & Functionality</div>
+          <ul class="task-list">
+            <li>Connect pages and navigation</li>
+            <li>Implement booking functionality</li>
+            <li>Develop interactive map feature</li>
+            <li>Create filtering capabilities</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="milestone right">
+        <strong>MILESTONE:</strong> Functional development of all core pages (Day 25)
+      </div>
+    </div>
+
+    <!-- Week 4 -->
+    <div class="week">
+      <div class="week-header">Week 4: Testing, Refinement & Launch (Days 26-30)</div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <div class="day-label">Day 26-28: Quality Assurance (Student Testing/Feedback)</div>
+          <ul class="task-list">
+            <li>Cross-platform testing</li>
+            <li>Responsive design testing</li>
+            <li>Performance optimization</li>
+            <li>Accessibility testing</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <div class="day-label">Day 28-39: Final Refinements</div>
+          <ul class="task-list">
+            <li>Address feedback from user acceptance testing</li>
+            <li>Final bug fixes and optimizations</li>
+            <li>Content review and finalization</li>
+            <li>SEO implementation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <div class="day-label">Day 30: Deployment & Launch</div>
+          <ul class="task-list">
+            <li>Deployment to production environment</li>
+            <li>Launch announcement and monitoring</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="milestone right">
+        <strong>MILESTONE:</strong> Website launch (Day 30)
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
